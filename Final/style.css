@@ -1,0 +1,88 @@
+
+<link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,900,700' rel='stylesheet' type='text/css'>
+<style>
+
+	header {
+		<link rel="shortcut icon" href="http://2.bp.blogspot.com/-V7Ui2zipbM8/VkJ9MGDNMRI/AAAAAAACXY8/dKxLtH_pU1o/s1600/favicon.ico">
+		background-image: img src= "http://4.bp.blogspot.com/-xjl8-0ELmjc/VkJ9I-h4ayI/AAAAAAACXX4/pZ7G9EOi_WU/s1600/Frish-Smaller.png";
+		text-align: center;
+	}
+	a {color: blue;}
+		a:link {color:blue; background-color:transparent; text-decoration:none}
+		a:visited {color:orange; background-color:transparent; text-decoration:none}
+		a:hover   {color:Red; background-color:transparent; text-decoration:none}
+		a:active  {color:green; background-color:transparent; text-decoration:underline}
+	h1 { 
+		font-size: 100px;
+		font-family: 'Abril Fatface', cursive;
+		background-color: white;	
+		      max-width: 1000px;
+      margin: 0 auto;
+	}
+	h2 {font-size: 40x;
+		font-family: 'Abril Fatface', cursive;
+		background-color: white;
+	}
+	.img {
+    height:200px;
+    width:200px;
+}
+	ul {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 100px
+		padding: 10px;
+	}
+	li {display: inline;
+		position: center;
+		padding: 0px 10px 0px 10px;
+		color: black;
+		font-size: 50px;
+	}
+	    article {
+	    	max-width: 500px;
+      padding: 10px;
+      margin: 0 auto;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      position: center;
+    }
+	Body {
+		text-align: center;
+		background: url("http://4.bp.blogspot.com/-3-uMzwjsAvs/VkJ9Ll8viGI/AAAAAAACXYo/FoxbPBMp0mw/s1600/ThinkstockPhotos-476149819-%255BConverted%255D.png");
+		font-family: 'Playfair Display', serif;
+		color: Black;
+		background-color: white;
+		position: center;
+		text-align: center; 
+	}
+		Footer {
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      font-family: 'Abril Fatface', cursive;
+      position: center;
+      	font-size: 40px;
+	}
+	button {
+	height:60px;
+    width:200px;
+    font-family: 'Abril Fatface', cursive;
+	font-size: 40px;
+	color: black;
+	background: white;
+	border-radius: 20px;
+	border: 3px solid black;
+	margin-top: 20px;
+	position: center;
+	text-align: center;
+	}
+@media (max-width: 500px) {
+			Footer {
+      font-family: 'Abril Fatface', cursive;
+      position: center;
+      font-size: 20px;
+     max-width: 500px
+     margin: 0 auto;
+}
+	</style> 
