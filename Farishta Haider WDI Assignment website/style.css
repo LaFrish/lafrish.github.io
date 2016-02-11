@@ -10,12 +10,11 @@
 		a:link {color:blue; background-color:transparent; text-decoration:none}
 		a:visited {color:orange; background-color:transparent; text-decoration:none}
 		a:hover   {color:Red; background-color:transparent; text-decoration:none}
-		a:active  {color:green; background-color:transparent; text-decoration:underline}
-	
-	h1 { 
+
+	h1 {
 		font-size: 100px;
 		font-family: 'Abril Fatface', cursive;
-		background-color: white;	
+		background-color: white;
 		      max-width: 1000px;
       margin: 0 auto;
 
@@ -57,7 +56,7 @@
 		color: Black;
 		background-color: white;
 		position: center;
-		text-align: center; 
+		text-align: center;
 	}
 		Footer {
       background-color: white;
@@ -92,4 +91,4 @@
 }
 
 
-	</style> 
+	</style>
