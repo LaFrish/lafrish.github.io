@@ -1,11 +1,12 @@
 <link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,900,700' rel='stylesheet' type='text/css'>
 
-	head{
-				background: url("/Users/LaFrish/wdi/Farishta Haider/1167-withouttext.png");
+	head {
+
 	}
+
 		Body {
 		text-align: center;
-		background: url("/Users/LaFrish/wdi/Farishta Haider/1167-withouttext.png");
+		background: url("/Users/LaFrish/wdi/Farishta-Portfolio/1167-withouttext.png");
 		font-family: 'Playfair Display', serif;
 		color: #ffffff;
 		position: center;
@@ -14,7 +15,7 @@ h1 {
 			margin-top: 35px;
 			text-align: center;
 			font-size: 72px;
-			font-family: 'Abril Fatface', cursive;
+			font-family: 'Playfair Display', serif;
 }
 ul#tabs {
     list-style-type: none;
