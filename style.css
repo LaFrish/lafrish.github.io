@@ -2,21 +2,162 @@ body {
 	background-image: url("1167-withouttext.png");
 }
 
+.headerimg {
+  width: 310px;
+  height: 300px;
+  background: url(http://goltermann.design/wp-content/themes/goltermann/images/profile_build_jg.png);
+  background-position: -4960px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*
+  shorthand would be
+  -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  but that does not work with safari.
+  */
+  -webkit-animation-name: gif;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: steps(17, start);
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: gif 1s steps(17, start) 1.5s 1 forwards;
+  -ms-animation: gif 1s steps(17, start) 1.5s 1 forwards;
+  -o-animation: gif 1s steps(17, start) 1.5s 1 forwards;
+  animation: gif 1s steps(17, start) 1.5s 1 forwards;
+}
+
+@-webkit-keyframes gif {
+  0% {
+    background-position: -5270px
+  }
+  100% {
+    background-position: 1px
+  }
+}
+
+@-moz-keyframes gif {
+  from {
+    background-position: -5270px
+  }
+  to {
+    background-position: 1px
+  }
+}
+
+@-ms-keyframes gif {
+  from {
+    background-position: -5270px
+  }
+  to {
+    background-position: 1px
+  }
+}
+
+@-o-keyframes gif {
+  from {
+    background-position: -5270px
+  }
+  to {
+    background-position: 1px
+  }
+}
+
+@keyframes gif {
+  from {
+    background-position: -5270px
+  }
+  to {
+    background-position: 0
+  }
+}
+
+/*.container{
+  position:absolute;
+  top:30%;
+  left:calc(50% - 250px);
+  border:1px solid #909090;
+  width:640px;
+  height:32px;
+	margin:50px auto;
+  box-shadow:1px 1px 5px #404040;
+}*/
+
+#nb{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+}
+
+section{
+  position:relative;
+  width:100%;
+	max-width: 640px;
+  margin:50px auto;
+}
+
+nav{
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+	list-style:none;
+	width:160px;
+  text-align:center;
+  font-family:'Abril Fatface', sans-serif;
+  border: 1px dashed rgba(255,255,255, 0);
+  color:#fff;
+  padding:10px 0 10px 0;
+  margin:-1px -5px -1px -1px;
+  cursor:pointer;
+  transition:color .2s, background .2s;
+  -webkit-transition:color .2s, background .2s;
+}
+nav ul li:hover{
+  /*border:1px dashed #fff;*/
+  background:rgba(255,255,255,.1);
+}
+nav ul{
+  border: 1px solid #fff;
+  position:absolute;
+  width:100%;
+  padding:0;
+  z-index:100;
+}
+/*nav div{
+  position:absolute;
+  left:0;
+  top:16px;
+  background: #fff;
+  width:162px;
+  height:40px;
+  z-index:99;
+}*/
+.active{
+  color:rgba(55, 186, 177, 1);
+	background: #fff;
+}
+
 h1 {
 	margin-top: 35px;
 	text-align: center;
 	font-size: 72px;
-	font-family: 'Abril Fatface', serif;
+	font-family: 'Abril Fatface', sans-serif;;
 	color: white;
 	text-shadow: 2px 2px 2px #000;
 }
 
 button {
-	margin-left:auto;
-	margin-right:auto;
 	display:inline-block;
-	vertical-align: middle;
-	text-align: center;
+	text-align:center;
+	padding:10px 0 10px 0;
+	margin:0px 10px 0px 0px;
 	width:150px;
 	height: 50px;
   cursor: pointer;
