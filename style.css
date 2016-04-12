@@ -5,7 +5,7 @@ body {
 .headerimg {
   width: 310px;
   height: 300px;
-  background: url(http://goltermann.design/wp-content/themes/goltermann/images/profile_build_jg.png);
+  background: url("http://i.imgur.com/oMiKGyW.png");
   background-position: -4960px;
   position: absolute;
   margin: auto;
@@ -13,6 +13,9 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+
+
+	http://imgur.com/oMiKGyW
   /*
   shorthand would be
   -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards;
