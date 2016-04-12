@@ -13,9 +13,8 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+}
 
-
-	http://imgur.com/oMiKGyW
   /*
   shorthand would be
   -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards;
