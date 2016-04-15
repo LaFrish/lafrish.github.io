@@ -2,80 +2,66 @@ body {
 	background-image: url("1167-withouttext.png");
 }
 
+
+html {height: 100%;overflow:hidden}
+
+body {
+    background: "1167-withouttext.png";
+    min-height: 100%;
+}
+
 .headerimg {
   width: 310px;
   height: 300px;
-  background: url("http://i.imgur.com/ifckBKU.png");
+  background: url(http://i.imgur.com/ifckBKU.png);
   background-position: -4960px;
   position: absolute;
   margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
+  top: 0; left: 0; bottom: 0; right: 0;
 
   /*
   shorthand would be
   -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards;
   but that does not work with safari.
   */
+
   -webkit-animation-name: gif;
   -webkit-animation-delay: 1s;
-  -webkit-animation-timing-function: steps(17, start);
+  -webkit-animation-timing-function: steps(17,start);
   -webkit-animation-duration: 1.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
-  -moz-animation: gif 1s steps(17, start) 1.5s 1 forwards;
-  -ms-animation: gif 1s steps(17, start) 1.5s 1 forwards;
-  -o-animation: gif 1s steps(17, start) 1.5s 1 forwards;
-  animation: gif 1s steps(17, start) 1.5s 1 forwards;
+
+  -moz-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  -ms-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  -o-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  animation: gif 1s steps(17,start) 1.5s 1 forwards;
 }
 
-@-webkit-keyframes gif {
-  0% {
-    background-position: -5270px
+  @-webkit-keyframes gif{
+  0% {background-position: -5270px}
+  100% {background-position: 1px}
   }
-  100% {
-    background-position: 1px
-  }
-}
 
-@-moz-keyframes gif {
-  from {
-    background-position: -5270px
+  @-moz-keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 1px}
   }
-  to {
-    background-position: 1px
-  }
-}
 
-@-ms-keyframes gif {
-  from {
-    background-position: -5270px
+  @-ms-keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 1px}
   }
-  to {
-    background-position: 1px
-  }
-}
 
-@-o-keyframes gif {
-  from {
-    background-position: -5270px
+  @-o-keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 1px}
   }
-  to {
-    background-position: 1px
-  }
-}
 
-@keyframes gif {
-  from {
-    background-position: -5270px
+  @keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 0}
   }
-  to {
-    background-position: 0
-  }
-}
 
 /*.container{
   position:absolute;
