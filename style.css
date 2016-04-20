@@ -1,3 +1,8 @@
+@font-face {
+   font-family: Audrey-Normal;
+   src: url('Audrey-Normal.otf');
+}
+
 body {
 	background-image: url("1167-withouttext.png");
 }
@@ -98,7 +103,7 @@ nav ul li{
 	list-style:none;
 	width:160px;
   text-align:center;
-  font-family:'Abril Fatface', sans-serif;
+  font-family:'Audrey-Normal', sans-serif;
   border: 1px dashed rgba(255,255,255, 0);
   color:#fff;
   padding:10px 0 10px 0;
@@ -107,10 +112,9 @@ nav ul li{
   transition:color .2s, background .2s;
   -webkit-transition:color .2s, background .2s;
 }
-nav ul li:hover{
-  /*border:1px dashed #fff;*/
-  background:rgba(255,255,255,.1);
-}
+/*nav ul li:hover{
+  background: white;
+}*/
 nav ul{
   border: 1px solid #fff;
   position:absolute;
@@ -150,7 +154,7 @@ button {
 	height: 50px;
   cursor: pointer;
 	border-radius: .5em;
-	font-family: 'Abril Fatface', serif;
+	font-family: 'Audrey-Normal', serif;
 	font-size: 16px;
 	background-color: #E6B72D;
 	border-color: #f91791;
@@ -158,6 +162,7 @@ button {
 	box-shadow: 0 0 40px 40px #f1c40f inset, 0 0 0 0 #ff5858;
 	transition: all 150ms ease-in-out;
 }
-button:hover {
+button::hover {
+	color: white;
 	box-shadow: 0 0 10px 0 #ff5858 inset, 0 0 10px 0 #f1c40f;
 }
