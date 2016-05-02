@@ -1,18 +1,18 @@
 @font-face {
-   font-family: Audrey-Normal;
-   src: url('Audrey-Normal.otf');
+  font-family: Audrey-Normal;
+  src: url('Audrey-Normal.otf');
 }
 
 body {
-	background-image: url("1167-withouttext.png");
+  background-image: url("1167-withouttext.png");
 }
 
-
-html {
-  height: 100%;
-  overflow:hidden
+#top {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  position: fixed;
 }
-
 
 .headerimg {
   width: 310px;
@@ -42,78 +42,81 @@ html {
   animation: gif 1s steps(17,start) 1.5s 1 forwards;
 }
 
-  @-webkit-keyframes gif{
+@-webkit-keyframes gif{
   0% {background-position: -5270px}
   100% {background-position: 1px}
-  }
+}
 
-  @-moz-keyframes gif{
+@-moz-keyframes gif{
   from{background-position: -5270px}
   to{background-position: 1px}
-  }
+}
 
-  @-ms-keyframes gif{
+@-ms-keyframes gif{
   from{background-position: -5270px}
   to{background-position: 1px}
-  }
+}
 
-  @-o-keyframes gif{
+@-o-keyframes gif{
   from{background-position: -5270px}
   to{background-position: 1px}
-  }
+}
 
-  @keyframes gif{
+@keyframes gif{
   from{background-position: -5270px}
   to{background-position: 0}
-  }
+}
 
-/*.container{
-  position:absolute;
-  top:30%;
-  left:calc(50% - 250px);
-  border:1px solid #909090;
-  width:640px;
-  height:32px;
-	margin:50px auto;
-  box-shadow:1px 1px 5px #404040;
-}*/
+.container{
+position:absolute;
+top:30%;
+left:calc(50% - 250px);
+border:1px solid #909090;
+width:640px;
+height:32px;
+margin:50px auto;
+box-shadow:1px 1px 5px #404040;
+}
 
-#nb{
-  position:fixed;
+#navbar{
+  position: absolute;
   left:0;
   top:0;
   width:100%;
   height:100%;
 }
-
-section{
-  position:relative;
-  width:100%;
-	max-width: 640px;
-  margin:50px auto;
-}
-
-nav{
-  width:100%;
-}
+//
+// section{
+//   position:relative;
+//   width:100%;
+// 	max-width: 640px;
+//   margin:50px auto;
+// }
+//
+// nav{
+//   width:100%;
+// }
 
 nav ul li{
+  align-self: baseline;
+  background-color: pink;
   display:inline-block;
-	list-style:none;
-	width:160px;
+  list-style:none;
+  width:20%;
   text-align:center;
   font-family:'Audrey-Normal', sans-serif;
   border: 1px dashed rgba(255,255,255, 0);
   color:#fff;
-  padding:10px 0 10px 0;
+  padding:20px 0 20px 0;
   margin:-1px -5px -1px -1px;
   cursor:pointer;
   transition:color .2s, background .2s;
   -webkit-transition:color .2s, background .2s;
 }
-/*nav ul li:hover{
-  background: white;
-}*/
+nav ul li:hover{
+background: white;
+}
+
 nav ul{
   border: 1px solid #fff;
   position:absolute;
@@ -121,27 +124,28 @@ nav ul{
   padding:0;
   z-index:100;
 }
-/*nav div{
-  position:absolute;
-  left:0;
-  top:16px;
-  background: #fff;
-  width:162px;
-  height:40px;
-  z-index:99;
-}*/
+// nav div{
+//   position:absolute;
+//   left:0;
+//   top:16px;
+//   background: #fff;
+//   width:162px;
+//   height:40px;
+//   z-index:99;
+// }
+
 .active{
   color:rgba(55, 186, 177, 1);
-	background: #fff;
+  background: #fff;
 }
 
 h1 {
-	margin-top: 35px;
-	text-align: center;
-	font-size: 72px;
-	font-family: 'Abril Fatface', sans-serif;;
-	color: white;
-	text-shadow: 2px 2px 2px #000;
+  margin-top: 35px;
+  text-align: center;
+  font-size: 72px;
+  font-family: 'Abril Fatface', sans-serif;;
+  color: white;
+  text-shadow: 2px 2px 2px #000;
 }
 
 // button {
@@ -167,16 +171,13 @@ h1 {
 // }
 
 /*contact page*/
-.contact body {
-  padding-top: 100px;
-}
+
 
 .contact p{
   color: lime;
   font-family: "Courier";
   font-size: 20px;
-    /*padding-top: 100px;*/
-
+  /*padding-top: 100px;*/
   margin: 150px 25px 25px 12em;
   white-space: nowrap;
   overflow: hidden;
@@ -214,163 +215,19 @@ h1 {
 .contact ::selection{
   background: black;
 }
+///sections
+.intro{
+  background: url("1167-withouttext.png"), no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-
-/*portfolio gallery*/
-$cardcolor:rgba(10,191,113,.6);
-$buttonscolor:rgba(23,159,100,.6);
-$buttonsbackgroundhovercolor:rgba(23,159,100,.8);
-$buttonfontcolor:rgba(47,47,47,.4);
-$buttonfonthovercolor:rgba(47,47,47,.7);
-$headlinecolor:#fefefe;
-$fontcolor:#272727;
-
-*{
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
+.aboutme{
+  background: white;
 }
 
+.contact{
 
-.container{
-	position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-	transform-style: preserve-3d;
-	perspective: 1200px;
-
-	.card{
-		background-color:$cardcolor;
-		width: 420px;
-		min-height: 270px;
-		border-radius: 8px;
-		box-shadow: 26px 33px 121px 0px rgba(0,0,0,0.40);
-		padding: 30px;
-		transition: all .5s ease;
-
-		&.challengeChosen{
-			transform: rotateY(180deg) translateZ(-70px);
-			min-height: 400px;
-			width: 300px;
-
-			.back{
-				display: block;
-				margin-left: -15px;
-			}
-
-			.welcometext{
-				font-weight: bold;
-				width: 240px;
-				float:right;
-			}
-
-			h3, p, .download{
-				transform: rotateY(180deg);
-			}
-
-			.grats{
-				margin-top: 30px;
-				width: 180px;
-				display: block;
-				float: right;
-				font-size: 11px;
-			}
-		}
-
-		h3{
-			color: $headlinecolor;
-			font-size:18px;
-			font-weight: 300;
-			margin-bottom: 30px;
-			opacity: .7;
-		}
-		p{
-			color: $fontcolor;
-			font-size: 12px;
-			opacity: .8;
-			line-height: 18px;
-
-			&.back{
-				display: none;
-				color:$headlinecolor;
-				cursor: pointer;
-				&:hover{
-					opacity: 1;
-				}
-
-				&:before{
-					content:"\f104";
-					font-family: 'fontAwesome';
-					opacity: .7;
-					margin-right: 5px;
-				}
-			}
-
-			&.download{
-				color:$headlinecolor;
-				cursor: pointer;
-				position: absolute;
-				bottom: 30px;
-				right: 25px;
-				display: none;
-				font-size: 11px;
-				&:hover{
-					opacity: 1;
-				}
-
-				&:before{
-					content:"\f019";
-					font-family: 'fontAwesome';
-					opacity: .7;
-					margin-right: 5px;
-				}
-			}
-
-			span{
-				margin-top: 30px;
-				display:block;
-			}
-		}
-
-		.btn{
-			display: inline-block;
-			user-select: none;
-			position: absolute;
-			bottom:0;
-			padding:25px;
-			width: 50%;
-			text-align: center;
-			background: $buttonscolor;
-			font-size: 11px;
-			color:$buttonfontcolor;
-			text-transform: uppercase;
-			font-weight: bold;
-			cursor: pointer;
-			transition: color .3s ease, background-color .2s ease;
-			&:hover{
-				color:$buttonfonthovercolor;
-				background-color:$buttonsbackgroundhovercolor;
-			}
-			&.start{
-				left:0;
-				right:0;
-				width:100%;
-				border-bottom-left-radius: 8px;
-				border-bottom-right-radius: 8px;
-			}
-
-			&.decline{
-				left:0;
-				border-bottom-left-radius: 8px;
-				border-right: 1px solid rgba(255,255,255,.2);
-				display:none;
-			}
-			&.accept{
-				right:0;
-				border-bottom-right-radius: 8px;
-				display: none;
-			}
-		}
-	}
 }
