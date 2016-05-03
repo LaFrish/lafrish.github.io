@@ -10,8 +10,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     vertical-align: baseline;
 }
-
 @import "compass";
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
+
+
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
 
 html {
@@ -54,15 +57,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-image: url('../images/icons-sd2ced10e58.png');
     background-repeat: no-repeat;
 }
-
-/*
-This CSS resource incorporates links to font software which is
-the valuable copyrighted property of Monotype Imaging and/or
-its suppliers. You may not attempt to copy, install, redistribute, convert,
-modify or reverse engineer this font software. Please contact Monotype Imaging
-with any questions regarding Web Fonts:  http://www.fontslive.com
-*/
-
 
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
 
@@ -119,58 +113,7 @@ with any questions regarding Web Fonts:  http://www.fontslive.com
 }
 
 
-.headerimg {
-  width: 310px;
-  height: 300px;
-  background: url("http://i.imgur.com/ifckBKU.png");
-  background-position: -4960px;
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
 
-  /*
-  shorthand would be
-  -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  but that does not work with safari.
-  */
-
-  -webkit-animation-name: gif;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-timing-function: steps(17,start);
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-
-  -moz-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  -ms-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  -o-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  animation: gif 1s steps(17,start) 1.5s 1 forwards;
-}
-
-@-webkit-keyframes gif{
-  0% {background-position: -5270px}
-  100% {background-position: 1px}
-}
-
-@-moz-keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 1px}
-}
-
-@-ms-keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 1px}
-}
-
-@-o-keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 1px}
-}
-
-@keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 0}
-}
 h1 {
   position: relative;
   text-align: center;
@@ -326,8 +269,6 @@ h1 {
   }
 }
 
-
-
 .easynav {
     position: fixed;
     z-index: 100;
@@ -354,7 +295,7 @@ h1 {
 
 
 #loading {
-    background: url(../images/me-overlay.png) repeat 0 0 fixed #000;
+    background: url("1167-withouttext.png") repeat 0 0 fixed #000;
     position: fixed;
     top: 0;
     right: 0;
@@ -530,7 +471,7 @@ body {
 
 #welcome
 {
-    background: url(../images/me-overlay.png) repeat 0 0 fixed, url("1167-withouttext.png") no-repeat center -80px fixed #000;
+    background: url("1167-withouttext.png") repeat 0 0 fixed, url("1167-withouttext.png") no-repeat center -80px fixed #000;
     background-size: auto, cover;
     position: relative;
     z-index: 0;
@@ -708,7 +649,7 @@ body {
     margin-top: -52px;
 }
 
-#welcome .close .segoa-bar .toggle-bar {
+#welcome .close .nav-bar .toggle-bar {
     height: 4px;
     background-color: #fff;
     width: 24px;
@@ -767,7 +708,7 @@ body {
     cursor: pointer;
     position: relative;
     border: 1px solid #333;
-    border-top-color: #000;
+    border-top-color: #fff;
     margin-top: -1px;
     -moz-border-radius: 0 0 3px 3px;
     -webkit-border-radius: 0;
@@ -792,7 +733,7 @@ body {
     -o-transition: height 0.25s, top 0.2s ease;
     -webkit-transition: height 0.25s, top 0.2s ease;
     transition: height 0.25s, top 0.2s ease;
-    /*background-color: #f91791;*/
+    background-color: #f91791;
     width: 24px;
     position: absolute;
     -moz-border-radius: 1px;
@@ -996,17 +937,53 @@ body > section > .holder > .title h2:after {
     -o-transition: all 2s;
     -webkit-transition: all 2s;
     transition: all 2s;
-    position: absolute;
-    top: 22%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(../images/me-about.png) no-repeat right -158px #fcfefe;
-    /*@include filter(blur(5px));
-  &:hover {
-      @include filter(blur(0px));
-  }*/
-}
+    width: 310px;
+    height: 300px;
+    background: url("http://i.imgur.com/ifckBKU.png");
+    background-position: -4660px;
+    /*position: absolute;*/
+    margin: auto;
+    margin-top: 50px;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+      -webkit-animation-name: gif;
+      -webkit-animation-delay: 1s;
+      -webkit-animation-timing-function: steps(17,start);
+      -webkit-animation-duration: 1.5s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+
+      -moz-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+      -ms-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+      -o-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+      animation: gif 1s steps(17,start) 1.5s 1 forwards;
+    }
+
+    @-webkit-keyframes gif{
+      0% {background-position: -5270px}
+      100% {background-position: 1px}
+    }
+
+    @-moz-keyframes gif{
+      from{background-position: -5270px}
+      to{background-position: 1px}
+    }
+
+    @-ms-keyframes gif{
+      from{background-position: -5270px}
+      to{background-position: 1px}
+    }
+
+    @-o-keyframes gif{
+      from{background-position: -5270px}
+      to{background-position: 1px}
+    }
+
+    @keyframes gif{
+      from{background-position: -5270px}
+      to{background-position: 0}
+    }
+
 
 #about:before {
     -moz-transform: skewY(-3deg);
@@ -1030,7 +1007,7 @@ body > section > .holder > .title h2:after {
     height: 135px;
     width: 100%;
     content: "";
-    bottom: -80px;
+    bottom: -60px;
     left: 0;
     background: #000;
     position: absolute;
@@ -1158,110 +1135,6 @@ body > section > .holder > .title h2:after {
 
 #about .bio > p {
     padding: 0 0 16px 0;
-}
-
-#about .skills .meter {
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
-    border-radius: 1px;
-    width: 96%;
-    position: relative;
-    line-height: 20px;
-    /*border: 2px solid #000;*/
-}
-
-#about .skills .meter > div {
-    background-color: #f91791;
-    height: 25px;
-    color: #fff;
-    position: relative;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-
-#about .skills .meter > div[data-icon]:before {
-    position: absolute;
-    content: attr(data-icon);
-    right: -47px;
-    color: #000;
-    top: 2px;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 0px 5px;
-}
-
-#about .skills .meter span {
-    position: absolute;
-    left: 12px;
-    color: #fff;
-    top: 2px;
-    font-size: 13px;
-    font-family: "Audrey-Normal";
-    text-transform: uppercase;
-    z-index: 1;
-}
-
-#about .skills .meter:after {
-    clear: both;
-    content: '';
-    display: block;
-}
-
-#about .skills .meter + .meter {
-    margin: 22px 0 0 0;
-}
-
-#about .skills .meter .photoshop {
-    width: 100%;
-}
-
-#about .skills .meter .illustrator {
-    width: 90%;
-}
-
-#about .skills .meter .website {
-    width: 100%;
-}
-
-#about .skills .meter .ui {
-    width: 98%;
-}
-
-#about .skills .meter .mobile {
-    width: 95%;
-}
-
-#about .skills .meter .flash {
-    width: 90%;
-}
-
-#about .skills .meter .html {
-    width: 100%;
-}
-
-#about .skills .meter .sass {
-    width: 100%;
-}
-
-#about .skills .meter .responsive {
-    width: 100%;
-}
-
-#about .skills .meter .wireframing {
-    width: 85%;
-}
-
-#about .skills .meter .sketch {
-    width: 30%;
-}
-
-#about .skills .meter .js {
-    width: 65%;
-}
-
-#about .skills .meter .dedication {
-    width: 100%;
 }
 
 #about .experience .row {
@@ -1657,7 +1530,7 @@ body > section > .holder > .title h2:after {
     content: "";
     bottom: -80px;
     left: 0;
-    background: #EDEDED;
+    background: #f4f4f4;
     position: absolute;
 }
 
@@ -2001,10 +1874,10 @@ body > section > .holder > .title h2:after {
         margin: 0 10px;
     }
 
-    #about .bg-image {
+    /*#about .bg-image {
         background-size: 150%;
-        background-position: center bottom;
-    }
+        background-position: right bottom;
+    }*/
 
     #about #bio {
         padding-bottom: 200px;
