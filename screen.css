@@ -11,9 +11,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
-@import "compass";
-@import url(http://reset5.googlecode.com/hg/reset.min.css);
-
 html {
     line-height: 1;
 }
@@ -62,271 +59,45 @@ its suppliers. You may not attempt to copy, install, redistribute, convert,
 modify or reverse engineer this font software. Please contact Monotype Imaging
 with any questions regarding Web Fonts:  http://www.fontslive.com
 */
-
-
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/Segoe UI.eot");
+    src: url("../fonts/Segoe UI.eot?#iefix") format("embedded-opentype"), url("../fonts/Segoe UI.woff") format("woff"), url("../fonts/Segoe UI.ttf") format("truetype"), url("../fonts/Segoe UI.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
 
 @font-face {
-  font-family: 'Audrey-Normal';
-  src: url('Audrey-Normal.otf');
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/Segoe UI Bold.eot");
+    src: url("../fonts/Segoe UI Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Segoe UI Bold.woff") format("woff"), url("../fonts/Segoe UI Bold.ttf") format("truetype"), url("../fonts/Segoe UI Bold.svg#web") format("svg");
+    font-style: normal;
+    font-weight: bold;
 }
 
-#statement {
-  display: inline;
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url("../fonts/Segoe UI Light.eot");
+    src: url("../fonts/Segoe UI Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Segoe UI Light.woff") format("woff"), url("../fonts/Segoe UI Light.ttf") format("truetype"), url("../fonts/Segoe UI Light.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
 }
 
-.container {
-  position: absolute;
-  width: 100%;
-  heigh: 100%;
-  text-align: center;
-  top: 40%;
-  left: 0;
-  margin:  0 auto;
-  font-family: 'Roboto', sans-serif;
-
-  p {
-    font-size: 20px;
-  }
-
-  a {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    color: pink;
-    text-decoration: none;
-    font-size: 20px;
-    overflow: hidden;
-    top: 5px;
-
-    &:after {
-      content: '';
-      position: absolute;
-      background: pink;
-      height: 2px;
-      width: 0%;
-      transform: translateX(-50%);
-      left: 50%;
-      bottom: 0;
-      transition: .35s ease;
-    }
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
-      width: 100%;
-    }
-  }
+@font-face {
+    font-family: "Segoe UI Semibold";
+    src: url("../fonts/Segoe UI Semibold.eot");
+    src: url("../fonts/Segoe UI Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Segoe UI Semibold.woff") format("woff"), url("../fonts/Segoe UI Semibold.ttf") format("truetype"), url("../fonts/Segoe UI Semibold.svg#web") format("svg");
+    font-style: normal;
+    font-weight: bold;
 }
 
-
-.headerimg {
-  width: 310px;
-  height: 300px;
-  background: url("http://i.imgur.com/ifckBKU.png");
-  background-position: -4960px;
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-
-  /*
-  shorthand would be
-  -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  but that does not work with safari.
-  */
-
-  -webkit-animation-name: gif;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-timing-function: steps(17,start);
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-
-  -moz-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  -ms-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  -o-animation: gif 1s steps(17,start) 1.5s 1 forwards;
-  animation: gif 1s steps(17,start) 1.5s 1 forwards;
+@font-face {
+    font-family: "Segoe UI Semilight";
+    src: url("../fonts/Segoe UI Semilight.eot");
+    src: url("../fonts/Segoe UI Semilight.eot?#iefix") format("embedded-opentype"), url("../fonts/Segoe UI Semilight.woff") format("woff"), url("../fonts/Segoe UI Semilight.ttf") format("truetype"), url("../fonts/Segoe UI Semilight.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
 }
-
-@-webkit-keyframes gif{
-  0% {background-position: -5270px}
-  100% {background-position: 1px}
-}
-
-@-moz-keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 1px}
-}
-
-@-ms-keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 1px}
-}
-
-@-o-keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 1px}
-}
-
-@keyframes gif{
-  from{background-position: -5270px}
-  to{background-position: 0}
-}
-h1 {
-  position: relative;
-  text-align: center;
-  font-family: 'Abril Fatface', serif;
-}
-
-.button_container {
-  position: fixed;
-  top: 5%;
-  right: 2%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  z-index: 100;
-  transition: opacity .25s ease;
-
-  &:hover {
-    opacity: .7;
-  }
-
-  &.active {
-    .top {
-      transform: translateY(11px) translateX(0) rotate(45deg);
-      background: yellow;
-    }
-    .middle {
-      opacity: 0;
-      background: yellow;
-    }
-
-    .bottom {
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: yellow;
-    }
-  }
-
-  span {
-  background: blue;
-  border: none;
-  height: 5px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition:  all .35s ease;
-  cursor: pointer;
-
-    &:nth-of-type(2) {
-      top: 11px;
-    }
-
-    &:nth-of-type(3) {
-      top: 22px;
-    }
-  }
-}
-
-.overlay {
-  position: fixed;
-  background: pink;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden;
-
-  &.open {
-    opacity: .9;
-    visibility: visible;
-    height: 100%;
-
-    li {
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
-
-      &:nth-of-type(2) {
-        animation-delay: .4s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: .45s;
-      }
-      &:nth-of-type(4) {
-        animation-delay: .50s;
-      }
-    }
-  }
-#overlay-menu {
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Abril Fatface', serif;
-    font-weight: 400;
-    text-align: center;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-
-    li {
-      display: block;
-      height: 25%;
-      height: calc(100% / 4);
-      min-height: 50px;
-      position: relative;
-      opacity: 0;
-
-      a {
-        display: block;
-        position: relative;
-        color: red;
-        text-decoration: none;
-        overflow: hidden;
-
-        &:hover:after,
-         &:focus:after,
-         &:active:after {
-           width: 100%;
-         }
-
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background: red;
-          transition: .35s;
-        }
-      }
-    }
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
-}
-
-
 
 .easynav {
     position: fixed;
@@ -348,10 +119,15 @@ h1 {
 }
 
 .easynav a:hover, .easynav a .active {
-    background-color: #f91791;
+    background-color: #14B97D;
 }
 
-
+.htmlawards {
+    position: fixed;
+    top: 115px;
+    right: 0px;
+    z-index: 99;
+}
 
 #loading {
     background: url(../images/me-overlay.png) repeat 0 0 fixed #000;
@@ -376,7 +152,7 @@ h1 {
 }
 
 strong {
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
 .clear-fix {
@@ -385,7 +161,7 @@ strong {
 
 .button {
     color: #000;
-    border: 1px solid #f91791;
+    border: 1px solid #14B97D;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -407,7 +183,7 @@ strong {
 .button:before {
     filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=0);
     opacity: 0;
-    background: #f91791;
+    background: #14B97D;
     content: '';
     position: absolute;
     top: 0;
@@ -449,7 +225,7 @@ strong {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "Abril Fatface";
+    font-family: Segoe UI Semilight;
 }
 
 .fade-in {
@@ -524,167 +300,14 @@ body {
 }
 
 ::selection {
-    background-color: #f91791;
+    background-color: #14B97D;
     color: #fff;
 }
 
-#welcome
-{
-    background: url(../images/me-overlay.png) repeat 0 0 fixed, url("1167-withouttext.png") no-repeat center -80px fixed #000;
+#welcome {
+    background: url(../images/me-overlay.png) repeat 0 0 fixed, url(../images/me-bg.jpg) no-repeat center -80px fixed #000;
     background-size: auto, cover;
     position: relative;
-    z-index: 0;
-
-}
-
-#welcome .text {
-  animation: inherit;
-}
-#welcome .background {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 100s infinite;
-  background-color: currentColor;
-}
-@supports (background-blend-mode: overlay) {
-#welcome  .background {
-    background-image: linear-gradient(45deg, white 10%, black 90%);
-    background-blend-mode: overlay;
-  }
-}
-@keyframes wheelHueColor {
-  from, to { color: hsl(324, 70%, 45%); }
-  10%      { color: hsl(360, 65%, 45%); }
-  20%      { color: hsl( 36, 80%, 45%); }
-  30%      { color: hsl( 72, 75%, 35%); }
-  40%      { color: hsl(108, 65%, 35%); }
-  50%      { color: hsl(144, 75%, 35%); }
-  60%      { color: hsl(180, 75%, 35%); }
-  70%      { color: hsl(216, 60%, 45%); }
-  80%      { color: hsl(252, 65%, 50%); }
-  90%      { color: hsl(288, 60%, 40%); }
-}
-
-
-/* misc */
-* { margin: 0; padding: 0; }
-#welcome .background {
-  min-height: 100vh;
-  display: flex;
-}
-#welcome .text {
-  margin: auto;
-  background: rgba(0,0,0,.75);
-  padding: 1em;
-}
-
-.intro h2 {
-    font-size: 2.0em;
-    font-weight: 300;
-    line-height: 1.4;
-}
-
-.intro h2 strong {
-    letter-spacing: -2px;
-    font-weight: 800;
-}
-
-/* ROTATE WORDS */
-.rotate-words {
-    display: inline-block;
-    min-width: 180px;
-    min-height: 34px;
-    text-align: left;
-    text-indent: 6px;
-}
-
-.rotate-words span {
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    font-weight: 800;
-    letter-spacing: -2px;
-}
-
-.no-csstransforms .rotate-words {
-    display: inline;
-    text-align: center;
-}
-
-.no-csstransforms .rotate-words span {
-    position: relative;
-    opacity: 1;
-}
-
-/*.no-csstransforms .rotate-words span:after {
-    content: ",";
-	}
-.no-csstransforms .rotate-words span:last-child:after {
-    content: ".";
-	}*/
-.rotate-words span .rotate-in {
-    animation: rotateInWord .5s linear forwards;
-    -webkit-animation: rotateInWord .5s linear forwards;
-}
-
-.rotate-words span .rotate-out {
-    animation: rotateOutWord .5s linear forwards;
-    -webkit-animation: rotateOutWord .5s linear forwards;
-}
-
-.rotate-words span:first-child {
-    opacity: 1;
-}
-
-@-webkit-keyframes rotateInWord {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-30px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0px);
-    }
-}
-
-@-webkit-keyframes rotateOutWord {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0px);
-    }
-
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(30px);
-    }
-}
-
-@keyframes rotateInWord {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes rotateOutWord {
-    0% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-}
-.rotate-words {
-    min-height: 28px;
-    min-width: 166px;
 }
 
 #welcome header {
@@ -708,7 +331,7 @@ body {
     margin-top: -52px;
 }
 
-#welcome .close .segoa-bar .toggle-bar {
+#welcome .close .nav-bar .toggle-bar {
     height: 4px;
     background-color: #fff;
     width: 24px;
@@ -775,15 +398,15 @@ body {
 }
 
 #welcome .nav-bar:hover .toggle-bar {
-    background-color: #f91791;
+    background-color: #14B97D;
 }
 
 #welcome .nav-bar:hover .toggle-bar:before {
-    background-color: #f91791;
+    background-color: #14B97D;
 }
 
 #welcome .nav-bar:hover .toggle-bar:after {
-    background-color: #f91791;
+    background-color: #14B97D;
 }
 
 #welcome .nav-bar .toggle-bar {
@@ -792,7 +415,7 @@ body {
     -o-transition: height 0.25s, top 0.2s ease;
     -webkit-transition: height 0.25s, top 0.2s ease;
     transition: height 0.25s, top 0.2s ease;
-    /*background-color: #f91791;*/
+    background-color: #14B97D;
     width: 24px;
     position: absolute;
     -moz-border-radius: 1px;
@@ -809,7 +432,7 @@ body {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
-    background: #f91791;
+    background: #14B97D;
     position: absolute;
     top: 8px;
     -moz-transform: rotate(45deg);
@@ -830,7 +453,7 @@ body {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
-    background: #f91791;
+    background: #14B97D;
     position: absolute;
     top: 8px;
     -moz-transform: rotate(-45deg);
@@ -872,7 +495,7 @@ body {
     padding: 0px 20px 15px;
     position: relative;
     font-size: 16px;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -880,11 +503,11 @@ body {
 }
 
 #welcome nav a:hover {
-    color: #f91791;
+    color: #14B97D;
 }
 
 #welcome nav a .active {
-    color: #f91791;
+    color: #14B97D;
 }
 
 #welcome .logo {
@@ -906,21 +529,18 @@ body {
 #welcome .welcome h1 {
     font-size: 12vw;
     display: block;
-    z-index: 999;
 }
 
 #welcome .welcome h1 strong {
-    color: #f91791;
-    font-family: Audrey-Normal;
+    color: #14b97d;
+    font-family: Segoe UI Bold;
     text-transform: uppercase;
-    z-index: 999;
 }
 
 #welcome .welcome p {
     font-size: 2vw;
     padding: 16px 0 50px 0;
     line-height: 1.3em;
-    z-index: 999;
 }
 
 #welcome .welcome .button {
@@ -969,7 +589,7 @@ body > section > .holder > .title h2 {
     display: inline-block;
     padding: 0 0 12px;
     text-transform: uppercase;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
 body > section > .holder > .title h2:after {
@@ -1088,7 +708,7 @@ body > section > .holder > .title h2:after {
     position: absolute;
     content: '';
     height: 2px;
-    background-color: #f91791;
+    background-color: #14b97d;
     width: 100%;
     -moz-transition: width 0.5s;
     -o-transition: width 0.5s;
@@ -1102,14 +722,14 @@ body > section > .holder > .title h2:after {
 }
 
 #about .tabs-menu .current a {
-    color: #f91791;
+    color: #14b97d;
 }
 
 #about .tabs-menu li a {
     text-transform: uppercase;
     color: #000;
     text-decoration: none;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
 #about .tab {
@@ -1171,7 +791,7 @@ body > section > .holder > .title h2:after {
 }
 
 #about .skills .meter > div {
-    background-color: #f91791;
+    background-color: #14B97D;
     height: 25px;
     color: #fff;
     position: relative;
@@ -1197,7 +817,7 @@ body > section > .holder > .title h2:after {
     color: #fff;
     top: 2px;
     font-size: 13px;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
     text-transform: uppercase;
     z-index: 1;
 }
@@ -1268,12 +888,12 @@ body > section > .holder > .title h2:after {
     padding: 0 0 40px 0;
     overflow: hidden;
 }
-/*
-#about .experience .row + .row {
+
+/*#about .experience .row + .row {
     border-top: 1px solid #ccc;
     padding: 40px 0;
 }*/
-/*
+
 #about .experience .row .logo {
     display: inline-block;
     float: left;
@@ -1308,7 +928,7 @@ body > section > .holder > .title h2:after {
 }
 
 #about .experience .row .brief .company-name {
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
 #about .experience .row .brief .position {
@@ -1319,15 +939,15 @@ body > section > .holder > .title h2:after {
 
 #about .experience .row .brief span {
     display: block;
-}*/
+}
 
-#portfolio {
+#works {
     background-color: #000;
     padding: 80px 0 210px 0;
     position: relative;
 }
 
-#portfolio .slide_container {
+#works .slide_container {
     margin: auto;
     min-height: 1%;
     padding: 0 0 40px 0;
@@ -1335,23 +955,23 @@ body > section > .holder > .title h2:after {
     text-align: center;
 }
 
-#portfolio .slide_container h3 {
-    font-family: "Audrey-Normal";
+#works .slide_container h3 {
+    font-family: "Segoe UI Bold";
     font-size: 20px;
     padding: 0 0 12px 0;
 }
 
-#portfolio .slide_container img {
+#works .slide_container img {
     max-width: 100%;
 }
 
-#portfolio .slide_container .work_description {
+#works .slide_container .work_description {
     width: 100%;
     position: relative;
     padding: 50px 0;
 }
 
-#portfolio .slide_container .slide-action-btn, #portfolio .slide_container .close_work, #portfolio .slide_container .prev_work, #portfolio .slide_container .next_work {
+#works .slide_container .slide-action-btn, #works .slide_container .close_work, #works .slide_container .prev_work, #works .slide_container .next_work {
     cursor: pointer;
     display: block;
     position: absolute;
@@ -1364,11 +984,11 @@ body > section > .holder > .title h2:after {
     transition: all 0.25s ease-in-out;
 }
 
-#portfolio .slide_container .slide-action-btn:hover, #portfolio .slide_container .close_work:hover, #portfolio .slide_container .prev_work:hover, #portfolio .slide_container .next_work:hover {
-    color: #f91791;
+#works .slide_container .slide-action-btn:hover, #works .slide_container .close_work:hover, #works .slide_container .prev_work:hover, #works .slide_container .next_work:hover {
+    color: #14B97D;
 }
 
-#portfolio .slide_container .toggle-bar {
+#works .slide_container .toggle-bar {
     height: 4px;
     background-color: #fff;
     width: 24px;
@@ -1379,7 +999,7 @@ body > section > .holder > .title h2:after {
     top: 18px;
 }
 
-#portfolio .slide_container .toggle-bar:before {
+#works .slide_container .toggle-bar:before {
     display: block;
     content: "";
     width: 100%;
@@ -1396,7 +1016,7 @@ body > section > .holder > .title h2:after {
     transform: rotate(0);
 }
 
-#portfolio .slide_container .toggle-bar:after {
+#works .slide_container .toggle-bar:after {
     display: block;
     content: "";
     width: 100%;
@@ -1413,37 +1033,37 @@ body > section > .holder > .title h2:after {
     transform: rotate(0);
 }
 
-#portfolio .slide_container .close_work {
+#works .slide_container .close_work {
     right: 0;
     top: -20px;
     left: 0;
     margin: auto;
 }
 
-#portfolio .slide_container .close_work:hover div:before {
+#works .slide_container .close_work:hover div:before {
     -moz-transform: rotate(136deg);
     -ms-transform: rotate(136deg);
     -webkit-transform: rotate(136deg);
     transform: rotate(136deg);
-    background: #f91791;
+    background: #14B97D;
 }
 
-#portfolio .slide_container .close_work:hover div:after {
+#works .slide_container .close_work:hover div:after {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: #f91791;
+    background: #14B97D;
 }
 
-#portfolio .slide_container .close_work div {
+#works .slide_container .close_work div {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
     position: relative;
 }
 
-#portfolio .slide_container .close_work div:before {
+#works .slide_container .close_work div:before {
     display: block;
     content: "";
     width: 100%;
@@ -1464,7 +1084,7 @@ body > section > .holder > .title h2:after {
     transition: transform 0.25s, top 0.2s ease;
 }
 
-#portfolio .slide_container .close_work div:after {
+#works .slide_container .close_work div:after {
     display: block;
     content: "";
     width: 100%;
@@ -1485,35 +1105,35 @@ body > section > .holder > .title h2:after {
     transition: transform 0.25s, top 0.2s ease;
 }
 
-#portfolio .slide_container .prev_work {
+#works .slide_container .prev_work {
     left: 0;
     top: 40%;
 }
 
-#portfolio .slide_container .prev_work:hover div:before {
+#works .slide_container .prev_work:hover div:before {
     -moz-transform: rotate(-138deg);
     -ms-transform: rotate(-138deg);
     -webkit-transform: rotate(-138deg);
     transform: rotate(-138deg);
-    background: #f91791;
+    background: #14B97D;
 }
 
-#portfolio .slide_container .prev_work:hover div:after {
+#works .slide_container .prev_work:hover div:after {
     -moz-transform: rotate(138deg);
     -ms-transform: rotate(138deg);
     -webkit-transform: rotate(138deg);
     transform: rotate(138deg);
-    background: #f91791;
+    background: #14B97D;
 }
 
-#portfolio .slide_container .prev_work div {
+#works .slide_container .prev_work div {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
     position: relative;
 }
 
-#portfolio .slide_container .prev_work div:before {
+#works .slide_container .prev_work div:before {
     display: block;
     content: "";
     width: 80%;
@@ -1534,7 +1154,7 @@ body > section > .holder > .title h2:after {
     transition: transform 0.25s, top 0.2s ease;
 }
 
-#portfolio .slide_container .prev_work div:after {
+#works .slide_container .prev_work div:after {
     display: block;
     content: "";
     width: 80%;
@@ -1555,35 +1175,35 @@ body > section > .holder > .title h2:after {
     transition: transform 0.25s, top 0.2s ease;
 }
 
-#portfolio .slide_container .next_work {
+#works .slide_container .next_work {
     right: 0;
     top: 40%;
 }
 
-#portfolio .slide_container .next_work:hover div:before {
+#works .slide_container .next_work:hover div:before {
     -moz-transform: rotate(138deg);
     -ms-transform: rotate(138deg);
     -webkit-transform: rotate(138deg);
     transform: rotate(138deg);
-    background: #f91791;
+    background: #14B97D;
 }
 
-#portfolio .slide_container .next_work:hover div:after {
+#works .slide_container .next_work:hover div:after {
     -moz-transform: rotate(-138deg);
     -ms-transform: rotate(-138deg);
     -webkit-transform: rotate(-138deg);
     transform: rotate(-138deg);
-    background: #f91791;
+    background: #14B97D;
 }
 
-#portfolio .slide_container .next_work div {
+#works .slide_container .next_work div {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
     position: relative;
 }
 
-#portfolio .slide_container .next_work div:before {
+#works .slide_container .next_work div:before {
     display: block;
     content: "";
     width: 80%;
@@ -1604,7 +1224,7 @@ body > section > .holder > .title h2:after {
     transition: transform 0.25s, top 0.2s ease;
 }
 
-#portfolio .slide_container .next_work div:after {
+#works .slide_container .next_work div:after {
     display: block;
     content: "";
     width: 80%;
@@ -1625,29 +1245,29 @@ body > section > .holder > .title h2:after {
     transition: transform 0.25s, top 0.2s ease;
 }
 
-#portfolio .slide_container .image_container_M {
+#works .slide_container .image_container_M {
     padding: 15px;
     background-color: #fff;
     display: inline-block;
 }
 
-#portfolio .work_item {
+#works .work_item {
     width: 100%;
     height: 100%;
     position: relative;
     display: none;
 }
 
-#portfolio .title {
+#works .title {
     color: #fff;
     padding: 0 0 45px;
 }
 
-#portfolio .title h2:after {
-    background-color: #f91791;
+#works .title h2:after {
+    background-color: #14B97D;
 }
 
-#portfolio:after {
+#works:after {
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
@@ -1661,7 +1281,7 @@ body > section > .holder > .title h2:after {
     position: absolute;
 }
 
-#portfolio .box {
+#works .box {
     width: 33.33%;
     max-height: 315px;
     float: left;
@@ -1676,24 +1296,24 @@ body > section > .holder > .title h2:after {
     transition: background-size 1.2s;
 }
 
-#portfolio .box img {
+#works .box img {
     max-width: 100%;
     display: block;
 }
 
-#portfolio .box:hover {
+#works .box:hover {
     background-size: 125% 125%;
 }
 
-#portfolio .box:hover .box-text-inner {
-    background-color: #f91791;
+#works .box:hover .box-text-inner {
+    background-color: #14b97d;
 }
 
-#portfolio .box:hover .box-text-inner .content {
+#works .box:hover .box-text-inner .content {
     bottom: 0;
 }
 
-#portfolio .box .box-text-inner {
+#works .box .box-text-inner {
     position: absolute;
     top: 0;
     right: 0;
@@ -1707,7 +1327,7 @@ body > section > .holder > .title h2:after {
     width: 100%;
 }
 
-#portfolio .box .box-text-inner .content {
+#works .box .box-text-inner .content {
     -moz-transition: bottom 0.4s;
     -o-transition: bottom 0.4s;
     -webkit-transition: bottom 0.4s;
@@ -1724,49 +1344,49 @@ body > section > .holder > .title h2:after {
     color: #fff;
 }
 
-#portfolio .box .box-text-inner h2 {
+#works .box .box-text-inner h2 {
     font-size: 20px;
     text-transform: uppercase;
     padding: 0 0 8px;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
-#resume {
+#testimonials {
     background-color: #f4f4f4;
     padding: 80px 0 210px 0;
     text-align: center;
     position: relative;
 }
 
-#resume .holder {
+#testimonials .holder {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-#resume .resume {
-    /*font-family: Audrey-Normal;*/
+#testimonials .testimonial {
+    /*font-family: Segoe UI Light;*/
     line-height: 34px;
 }
 
-#resume .resume .quote {
+#testimonials .testimonial .quote {
     font-size: 24px;
     padding: 0 0 20px;
 }
 
-#resume .resume .client-info {
-    color: #f91791;
+#testimonials .testimonial .client-info {
+    color: #14B97D;
     font-size: 17px;
 }
 
-#contactMe {
-    background-color: #f91791;
+#quick-contact {
+    background-color: #14B97D;
     text-align: center;
     padding: 100px 0 120px 0;
     position: relative;
     color: #fff;
 }
 
-#contactMe:before {
+#quick-contact:before {
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
@@ -1776,66 +1396,66 @@ body > section > .holder > .title h2:after {
     content: "";
     top: -46px;
     left: 0;
-    background: #f91791;
+    background: #14B97D;
     position: absolute;
 }
 
-#contactMe h2 {
+#quick-contact h2 {
     font-size: 40px;
     padding: 0 0 35px;
     color: #fff;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
-#contactMe .button {
+#quick-contact .button {
     border-color: #fff;
     color: #fff;
     clear: both;
 }
 
-#contactMe .button:hover {
-    color: #f91791;
+#quick-contact .button:hover {
+    color: #14B97D;
 }
 
-#contactMe .button:before {
+#quick-contact .button:before {
     background: #fff;
 }
 
-#contactMe .contact-info {
+#quick-contact .contact-info {
     margin: 0 auto;
     font-size: 25px;
-    font-family: "Audrey-Normal";
+    font-family: "Segoe UI Bold";
 }
 
-#contactMe .contact-info a {
+#quick-contact .contact-info a {
     color: #fff;
     text-decoration: none;
 }
 
-#contactMe .contact-info a:hover {
+#quick-contact .contact-info a:hover {
     text-decoration: underline;
 }
 
-#contactMe .contact-info div {
+#quick-contact .contact-info div {
     display: inline-block;
 }
 
-#contactMe .contact-info div + div {
+#quick-contact .contact-info div + div {
     margin: 0 0 0 20px;
 }
 
-#contactMe .contact-info .fa-mobile {
+#quick-contact .contact-info .fa-mobile {
     font-size: 38px;
     float: left;
     margin-right: 10px;
     margin-top: -6px;
 }
 
-#contactMe .social {
+#quick-contact .social {
     margin: 40px 0;
 }
 
-#contactMe .social a i {
+#quick-contact .social a i {
     font-size: 24px;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -1853,12 +1473,12 @@ body > section > .holder > .title h2:after {
     color: #fff;
 }
 
-#contactMe .social a i:hover {
+#quick-contact .social a i:hover {
     background-color: #fff;
-    color: #f91791;
+    color: #14B97D;
 }
 
-#contactMe .copy {
+#quick-contact .copy {
     padding: 40px 0 0 0;
 }
 
@@ -1886,7 +1506,7 @@ body > section > .holder > .title h2:after {
 #featured h2 {
     font-size: 18px;
     text-transform: uppercase;
-    /* font-family: 'Audrey-Normal'; */
+    /* font-family: 'Segoe UI Bold'; */
     padding-bottom: 42px;
 }
 
@@ -1907,7 +1527,7 @@ body > section > .holder > .title h2:after {
     margin: 0 0 0 15px;
 }
 
-#resume .resume .quote {
+#testimonials .testimonial .quote {
     font-size: 22px;
 }
 
@@ -2033,19 +1653,19 @@ body > section > .holder > .title h2:after {
         font-size: 18px;
     }
 
-    #portfolio .slide_container {
+    #works .slide_container {
         width: 100%;
     }
 
-    #portfolio .slide_container .image_container_M {
+    #works .slide_container .image_container_M {
         display: block;
     }
 
-    #portfolio .box {
+    #works .box {
         width: 100%;
     }
 
-    #contactMe .contact-info div {
+    #quick-contact .contact-info div {
         border: 1px solid #FFF;
         margin: 0 auto 12px !important;
         -moz-border-radius: 3px;
@@ -2058,23 +1678,23 @@ body > section > .holder > .title h2:after {
         clear: both;
     }
 
-    #contactMe .contact-info .fa-mobile {
+    #quick-contact .contact-info .fa-mobile {
         position: relative;
         top: 4px;
         float: none;
     }
 
-    #resume {
+    #testimonials {
         width: 90%;
         padding: 80px 5% 160px 5%;
     }
 
-    #resume .resume .quote {
+    #testimonials .testimonial .quote {
         font-size: 17px;
         line-height: 1.4;
     }
 
-    #resume .resume .client-info {
+    #testimonials .testimonial .client-info {
         line-height: 1.2;
     }
 }
