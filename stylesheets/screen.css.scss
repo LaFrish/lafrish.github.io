@@ -27,6 +27,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Abril Fatface";
+}
+
 html {
   line-height: 1;
 }
@@ -63,59 +69,127 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.icons-sprite, #welcome .logo, #about .experience .row .danat, #about .experience .row .yahoo, #about .experience .row .toadfly, #about .experience .row .fomax {
-  background-image: url('../images/icons-sd2ced10e58.png');
-  background-repeat: no-repeat;
+@mixin respond-to($media, $media-size: 800px) {
+    @if $media == handhelds {
+        @media only screen and (max-width: 375px) { @content; }
+    }
+    @else if $media == small-screens {
+        @media only screen and (max-width: 640px) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: 641px) and (max-width: 800px) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: 800px) { @content; }
+    }
+    @else if $media == custom {
+        @media only screen and (max-width: $media-size) { @content; }
+    }
 }
 
-
-#statement {
-  display: inline;
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // min-height: 100vh;
 }
 
-.container {
-  position: absolute;
-  width: 100%;
-  heigh: 100%;
-  text-align: center;
-  top: 40%;
-  left: 0;
-  margin:  0 auto;
-  font-family: 'Roboto', sans-serif;
-
-  p {
-    font-size: 20px;
-  }
-
-  a {
-    display: inline-block;
-    position: relative;
-    text-align: center;
+.inner-page-wrapper {
     color: pink;
-    text-decoration: none;
-    font-size: 20px;
-    overflow: hidden;
-    top: 5px;
+    font-size: 18px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    @include respond-to(custom, 540px) {
+        font-size: 24px;
+    }
+}
+
+.intro {
+    margin: 1em 0;
+    position: relative;
+}
+
+.intro-text {
+    @include respond-to(custom, 374px) {
+        display: block;
+    }
+}
+
+.list-of-frishWords {
+    margin-left: 0.125em;
 
     &:after {
-      content: '';
-      position: absolute;
-      background: pink;
-      height: 2px;
-      width: 0%;
-      transform: translateX(-50%);
-      left: 50%;
-      bottom: 0;
-      transition: .35s ease;
+        content: '';
+        border-bottom: 1px dashed #fff;
+        width: 210px;
+        position: absolute;
+        bottom: 0;
+        margin-left: -0.125em;
+        @include respond-to(custom, 540px) {
+            width: 180px;
+        }
     }
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
-      width: 100%;
+
+    .frishWords {
+        $time: 12s;
+        $items: 5;
+        padding-left: 5px;
+        position: absolute;
+        opacity: 0;
+        white-space: nowrap;
+        animation: $time word-rotation infinite;
+
+        @for $i from 1 through $items {
+            &:nth-child(#{$i}) {
+                animation-delay: ($time / $items) * ($i - 1)
+            }
+        }
     }
-  }
 }
 
+
+@keyframes word-rotation {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    15% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+}
+
+
+@keyframes animate-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes animate-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 h1 {
@@ -124,92 +198,6 @@ h1 {
   font-family: 'Abril Fatface', serif;
 }
 
-.overlay {
-  position: fixed;
-  background: pink;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden;
-
-  &.open {
-    opacity: .9;
-    visibility: visible;
-    height: 100%;
-
-    li {
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
-
-      &:nth-of-type(2) {
-        animation-delay: .4s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: .45s;
-      }
-      &:nth-of-type(4) {
-        animation-delay: .50s;
-      }
-    }
-  }
-  #overlay-menu {
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Abril Fatface', serif;
-    font-weight: 400;
-    text-align: center;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-
-    li {
-      display: block;
-      height: 25%;
-      height: calc(100% / 4);
-      min-height: 50px;
-      position: relative;
-      opacity: 0;
-
-      a {
-        display: block;
-        position: relative;
-        color: red;
-        text-decoration: none;
-        overflow: hidden;
-
-        &:hover:after,
-        &:focus:after,
-        &:active:after {
-          width: 100%;
-        }
-
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background: red;
-          transition: .35s;
-        }
-      }
-    }
-  }
-}
 
 @keyframes fadeInRight {
   0% {
@@ -222,14 +210,14 @@ h1 {
   }
 }
 
-.easynav {
+.nav {
   position: fixed;
   z-index: 100;
   right: 20px;
   top: 30%;
 }
 
-.easynav a {
+.nav a {
   display: block;
   clear: both;
   -moz-border-radius: 50px;
@@ -241,7 +229,7 @@ h1 {
   margin: 15px 0;
 }
 
-.easynav a:hover, .easynav a .active {
+.nav a:hover, .easynav a .active {
   background-color: #f91791;
 }
 
@@ -340,12 +328,6 @@ strong {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Abril Fatface";
-}
-
 .fade-in {
   -moz-animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
@@ -428,46 +410,17 @@ body {
   background-size: auto, cover;
   position: relative;
   z-index: 0;
-
 }
 
-#welcome .text {
-  animation: inherit;
-}
-#welcome .background {
-  color: hsl(324, 70%, 45%);
-  animation: wheelHueColor 100s infinite;
-  background-color: currentColor;
-}
-@supports (background-blend-mode: overlay) {
-  #welcome  .background {
-    background-image: linear-gradient(45deg, white 10%, black 90%);
-    background-blend-mode: overlay;
-  }
-}
-@keyframes wheelHueColor {
-  from, to { color: hsl(324, 70%, 45%); }
-  10%      { color: hsl(360, 65%, 45%); }
-  20%      { color: hsl( 36, 80%, 45%); }
-  30%      { color: hsl( 72, 75%, 35%); }
-  40%      { color: hsl(108, 65%, 35%); }
-  50%      { color: hsl(144, 75%, 35%); }
-  60%      { color: hsl(180, 75%, 35%); }
-  70%      { color: hsl(216, 60%, 45%); }
-  80%      { color: hsl(252, 65%, 50%); }
-  90%      { color: hsl(288, 60%, 40%); }
-}
-
-
-/* misc */
 * { margin: 0; padding: 0; }
 #welcome .background {
   min-height: 100vh;
   display: flex;
 }
 #welcome .text {
+  animation: inherit;
   margin: auto;
-  background: rgba(0,0,0,.75);
+  background: red;
   padding: 1em;
 }
 
@@ -482,104 +435,6 @@ body {
   font-weight: 800;
 }
 
-/* ROTATE WORDS */
-.rotate-words {
-  display: inline-block;
-  min-width: 180px;
-  min-height: 34px;
-  text-align: left;
-  text-indent: 6px;
-}
-
-.rotate-words span {
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-  font-weight: 800;
-  letter-spacing: -2px;
-}
-
-.no-csstransforms .rotate-words {
-  display: inline;
-  text-align: center;
-}
-
-.no-csstransforms .rotate-words span {
-  position: relative;
-  opacity: 1;
-}
-
-.no-csstransforms .rotate-words span:after {
-content: ",";
-}
-.no-csstransforms .rotate-words span:last-child:after {
-content: ".";
-}
-.rotate-words span .rotate-in {
-  animation: rotateInWord .5s linear forwards;
-  -webkit-animation: rotateInWord .5s linear forwards;
-}
-
-.rotate-words span .rotate-out {
-  animation: rotateOutWord .5s linear forwards;
-  -webkit-animation: rotateOutWord .5s linear forwards;
-}
-
-.rotate-words span:first-child {
-  opacity: 1;
-}
-
-@-webkit-keyframes rotateInWord {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes rotateOutWord {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-  }
-}
-
-@keyframes rotateInWord {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes rotateOutWord {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-}
-.rotate-words {
-  min-height: 28px;
-  min-width: 166px;
-}
 
 #welcome header {
   margin-top: 0;
@@ -1721,7 +1576,7 @@ fieldset.app-charnameinfo legend {
 #app-picturebox { position: relative;}
 .app-picture {
   display: inline-block;
-  width: 222px;
+  width: 422px;
   height: 322px;
   padding: 10px;
   margin: 10px;
@@ -1729,14 +1584,14 @@ fieldset.app-charnameinfo legend {
   position: relative;
 }
 .app-picture img {
-  width: 200px;
+  width: 400px;
   height: 300px;
   position: absolute;
   top: 10px;
   left: 10px;
 }
 .app-pictureinfo { /* holds number / description */
-  width: 200px;
+  width: 400px;
   height: 300px;
   font-family: 'Abril Fatface';
   font-size: 100px;

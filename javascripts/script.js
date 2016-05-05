@@ -1,21 +1,4 @@
 
-// Rotating Words
-		var rotate_words = $('.rotate-words');
-		if(rotate_words.length && Modernizr.csstransforms) {
-			rotate_words.find('span').eq(0).addClass('active');
-			setInterval(function(){
-				next_word_index = rotate_words.find('.active').next().length ? rotate_words.find('.active').next().index() : 0;
-				rotate_words.find('.active').addClass('rotate-out').removeClass('rotate-in active');
-				rotate_words.find('span').eq(next_word_index).addClass('rotate-in active').removeClass('rotate-out');
-			},3000);
-		}
-rotate_words();
-$('#toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
-  });
-toggle()
-
 jQuery(document).ready(function($) {
     $(window).load(function() {
         $(".loader").delay(500).fadeOut(1000, function() {
@@ -99,66 +82,6 @@ jQuery(document).ready(function($) {
         })
     })
 });
-$(".close_work").click(function() {
-    $("div.work_item").slideUp("slow")
-});
-$(".work_1").click(function() {
-    if ($("div.current").is(":visible")) {
-        $("div.current").slideUp("slow", function() {
-            $("div.current").removeClass("current");
-            $("#trivia").slideDown("slow", function() {
-                $("#trivia").addClass("current")
-            })
-        })
-    } else {
-        $("#trivia").slideDown("slow", function() {
-            $("#trivia").addClass("current")
-        })
-    }
-});
-$(".work_2").click(function() {
-    if ($("div.current").is(":visible")) {
-        $("div.current").slideUp("slow", function() {
-            $("div.current").removeClass("current");
-            $("#ioscalling").slideDown("slow", function() {
-                $("#ioscalling").addClass("current")
-            })
-        })
-    } else {
-        $("#ioscalling").slideDown("slow", function() {
-            $("#ioscalling").addClass("current")
-        })
-    }
-});
-$(".work_3").click(function() {
-    if ($("div.current").is(":visible")) {
-        $("div.current").slideUp("slow", function() {
-            $("div.current").removeClass("current");
-            $("#booking").slideDown("slow", function() {
-                $("#booking").addClass("current")
-            })
-        })
-    } else {
-        $("#booking").slideDown("slow", function() {
-            $("#booking").addClass("current")
-        })
-    }
-});
-$(".work_4").click(function() {
-    if ($("div.current").is(":visible")) {
-        $("div.current").slideUp("slow", function() {
-            $("div.current").removeClass("current");
-            $("#dubizzle").slideDown("slow", function() {
-                $("#dubizzle").addClass("current")
-            })
-        })
-    } else {
-        $("#dubizzle").slideDown("slow", function() {
-            $("#dubizzle").addClass("current")
-        })
-    }
-});
-
 
 function isMobile() {
   return ((navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/webOS/i)) || (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/BlackBerry/)))
