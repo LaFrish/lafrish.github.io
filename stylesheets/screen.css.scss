@@ -69,128 +69,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-@mixin respond-to($media, $media-size: 800px) {
-    @if $media == handhelds {
-        @media only screen and (max-width: 375px) { @content; }
-    }
-    @else if $media == small-screens {
-        @media only screen and (max-width: 640px) { @content; }
-    }
-    @else if $media == medium-screens {
-        @media only screen and (min-width: 641px) and (max-width: 800px) { @content; }
-    }
-    @else if $media == wide-screens {
-        @media only screen and (min-width: 800px) { @content; }
-    }
-    @else if $media == custom {
-        @media only screen and (max-width: $media-size) { @content; }
-    }
-}
-
-.page-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // min-height: 100vh;
-}
-
-.inner-page-wrapper {
-    color: pink;
-    font-size: 18px;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    @include respond-to(custom, 540px) {
-        font-size: 24px;
-    }
-}
-
-.intro {
-    margin: 1em 0;
-    position: relative;
-}
-
-.intro-text {
-    @include respond-to(custom, 374px) {
-        display: block;
-    }
-}
-
-.list-of-frishWords {
-    margin-left: 0.125em;
-
-    &:after {
-        content: '';
-        border-bottom: 1px dashed #fff;
-        width: 210px;
-        position: absolute;
-        bottom: 0;
-        margin-left: -0.125em;
-        @include respond-to(custom, 540px) {
-            width: 180px;
-        }
-    }
-
-    .frishWords {
-        $time: 12s;
-        $items: 5;
-        padding-left: 5px;
-        position: absolute;
-        opacity: 0;
-        white-space: nowrap;
-        animation: $time word-rotation infinite;
-
-        @for $i from 1 through $items {
-            &:nth-child(#{$i}) {
-                animation-delay: ($time / $items) * ($i - 1)
-            }
-        }
-    }
-}
-
-
-@keyframes word-rotation {
-    0% {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-    5% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    15% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    20% {
-        opacity: 0;
-        transform: translateY(5px);
-    }
-}
-
-
-@keyframes animate-out {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes animate-in {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 
 h1 {
   position: relative;
@@ -1540,6 +1418,16 @@ display: block;
 
 
 /*gallery*/
+
+* { box-sizing: border-box; }
+#app-container body { box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-align: center; color: #1c1c1c;
+  background: #212121;
+  background-attachment: fixed; box-sizing: border-box;
+}
+
 .clearfix { clear: both; }
 
 #app-container {

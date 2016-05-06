@@ -13,37 +13,6 @@ jQuery(document).ready(function($) {
     })
 });
 
-//jQuery(document).ready(function($) {
-  //  var open = false;
-
-    //function resizeMenu() {
-      //  if ($(this).width() <= 680) {
-        //    $("nav,#logo").hide();
-          //  $("#nav-mobile,#menu-button").show()
-        //} else {
-          //  if ($(this).width() >= 680) {
-            //    $("nav,#logo").show();
-              //  $("#nav-mobile,#menu-button").hide()
-            //}
-        //}
-    //}
-
-    //function setupMenuButton() {
-      //  $("#menu-button").click(function(e) {
-        //    e.preventDefault();
-          //  if (open) {
-            //    $("nav").slideUp()
-            //} else {
-              //  $("nav").slideDown()
-            //}
-            //open = !open
-        //})
-    //}
-    //$(window).resize(resizeMenu);
-    //resizeMenu();
-    //setupMenuButton()
-//});
-
 $(".image_container_zoom").toggle(function() {
     $(this).animate({
         width: "90%"
@@ -289,59 +258,15 @@ window.onscroll = function() {
 
 function startGif() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("headerimg").className = "test";
+        document.getElementById("bg-image").className = "test";
     } else {
-        document.getElementById("headerimg").className = "";
+        document.getElementById("bg-image").className = "";
     }
 };
 startGif()
 
-//portfolio gallery
-$(document).ready(function(){
-
-   var $sm = 480;
-   var $md = 768;
-
-   function resizeThis() {
-      $imgH = $('.middle img').width();
-      if ($(window).width() >= $sm) {
-         $('.left,.right,.section').css('height', $imgH);
-      } else {
-         $('.left,.right,.section').css('height', 'auto');
-      }
-   }
-
-   resizeThis();
-
-   $(window).resize(function(){
-      resizeThis();
-   });
-
-   $(window).scroll(function() {
-      $('.section').each(function(){
-         var $elementPos = $(this).offset().top;
-         var $scrollPos = $(window).scrollTop();
-
-         var $sectionH = $(this).height();
-         var $h = $(window).height();
-         var $sectionVert = (($h/2)-($sectionH/4));
-
-
-         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos) {
-            $(this).addClass('animate');
-         } else {
-            $(this).removeClass('animate');
-         }
-      });
-   });
-
-   $('.btn-primary').click(function(){
-      alert('I lied');
-   });
-});
-
 // gallery
-
+function gallery (){
 $(document).ready(function(){
   $('#app-pictureinfo1').click(function(e){
     e.stopPropagation();
@@ -395,3 +320,5 @@ $(document).ready(function(){
     $('.move4').animate({'left':'+=738px'}).removeClass('move4');
   });
 });
+}
+gallery();
