@@ -258,9 +258,9 @@ window.onscroll = function() {
 
 function startGif() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("bg-image").className = "test";
+        document.getElementById("bg-image");
     } else {
-        document.getElementById("bg-image").className = "";
+        document.getElementById("bg-image");
     }
 };
 startGif()
