@@ -143,7 +143,7 @@ h1 {
 }*/
 
 strong {
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace, monospace;
 }
 
 .clear-fix {
@@ -576,7 +576,7 @@ strong {
   padding: 0px 20px 15px;
   position: relative;
   font-size: 16px;
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -673,7 +673,7 @@ body > section > .holder > .title h2 {
   display: inline-block;
   padding: 0 0 12px;
   text-transform: uppercase;
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
 }
 
 body > section > .holder > .title h2:after {
@@ -929,7 +929,7 @@ body > section > .holder > .title h2:after {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
 }
 
 #about .tab {
@@ -1128,7 +1128,7 @@ body > section > .holder > .title h2:after {
 }
 
 #about .experience .row .brief .company-name {
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
 }
 
 #about .experience .row .brief .position {
@@ -1156,7 +1156,7 @@ body > section > .holder > .title h2:after {
 }
 
 #portfolio .slide_container h3 {
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
   font-size: 20px;
   padding: 0 0 12px 0;
 }
@@ -1548,7 +1548,7 @@ body > section > .holder > .title h2:after {
   font-size: 20px;
   text-transform: uppercase;
   padding: 0 0 8px;
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
 }
 
 @mixin vertical-align {
@@ -1859,7 +1859,7 @@ fieldset.app-charnameinfo legend {
   font-size: 40px;
   padding: 0 0 35px;
   color: #fff;
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
 }
 
 #contactMe .button {
@@ -1879,7 +1879,7 @@ fieldset.app-charnameinfo legend {
 #contactMe .contact-info {
   margin: 0 auto;
   font-size: 25px;
-  font-family: "Audrey-Normal";
+  font-family: "Audrey-Normal", monospace;
 }
 
 #contactMe .contact-info a {
