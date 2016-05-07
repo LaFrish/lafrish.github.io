@@ -17,6 +17,10 @@
   src: url('Audrey-Normal.otf');
 }
 
+@font-face {
+  font-family: 'Audrey-Normal';
+  src: url('font/Audrey-Normal.otf');
+}
 * {
   box-sizing: border-box;
 }
