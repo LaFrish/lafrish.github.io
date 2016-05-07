@@ -30,8 +30,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -118,7 +116,7 @@ h1 {
 
 
 
-#loading {
+/*#loading {
   background: repeat 0 0 fixed #000;
   position: fixed;
   top: 0;
@@ -138,7 +136,7 @@ h1 {
   margin: auto;
   filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=60);
   opacity: 0.6;
-}
+}*/
 
 strong {
   font-family: "Audrey-Normal";
@@ -286,6 +284,74 @@ strong {
   background-color: #f91791;
   color: #fff;
 }
+
+
+
+.toggles button {
+  font-family: "Abril Fatface";
+  background-color: #fff;
+    color: #000;
+    border: 1px solid #f91791;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    height: 45px;
+    line-height: 47px;
+    padding: 25px 25px 25px 25px;
+    min-width: 130px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+.toggles button:before {
+    filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=0);
+    opacity: 0;
+    background: #f91791;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    -moz-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
+    -ms-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s, background-color 0.4s;
+    -o-transition: -o-transform 0.4s, opacity 0.4s, background-color 0.4s;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s, background-color 0.4s;
+    transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    z-index: -1;
+  }
+
+.toggles button:hover {
+    color: #fff;
+  }
+
+.toggles button:hover:before {
+    filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=10000);
+    opacity: 100;
+    -moz-transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0em, 0);
+    -ms-transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0em, 0);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0em, 0);
+    transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0em, 0);
+    -moz-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -o-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  }
+
 
 #welcome
 {
