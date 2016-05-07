@@ -338,6 +338,4 @@ galleryFirstRow();
     $('.move4').animate({'left':'-=300px'}).removeClass('move4');
   });
 };
-
-
 gallerySecondRow();
