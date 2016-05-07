@@ -1,55 +1,55 @@
 
 jQuery(document).ready(function($) {
-    $(window).load(function() {
-        $(".loader").delay(500).fadeOut(1000, function() {
-            $(".load_page").fadeOut(1000)
-        })
+  $(window).load(function() {
+    $(".loader").delay(500).fadeOut(1000, function() {
+      $(".load_page").fadeOut(1000)
     })
+  })
 });
 jQuery(document).ready(function($) {
-    $("#tagline").hide();
-    $(window).load(function() {
-        $("#tagline").delay(1800).fadeIn(1500)
-    })
+  $("#tagline").hide();
+  $(window).load(function() {
+    $("#tagline").delay(1800).fadeIn(1500)
+  })
 });
 
 $(".image_container_zoom").toggle(function() {
-    $(this).animate({
-        width: "90%"
-    })
+  $(this).animate({
+    width: "90%"
+  })
 }, function() {
-    $(this).animate({
-        width: "70%"
-    })
+  $(this).animate({
+    width: "70%"
+  })
 });
 $(document).ready(function() {
-    $(".category,.level,.proficiency").hide();
-    $(".tool-item").hover(function() {
-        $(".skill_hud", this).stop(true, true).delay(200).animate({
-            height: "100px"
-        }, {
-            duration: 400
-        });
-        $(".category", this).stop(true, true).delay(200).fadeIn(400);
-        $(".level", this).stop(true, true).delay(200).fadeIn(400);
-        $(".proficiency", this).stop(true, true).delay(200).fadeIn(400)
-    }, function() {
-        $(".skill_hud").stop(true, true).animate({
-            height: "60px"
-        }, {
-            duration: 400
-        });
-        $(".category", this).stop(true, true).fadeOut(100);
-        $(".level", this).stop(true, true).fadeOut(100);
-        $(".proficiency", this).stop(true, true).fadeOut(100)
-    })
+  $(".category,.level,.proficiency").hide();
+  $(".tool-item").hover(function() {
+    $(".skill_hud", this).stop(true, true).delay(200).animate({
+      height: "100px"
+    }, {
+      duration: 400
+    });
+    $(".category", this).stop(true, true).delay(200).fadeIn(400);
+    $(".level", this).stop(true, true).delay(200).fadeIn(400);
+    $(".proficiency", this).stop(true, true).delay(200).fadeIn(400)
+  }, function() {
+    $(".skill_hud").stop(true, true).animate({
+      height: "60px"
+    }, {
+      duration: 400
+    });
+    $(".category", this).stop(true, true).fadeOut(100);
+    $(".level", this).stop(true, true).fadeOut(100);
+    $(".proficiency", this).stop(true, true).fadeOut(100)
+  })
 });
 jQuery(document).ready(function($) {
-    $(window).load(function() {
-        $(".loader").delay(500).fadeOut(1000, function() {
-            $(".load_page").fadeOut(1000)
-        })
+  $(window).load(function() {
+    $(".loader").delay(500).fadeOut(1000, function() {
+      $(".load_page").fadeOut(1000)
     })
+  })
 });
 
 function isMobile() {
@@ -256,86 +256,93 @@ function onScroll(event){
 window.onscroll = function() {
   startGif()};
 
-function startGif() {
+  function startGif() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("bg-image");
+      document.getElementById("bg-image");
     } else {
-        document.getElementById("bg-image");
+      document.getElementById("bg-image");
     }
-};
-startGif()
+  };
+  startGif()
 
-// gallery
-function galleryFirstRow (){
-$(document).ready(function(){
-  var $ap1 = 0;
-  $('#app-pictureinfo1').click(function(e){
-    e.stopPropagation();
-    if ( $ap1 === 0 ) {
-      $('#app-picture1').animate({'left':'-223px'}).addClass('move1');
-      $ap1 = $ap1 + 1;
-    } else {
-      $('#app-picture1').animate({'left':'0px'}).removeClass('move1');
-    }
-    $('#app-picturedet1').fadeToggle('fast');
-  });
-  var $ap2 = 0;
-  $('#app-pictureinfo2').click(function(e){
-    e.stopPropagation();
-    if ( $ap2 === 0 ) {
-      $('#app-picture2').animate({'left':'223px'}).addClass('move2');
-      $ap2 = $ap2 + 1;
-    } else {
-      $('#app-picture2').animate({'left':'0px'}).removeClass('move2');
-      $ap2 = 0;
-    }
-    $('#app-picturedet2').fadeToggle('fast');
-  });
-  $(document).click(function(){
-    $ap1 = 0;
-    $ap2 = 0;
-    $('#app-picturedet1:visible').fadeToggle('fast');
-    $('.move2').animate({'left':'+=100px'}).removeClass('move2');
-    $('#app-picturedet2:visible').fadeToggle('fast');
-    $('.move2').animate({'left':'+=100px'}).removeClass('move2');
+  // gallery
+  function gallery(){
+    $(document).ready(function(){
+      var $ap1 = 0;
+      $('#app-pictureinfo1').click(function(e){
+        e.stopPropagation();
+        if ( $ap1 === 0 ) {
+          $('#app-picture1').animate({'left':'-360px'}).addClass('move1');
+          $ap1 = $ap1 + 1;
+        } else {
+          $('#app-picture1').animate({'left':'0px'}).removeClass('move1');
+        }
+        $('#app-picturedet1').fadeToggle('fast');
+      });
+      var $ap2 = 0;
+      $('#app-pictureinfo2').click(function(e){
+        e.stopPropagation();
+        if ( $ap2 === 0 ) {
+          $('#app-picture2').animate({'left':'-360px'}).addClass('move2');
+          $ap2 = $ap2 + 1;
+        } else {
+          $('#app-picture2').animate({'left':'0px'}).removeClass('move2');
+          $ap2 = 0;
+        }
+        $('#app-picturedet2').fadeToggle('fast');
+      });
+      var $ap3 = 0;
+      $('#app-pictureinfo3').click(function(e){
+        e.stopPropagation();
+        if ( $ap3 === 0 ) {
+          $('#app-picture3').animate({'left':'-360px'}).addClass('move3');
+          $ap3 = $ap3 + 1;
+        } else {
+          $('#app-picture3').animate({'left':'0px'}).removeClass('move3');
+        }
+        $('#app-picturedet3').fadeToggle('fast');
+      });
+      var $ap4 = 0;
+      $('#app-pictureinfo4').click(function(e){
+        e.stopPropagation();
+        if ( $ap4 === 0 ) {
+          $('#app-picture4').animate({'left':'-360px'}).addClass('move4');
+          $ap4 = $ap4 + 1;
+        } else {
+          $('#app-picture4').animate({'left':'0px'}).removeClass('move4');
+          $ap4 = 0;
+        }
+        $('#app-picturedet4').fadeToggle('fast');
+      });
+      $(document).click(function(){
+        $ap1 = 0;
+        $ap2 = 0;
+        $ap3 = 0;
+        $ap4 = 0;
+        $('#app-picturedet1:visible').fadeToggle('fast');
+        $('.move2').animate({'left':'-=100px'}).removeClass('move2');
+        $('#app-picturedet2:visible').fadeToggle('fast');
+        $('.move2').animate({'left':'+=100px'}).removeClass('move2');
+        $('#app-picturedet3:visible').fadeToggle('fast');
+        $('.move3').animate({'left':'+=100px'}).removeClass('move3');
+        $('#app-picturedet4:visible').fadeToggle('fast');
+        $('.move4').animate({'left':'+=100px'}).removeClass('move4');
+      });
+    });
+  }
+    gallery();
+  //filter of gallery
+  $(function() {
 
-});
-});
-}
+    $('.toggles button').click(function(){
+      var get_id = this.id;
+      var get_current = $('.gallery_containers .' + get_id);
 
-galleryFirstRow();
-  function gallerySecondRow (){
+      $('.gallery_container').not( get_current ).hide(500);
+      get_current.show(500);
+    });
 
-  var $ap3 = 0;
-  $('#app-pictureinfo3').click(function(e){
-    e.stopPropagation();
-    if ( $ap3 === 0 ) {
-      $('#app-picture3').animate({'left':'-223px'}).addClass('move3');
-      $ap3 = $ap3 + 1;
-    } else {
-      $('#app-picture3').animate({'left':'0px'}).removeClass('move3');
-    }
-    $('#app-picturedet3').fadeToggle('fast');
+    $('#showall').click(function() {
+      $('.gallery_container').show(500);
+    });
   });
-  var $ap4 = 0;
-  $('#app-pictureinfo4').click(function(e){
-    e.stopPropagation();
-    if ( $ap4 === 0 ) {
-      $('#app-picture4').animate({'left':'223px'}).addClass('move4');
-      $ap4 = $ap4 + 1;
-    } else {
-      $('#app-picture4').animate({'left':'0px'}).removeClass('move4');
-      $ap4 = 0;
-    }
-    $('#app-picturedet4').fadeToggle('fast');
-  });
-  $(document).click(function(){
-    $ap3 = 0;
-    $ap4 = 0;
-    $('#app-picturedet3:visible').fadeToggle('fast');
-    $('.move3').animate({'left':'+=300px'}).removeClass('move3');
-    $('#app-picturedet4:visible').fadeToggle('fast');
-    $('.move4').animate({'left':'-=300px'}).removeClass('move4');
-  });
-};
-gallerySecondRow();
