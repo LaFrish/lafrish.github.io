@@ -266,29 +266,51 @@ function startGif() {
 startGif()
 
 // gallery
-function gallery (){
+function galleryFirstRow (){
 $(document).ready(function(){
+  var $ap1 = 0;
   $('#app-pictureinfo1').click(function(e){
     e.stopPropagation();
+    if ( $ap1 === 0 ) {
+      $('#app-picture1').animate({'left':'-223px'}).addClass('move1');
+      $ap1 = $ap1 + 1;
+    } else {
+      $('#app-picture1').animate({'left':'0px'}).removeClass('move1');
+    }
     $('#app-picturedet1').fadeToggle('fast');
   });
   var $ap2 = 0;
   $('#app-pictureinfo2').click(function(e){
     e.stopPropagation();
-    if ( $ap2 === 0 ) { // checks to see if the picture has been moved sideways
-      $('#app-picture2').animate({'left':'-245px'}).addClass('move2');
+    if ( $ap2 === 0 ) {
+      $('#app-picture2').animate({'left':'223px'}).addClass('move2');
       $ap2 = $ap2 + 1;
-    } else { // if picture was already moved, move it back
+    } else {
       $('#app-picture2').animate({'left':'0px'}).removeClass('move2');
       $ap2 = 0;
     }
-    $('#app-picturedet2').fadeToggle('fast'); // happens regardless of picture moving
+    $('#app-picturedet2').fadeToggle('fast');
   });
+  $(document).click(function(){
+    $ap1 = 0;
+    $ap2 = 0;
+    $('#app-picturedet1:visible').fadeToggle('fast');
+    $('.move2').animate({'left':'+=100px'}).removeClass('move2');
+    $('#app-picturedet2:visible').fadeToggle('fast');
+    $('.move2').animate({'left':'+=100px'}).removeClass('move2');
+
+});
+});
+}
+
+galleryFirstRow();
+  function gallerySecondRow (){
+
   var $ap3 = 0;
   $('#app-pictureinfo3').click(function(e){
     e.stopPropagation();
     if ( $ap3 === 0 ) {
-      $('#app-picture3').animate({'left':'-491px'}).addClass('move3');
+      $('#app-picture3').animate({'left':'-223px'}).addClass('move3');
       $ap3 = $ap3 + 1;
     } else {
       $('#app-picture3').animate({'left':'0px'}).removeClass('move3');
@@ -298,27 +320,24 @@ $(document).ready(function(){
   var $ap4 = 0;
   $('#app-pictureinfo4').click(function(e){
     e.stopPropagation();
-    if ( $ap4 === 0 ) { // checks to see if the picture has been moved sideways
-      $('#app-picture4').animate({'left':'-737px'}).addClass('move4');
+    if ( $ap4 === 0 ) {
+      $('#app-picture4').animate({'left':'223px'}).addClass('move4');
       $ap4 = $ap4 + 1;
-    } else { // if picture was already moved, move it back
+    } else {
       $('#app-picture4').animate({'left':'0px'}).removeClass('move4');
       $ap4 = 0;
     }
     $('#app-picturedet4').fadeToggle('fast');
   });
   $(document).click(function(){
-    $ap2 = 0; // have to reset variables so animation resets
     $ap3 = 0;
     $ap4 = 0;
-    $('#app-picturedet1:visible').fadeToggle('fast');
-    $('#app-picturedet2:visible').fadeToggle('fast');
-    $('.move2').animate({'left':'+=246px'}).removeClass('move2');
     $('#app-picturedet3:visible').fadeToggle('fast');
-    $('.move3').animate({'left':'+=492px'}).removeClass('move3');
+    $('.move3').animate({'left':'+=300px'}).removeClass('move3');
     $('#app-picturedet4:visible').fadeToggle('fast');
-    $('.move4').animate({'left':'+=738px'}).removeClass('move4');
+    $('.move4').animate({'left':'-=300px'}).removeClass('move4');
   });
-});
-}
-gallery();
+};
+
+
+gallerySecondRow();

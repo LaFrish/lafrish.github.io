@@ -1509,7 +1509,65 @@ fieldset.app-charnameinfo legend {
 /* ----------------------------
 >> actual information fields
 ---------------------------- */
-.app-picturedet {
+.overlay {
+  background-color:#777777;
+  height:100%;
+  opacity:0.7;
+  position:absolute;
+  width:100%;
+  z-index:5;
+}
+#app-picturedet1 {
+background: #2a2a2a;
+border: 1px solid #1f1f1f;
+-moz-column-count: 3;
+-moz-column-gap: 20px;
+-moz-column-width: 100px;
+-webkit-column-count: 3;
+-webkit-column-gap: 20px;
+-webkit-column-width: 100px;
+color: #cacaca;
+column-count: 3;
+column-gap: 20px;
+column-width: 100px;
+display: none;
+font-size: 14px;
+height: 322px;
+padding: 40px;
+overflow: auto;
+position: absolute;
+top: 10px;
+left: 265px;
+text-align: justify;
+width: 715px;
+z-index: 3;
+}
+#app-picturedet2 {
+  background: #2a2a2a;
+  border: 1px solid #1f1f1f;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -moz-column-width: 100px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -webkit-column-width: 100px;
+  color: #cacaca;
+  column-count: 3;
+  column-gap: 20px;
+  column-width: 100px;
+  display: none;
+  font-size: 14px;
+  height: 322px;
+  padding: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  text-align: justify;
+  width: 715px;
+  z-index: 2;
+}
+#app-picturedet3{
   background: #2a2a2a;
   border: 1px solid #1f1f1f;
   -moz-column-count: 3;
@@ -1534,6 +1592,32 @@ fieldset.app-charnameinfo legend {
   width: 715px;
   z-index: 3;
 }
+
+#app-picturedet4{
+  background: #2a2a2a;
+  border: 1px solid #1f1f1f;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -moz-column-width: 100px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -webkit-column-width: 100px;
+  color: #cacaca;
+  column-count: 3;
+  column-gap: 20px;
+  column-width: 100px;
+  display: none;
+  font-size: 14px;
+  height: 322px;
+  padding: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  text-align: justify;
+  width: 715px;
+  z-index: 2;
+}
 .app-picturedet h3 {
   display: inline-block;
   float: left;
@@ -1545,101 +1629,6 @@ fieldset.app-charnameinfo legend {
   text-align: center;
 }
 
-/* ----------------------------
->> pm link
----------------------------- */
-#app-charlinks {
-  width: 100%;
-  font-family: 'Audrey-Normal';
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  float: right;
-}
-#app-charlinks a {
-  background: #2a2a2a;
-  border: 1px solid #1f1f1f;
-  color: #cacaca;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  position: relative;
-  transition: all 0.1s ease-in;
-  -webkit-transition: all 0.1s ease-in;
-  -moz-transition: all 0.1s ease-in;
-  -o-transition: all 0.1s ease-in;
-  width: 150px;
-}
-#app-charlinks a::before,
-#app-charlinks a::after,
-#app-charlinks span::before,
-#app-charlinks span::after {
-  content:'';
-  background: #f91791;
-  position: absolute;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
-#app-charlinks a::before,
-#app-charlinks a::after {
-  height: 100%;
-  top: 0;
-  transform: scale3d(1,0,1);
-  width: 1px;
-}
-#app-charlinks a::before {
-  left: 0;
-  transform-origin: 0 100%;
-}
-#app-charlinks a::after {
-  right: 0;
-  transform-origin: 0 0;
-}
-#app-charlinks a span {
-  display: block;
-}
-#app-charlinks a span::before,
-#app-charlinks a span::after {
-  height: 1px;
-  left: 0;
-  width: 100%;
-  transform: scale3d(0,1,1);
-}
-#app-charlinks a span::before {
-  top: 0;
-  transform-origin: 100% 0;
-}
-#app-charlinks a span::after {
-  bottom: 0;
-  transform-origin: 0 0;
-}
-#app-charlinks a:hover {
-  background: #212121;
-  border-color: #212121;
-}
-#app-charlinks a:hover::before,
-#app-charlinks a:hover::after,
-#app-charlinks a:hover span::before,
-#app-charlinks a:hover span::after {
-  transform: scale3d(1,1,1);
-}
-
-/* ----------------------------
->> story
----------------------------- */
-#app-info-container {
-  background: #2a2a2a;
-  border: 1px solid #1f1f1f;
-  color: #cacaca;
-  font-size: 14px;
-  line-height: 150%;
-  margin-bottom: 50px;
-  padding: 70px 100px;
-  text-align: justify;
-  width: 100%;
-}
 
 #resume {
   background-color: #fff;
