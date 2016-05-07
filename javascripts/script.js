@@ -253,18 +253,16 @@ function onScroll(event){
   });
 }
 
-window.onscroll = function() {
-  startGif()};
+  //gif on scroll
 
-  function startGif() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("bg-image");
-    } else {
-      document.getElementById("bg-image");
-    }
-  };
-  startGif()
-
+  $(document).scroll(function() {
+  var gif = $(this).scrollTop();
+  if (gif > 400) {
+    $('.bg-image').fadeIn();
+  } else {
+    $('.bg-image').fadeOut();
+  }
+});
   // gallery
   function gallery(){
     $(document).ready(function(){
