@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'Audrey-Normal';
-  src: url('font/Audrey-Normal.otf');
+  src: url('fonts/Audrey-Normal.otf');
 }
 * {
   box-sizing: border-box;
@@ -2196,4 +2196,14 @@ fieldset.app-charnameinfo legend {
 
 .loaded #loader-wrapper {
   visibility: hidden;
+}
+
+.logo summit{
+  background: url("summitlogo.jpg")
+}
+.logo geico{
+  background: url("geico-logo.jpg")
+}
+.logo montage{
+  background: url("montage.png")
 }
