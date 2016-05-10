@@ -1099,30 +1099,6 @@ body > section > .holder > .title h2:after {
   float: left;
 }
 
-#about .experience .row .danat {
-  background-position: 0 -332px;
-  height: 34px;
-  width: 178px;
-}
-
-#about .experience .row .yahoo {
-  background-position: 0 -456px;
-  height: 42px;
-  width: 176px;
-}
-
-#about .experience .row .toadfly {
-  background-position: 0 -405px;
-  height: 46px;
-  width: 177px;
-}
-
-#about .experience .row .fomax {
-  background-position: 0 -371px;
-  height: 29px;
-  width: 150px;
-}
-
 #about .experience .row .brief {
   padding-left: 225px;
 }
@@ -1787,7 +1763,57 @@ fieldset.app-charnameinfo legend {
   height: 322px;
   padding: 40px;
   overflow: hidden;
-  position: absolute;
+  /*position: relative;*/
+  /*top: 10px;*/
+  left: 350px;
+  /*text-align: justify;*/
+  width: 715px;
+  z-index: 2;
+}
+#app-picturedet5{
+  background: #2a2a2a;
+  border: 1px solid #1f1f1f;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -moz-column-width: 100px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -webkit-column-width: 100px;
+  color: #cacaca;
+  column-count: 3;
+  column-gap: 20px;
+  column-width: 100px;
+  display: none;
+  font-size: 14px;
+  height: 322px;
+  padding: 40px;
+  overflow: hidden;
+  position: relative;*/
+  top: 10px;
+  left: 350px;
+  text-align: justify;
+  width: 715px;
+  z-index: 2;
+}
+#app-picturedet6{
+  background: #2a2a2a;
+  border: 1px solid #1f1f1f;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -moz-column-width: 100px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -webkit-column-width: 100px;
+  color: #cacaca;
+  column-count: 3;
+  column-gap: 20px;
+  column-width: 100px;
+  display: none;
+  font-size: 14px;
+  height: 322px;
+  padding: 40px;
+  overflow: hidden;
+  position: relative;*/
   top: 10px;
   left: 350px;
   text-align: justify;
