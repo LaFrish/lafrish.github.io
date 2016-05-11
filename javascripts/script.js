@@ -13,37 +13,6 @@ jQuery(document).ready(function($) {
   })
 });
 
-$(".image_container_zoom").toggle(function() {
-  $(this).animate({
-    width: "90%"
-  })
-}, function() {
-  $(this).animate({
-    width: "70%"
-  })
-});
-$(document).ready(function() {
-  $(".category,.level,.proficiency").hide();
-  $(".tool-item").hover(function() {
-    $(".skill_hud", this).stop(true, true).delay(200).animate({
-      height: "100px"
-    }, {
-      duration: 400
-    });
-    $(".category", this).stop(true, true).delay(200).fadeIn(400);
-    $(".level", this).stop(true, true).delay(200).fadeIn(400);
-    $(".proficiency", this).stop(true, true).delay(200).fadeIn(400)
-  }, function() {
-    $(".skill_hud").stop(true, true).animate({
-      height: "60px"
-    }, {
-      duration: 400
-    });
-    $(".category", this).stop(true, true).fadeOut(100);
-    $(".level", this).stop(true, true).fadeOut(100);
-    $(".proficiency", this).stop(true, true).fadeOut(100)
-  })
-});
 jQuery(document).ready(function($) {
   $(window).load(function() {
     $(".loader").delay(500).fadeOut(1000, function() {
@@ -167,7 +136,7 @@ $(document).ready(function() {
   })
 });
 
-//end
+
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     adaptiveHeight: true,
@@ -176,9 +145,9 @@ $(document).ready(function(){
   });
 });
 
-$(function() {                       //run when the DOM is ready
-  $(".nav-bar").click(function() {  //use a class, since your ID gets mangled
-    $("header").toggleClass("close");      //add the class to the clicked element
+$(function() {
+  $(".nav-bar").click(function() {
+    $("header").toggleClass("close");
   });
 });
 
@@ -340,6 +309,8 @@ function onScroll(event){
         // $ap2 = 0;
         // $ap3 = 0;
         $ap4 = 0;
+        // $ap5 = 0;
+        // $ap6 = 0;
         // $('#app-picturedet1:visible').fadeToggle('fast');
         // $('.move1').animate({'left':'-=100px'}).removeClass('move1');
         // $('#app-picturedet2:visible').fadeToggle('fast');
@@ -381,7 +352,9 @@ function onScroll(event){
           $('#app-picturedet6').fadeToggle('fast');
         });
         $(document).click(function(){
+
           $ap6 = 0;
+
           $('#app-picturedet6:visible').fadeToggle('fast');
           $('.move6').animate({'left':'+=100px'}).removeClass('move6');
           });

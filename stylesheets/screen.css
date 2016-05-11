@@ -1029,7 +1029,7 @@ body > section > .holder > .title h2:after {
   max-width: 70px;
 
 }
-/*
+
 .grid {
   		padding: 0.25em;
 			overflow: hidden;
@@ -1089,7 +1089,7 @@ body > section > .holder > .title h2:after {
 		  	.grid li:nth-child(5n+1) {
 				clear: none;
 			}
-		}*/
+		}
 /*SKILLS ICONS*/
 @font-face {
 	font-family: 'devicon';
@@ -1535,7 +1535,9 @@ skill gallery
   padding: 40px 0;
 }
 
-#about .experience .row .logo {
+#about .experience .row img {
+	margin-left: 50px;
+	margin-right: 50px;
   display: inline-block;
   float: left;
 }
@@ -1545,8 +1547,11 @@ skill gallery
 }
 
 #about .experience .row .brief .company-name {
-  font-family: "Audrey-Normal", monospace;
+  font-family: "Abril Fatface", monospace;
+	font-size: 24px;
+
 }
+color: #f91791;
 
 #about .experience .row .brief .position {
   font-style: italic;
@@ -1557,7 +1562,10 @@ skill gallery
 #about .experience .row .brief span {
   display: block;
 }
-
+#about .experience .row .brief li {
+  margin-left: 150px;
+	line-height: 20px;
+}
 .logo summit{
   background: url("summitlogo.jpg")
 }
@@ -2222,32 +2230,7 @@ fieldset.app-charnameinfo legend {
   width: 715px;
   z-index: 2;
 }
-/*#app-picturedet5{
-  background: #2a2a2a;
-  border: 1px solid #1f1f1f;
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -moz-column-width: 100px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  -webkit-column-width: 100px;
-  color: #cacaca;
-  column-count: 3;
-  column-gap: 20px;
-  column-width: 100px;
-  display: none;
-  font-size: 14px;
-  height: 322px;
-  padding: 40px;
-  overflow: hidden;
-  position: relative;*/
-  /*top: 10px;
-  left: 350px;
-  text-align: justify;
-  width: 715px;
-  z-index: 2;
-}*/*/
-/*#app-picturedet6{
+#app-picturedet5{
   background: #2a2a2a;
   border: 1px solid #1f1f1f;
   -moz-column-count: 3;
@@ -2271,7 +2254,32 @@ fieldset.app-charnameinfo legend {
   text-align: justify;
   width: 715px;
   z-index: 2;
-}*/
+}
+#app-picturedet6{
+  background: #2a2a2a;
+  border: 1px solid #1f1f1f;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -moz-column-width: 100px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -webkit-column-width: 100px;
+  color: #cacaca;
+  column-count: 3;
+  column-gap: 20px;
+  column-width: 100px;
+  display: none;
+  font-size: 14px;
+  height: 322px;
+  padding: 40px;
+  overflow: hidden;
+  position: relative;
+  top: 10px;
+  left: 350px;
+  text-align: justify;
+  width: 715px;
+  z-index: 2;
+}
 .app-picturedet h3 {
   display: inline-block;
   float: left;
