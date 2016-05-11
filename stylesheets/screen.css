@@ -337,7 +337,7 @@ strong {
     text-decoration: none;
     height: 45px;
     line-height: 47px;
-    padding: 25px 25px 25px 25px;
+    /*padding: 25px 25px 25px 25px;*/
     min-width: 130px;
     display: inline-block;
     text-transform: uppercase;
