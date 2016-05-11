@@ -3,6 +3,20 @@
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@font-face {
+	font-family:'Audrey-Normal';
+	src: url('Audrey-Normal_gdi.eot');
+	src: url('Audrey-Normal_gdi.eot?#iefix') format('embedded-opentype'),
+		url('Audrey-Normal_gdi.woff') format('woff'),
+		url('Audrey-Normal_gdi.ttf') format('truetype'),
+		url('Audrey-Normal_gdi.otf') format('opentype'),
+		url('Audrey-Normal_gdi.svg#Audrey-Normal') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
 @import "compass";
 
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
@@ -1388,110 +1402,6 @@ color Skills Icons
 }*/
 
 
-/*
-#about .skills .meter {
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  border-radius: 1px;
-  width: 96%;
-  position: relative;
-  line-height: 20px;
-  /*border: 2px solid #000;*/
-/*}/*/
-/*
-#about .skills .meter > div {
-  background-color: #f91791;
-  height: 25px;
-  color: #fff;
-  position: relative;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-#about .skills .meter > div[data-icon]:before {
-  position: absolute;
-  content: attr(data-icon);
-  right: -47px;
-  color: #000;
-  top: 2px;
-  border-radius: 3px;
-  font-size: 14px;
-  padding: 0px 5px;
-}
-
-#about .skills .meter span {
-  position: absolute;
-  left: 12px;
-  color: #fff;
-  top: 2px;
-  font-size: 13px;
-  font-family: "Segoe UI Bold";
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-#about .skills .meter:after {
-  clear: both;
-  content: '';
-  display: block;
-}
-
-#about .skills .meter + .meter {
-  margin: 22px 0 0 0;
-}
-
-#about .skills .meter .photoshop {
-  width: 100%;
-}
-
-#about .skills .meter .illustrator {
-  width: 90%;
-}
-
-#about .skills .meter .website {
-  width: 100%;
-}
-
-#about .skills .meter .ui {
-  width: 98%;
-}
-
-#about .skills .meter .mobile {
-  width: 95%;
-}
-
-#about .skills .meter .flash {
-  width: 90%;
-}
-
-#about .skills .meter .html {
-  width: 100%;
-}
-
-#about .skills .meter .sass {
-  width: 100%;
-}
-
-#about .skills .meter .responsive {
-  width: 100%;
-}
-
-#about .skills .meter .wireframing {
-  width: 85%;
-}
-
-#about .skills .meter .sketch {
-  width: 30%;
-}
-
-#about .skills .meter .js {
-  width: 65%;
-}
-
-#about .skills .meter .dedication {
-  width: 100%;
-}*/
 skill gallery
 
 .skillgallery body {
@@ -1598,11 +1508,6 @@ skill gallery
 .clear {
   clear: both;
 }
-
-
-
-
-
 
 #about .experience .row {
   padding: 0 0 40px 0;
