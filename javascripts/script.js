@@ -284,7 +284,7 @@ function onScroll(event){
         $('.move1').animate({'left':'-=100px'}).removeClass('move1');
         });
       });
-      
+
       $(document).ready(function(){
       var $ap2 = 0;
       $('#app-pictureinfo2').click(function(e){
@@ -407,3 +407,22 @@ function onScroll(event){
       $('.gallery_container').show(500);
     });
   });
+
+  //skill gallery
+  $(".skillItem").mouseenter(function() {
+  var thisoverlay = $(this).find('.skillOverlay');
+
+  thisoverlay.stop(true, true).animate({
+    height: '200',
+    marginTop: '-220px'
+  });
+});
+
+$(".skillItem").mouseleave(function() {
+  var thisoverlay = $(this).find('.skillOverlay');
+
+  thisoverlay.stop(true, true).animate({
+    height: '30',
+    marginTop: '-50px'
+  });
+});
