@@ -17,15 +17,6 @@
 	unicode-range: U+0020-25CA;
 }
 
-@import "compass";
-
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
-
-
-@import url(http://reset5.googlecode.com/hg/reset.min.css);
-
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
-
 @font-face {
   font-family: 'Audrey-Normal';
   src: url('Audrey-Normal.otf');
@@ -35,6 +26,16 @@
   font-family: 'Audrey-Normal';
   src: url('fonts/Audrey-Normal.otf');
 }
+
+@import "compass";
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
+
+
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
+
 * {
   box-sizing: border-box;
 }
@@ -1115,27 +1116,31 @@ body > section > .holder > .title h2:after {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
+.devicon-css3-plain:hover {
+	color: #3d8fc6;
+}
+
 .devicon-github-original:before,
 .devicon-github-plain:before {
 	content: "\e90b";
 }
 
-
-.devicon-nodewebkit-line:before {
-	content: "\e612";
+.devicon-github-original:hover,
+.devicon-github-plain:hover {
+	color: #181616;
 }
 
-
-
-.devicon-nodewebkit-plain:before {
-	content: "\e614";
-}
 
 .devicon-heroku-line:before,
 .devicon-heroku-original:before {
 	content: "\e60b";
 }
-
+.devicon-heroku-line:hover,
+.devicon-heroku-plain:hover,
+.devicon-heroku-original:hover {
+	color: #6762a6;
+}
 
 .devicon-heroku-plain:before {
 	content: "\e60f";
@@ -1146,21 +1151,32 @@ body > section > .holder > .title h2:after {
 .devicon-angularjs-plain:before {
 	content: "\e61d";
 }
+.devicon-angularjs-plain:hover {
+	color: #c4473a;
+}
 
 
 .devicon-atom-original:before,
 .devicon-atom-plain:before {
 	content: "\e624";
 }
-
-
+.devicon-atom-original:hover,
+.devicon-atom-plain:hover {
+	color: #67595D;
+}
 
 .devicon-git-plain:before {
 	content: "\e7a8";
 }
+.devicon-git-plain:hover {
+	color: #f34f29;
+}
 
 .devicon-html5-plain:before {
 	content: "\e7f7";
+}
+.devicon-html5-plain:hover {
+	color: #e54d26;
 }
 
 
@@ -1172,9 +1188,17 @@ body > section > .holder > .title h2:after {
 	content: "\e7fa";
 }
 
+.devicon-illustrator-line:hover,
+.devicon-illustrator-plain:hover {
+	color: #faa625;
+}
+
 
 .devicon-javascript-plain:before {
 	content: "\e845";
+}
+.devicon-javascript-plain:hover {
+	color: #f0db4f;
 }
 
 
@@ -1183,20 +1207,34 @@ body > section > .holder > .title h2:after {
 	content: "\e84a";
 }
 
+.devicon-jquery-plain:hover {
+	color: #0769ad;
+}
+
+
 .devicon-mongodb-plain:before {
 	content: "\eb44";
 }
 
+.devicon-mongodb-plain:hover {
+	color: #4FAA41;
+}
 
 
 .devicon-mysql-plain:before {
 	content: "\eb61";
+}
+.devicon-mysql-plain:hover {
+	color: #00618a;
 }
 
 .devicon-nodejs-plain:before {
 	content: "\eb6a";
 }
 
+.devicon-nodejs-plain:hover {
+	color: #83CD29;
+}
 .devicon-photoshop-line:before {
 	content: "\eb6c";
 }
@@ -1204,15 +1242,26 @@ body > section > .holder > .title h2:after {
 .devicon-photoshop-plain:before {
 	content: "\eb6d";
 }
-
+.devicon-photoshop-line:hover,
+.devicon-photoshop-plain:hover{
+	color: #80b5e2;
+}
 
 .devicon-postgresql-plain:before {
 	content: "\eb7d";
 }
+.devicon-postgresql-plain:hover{
+	color: #336791;
+}
 
-
+.devicon-php-plain:hover {
+	color: #6181b6;
+}
 .devicon-python-plain:before {
 	content: "\eb89";
+}
+.devicon-python-plain:hover {
+	color: #ffd845;
 }
 
 
@@ -1220,124 +1269,46 @@ body > section > .holder > .title h2:after {
 	content: "\eba3";
 }
 
+.devicon-rails-plain:hover {
+	color: #a62c46;
+}
+
 
 .devicon-ruby-plain:before {
 	content: "\ebca";
-}
-
-.devicon-sass-original:before,
-.devicon-sass-plain:before {
-	content: "\ebcb";
-}
-
-
-.devicon-wordpress-plain:before {
-	content: "\ebfe";
-}
-
-color Skills Icons
-
-
-.devicon-github-original:hover,
-.devicon-github-plain:hover {
-	color: #181616;
-}
-
-
-.devicon-angularjs-plain:hover {
-	color: #c4473a;
-}
-
-
-.devicon-atom-original:hover,
-.devicon-atom-plain:hover {
-	color: #67595D;
-}
-
-
-.devicon-css3-plain:hover {
-	color: #3d8fc6;
-}
-
-
-.devicon-git-plain:hover {
-	color: #f34f29;
-}
-
-
-.devicon-heroku-line:hover,
-.devicon-heroku-plain:hover,
-.devicon-heroku-original:hover {
-	color: #6762a6;
-}
-
-.devicon-html5-plain:hover {
-	color: #e54d26;
-}
-
-.devicon-illustrator-line:hover,
-.devicon-illustrator-plain:hover {
-	color: #faa625;
-}
-
-.devicon-javascript-plain:hover {
-	color: #f0db4f;
-}
-
-
-.devicon-jquery-plain:hover {
-	color: #0769ad;
-}
-
-
-.devicon-mongodb-plain:hover {
-	color: #4FAA41;
-}
-
-.devicon-mysql-plain:hover {
-	color: #00618a;
-}
-
-.devicon-nodejs-plain:hover {
-	color: #83CD29;
-}
-.devicon-nodewebkit-line:hover,
-.devicon-nodewebkit-plain:hover{
-	color: #3d3b47;
-}
-
-.devicon-photoshop-line:hover,
-.devicon-photoshop-plain:hover{
-	color: #80b5e2;
-}
-.devicon-php-plain:hover {
-	color: #6181b6;
-}
-.devicon-postgresql-plain:hover{
-	color: #336791;
-}
-
-.devicon-python-plain:hover {
-	color: #ffd845;
-}
-
-.devicon-rails-plain:hover {
-	color: #a62c46;
 }
 
 .devicon-ruby-plain:hover {
 	color: #d91404;
 }
 
+.devicon-sass-original:before,
+.devicon-sass-plain:before {
+	content: "\ebcb";
+}
 .devicon-sass-original:hover,
 .devicon-sass-plain:hover{
 	color: #cc6699;
 }
 
 
+.devicon-wordpress-plain:before {
+	content: "\ebfe";
+}
 .devicon-wordpress-plain:hover {
 	color: #494949;
 }
+
+color Skills Icons
+
+
+
+
+
+
+
+
+
 
 @font-face {
 	font-family: 'bitIcon';
@@ -1396,11 +1367,6 @@ color Skills Icons
   color: #fff;
 }
 
-/*#about .skills i:hover {
-  background-color: #fff;
-  color: #f91791;
-}*/
-
 
 skill gallery
 
@@ -1434,7 +1400,7 @@ skill gallery
 .fakeImage {
   width: 200px;
   height: 200px;
-  border-radius: 20px;
+	border-radius: 20px;
   font-size: 60px;
   font-weight: 800;
   text-align: center;
@@ -1444,7 +1410,7 @@ skill gallery
   background: #CCC;
 }
 
-.red {
+.html {
   background: #8942d6; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  #8942d6 0%, #5a0dac 100%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8942d6), color-stop(100%,#5a0dac)); /* Chrome,Safari4+ */
@@ -1453,10 +1419,9 @@ skill gallery
   background: -ms-radial-gradient(center, ellipse cover,  #8942d6 0%,#5a0dac 100%); /* IE10+ */
   background: radial-gradient(ellipse at center,  #8942d6 0%,#5a0dac 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8942d6', endColorstr='#5a0dac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 }
 
-.blue {
+.jquery {
   background: #3aaacf; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  #3aaacf 0%, #06799f 100%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3aaacf), color-stop(100%,#06799f)); /* Chrome,Safari4+ */
@@ -1468,8 +1433,8 @@ skill gallery
 
 }
 
-.green {
-  background: #66CC33;
+.mongodb {
+  background: #4FAA41;
   background: #61d7a4; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
@@ -1478,9 +1443,56 @@ skill gallery
   background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
   background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 }
 
+.rails {
+  background: #a62c46;
+  background: #a62c46; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+.ruby {
+  background: #d91404;
+  background: #d91404; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+.node {
+  background: #83CD29;
+  background: #83CD29; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #83CD29 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#83CD29)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#83CD29 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#83CD29 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#83CD29 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #61d7a4 0%,#83CD29 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#83CD29',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.angular {
+  background: #d91404;
+  background: #d91404; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .skillOverlay {
   position: absolute;
   width: 200px;
@@ -1488,9 +1500,12 @@ skill gallery
   padding: 10px;
   margin-top: -25px;
   color: #666;
-  background: #FFF;
+  background: white;
   overflow: hidden;
   z-index: 10;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
 
   -webkit-box-shadow: 0 -6px 6px -6px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 -6px 6px -6px rgba(0, 0, 0, 0.5);
@@ -1503,6 +1518,7 @@ skill gallery
   font-size: 16px;
   line-height: 20px;
   color: #000;
+	border-radius: 20px;
 }
 
 .clear {
@@ -1541,6 +1557,17 @@ skill gallery
 #about .experience .row .brief span {
   display: block;
 }
+
+.logo summit{
+  background: url("summitlogo.jpg")
+}
+.logo geico{
+  background: url("geico-logo.jpg")
+}
+.logo montage{
+  background: url("montage.png")
+}
+
 
 #portfolio {
   background-color: #000;
@@ -2195,7 +2222,32 @@ fieldset.app-charnameinfo legend {
   width: 715px;
   z-index: 2;
 }
-#app-picturedet5{
+/*#app-picturedet5{
+  background: #2a2a2a;
+  border: 1px solid #1f1f1f;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -moz-column-width: 100px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -webkit-column-width: 100px;
+  color: #cacaca;
+  column-count: 3;
+  column-gap: 20px;
+  column-width: 100px;
+  display: none;
+  font-size: 14px;
+  height: 322px;
+  padding: 40px;
+  overflow: hidden;
+  position: relative;*/
+  /*top: 10px;
+  left: 350px;
+  text-align: justify;
+  width: 715px;
+  z-index: 2;
+}*/*/
+/*#app-picturedet6{
   background: #2a2a2a;
   border: 1px solid #1f1f1f;
   -moz-column-count: 3;
@@ -2219,32 +2271,7 @@ fieldset.app-charnameinfo legend {
   text-align: justify;
   width: 715px;
   z-index: 2;
-}
-#app-picturedet6{
-  background: #2a2a2a;
-  border: 1px solid #1f1f1f;
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -moz-column-width: 100px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  -webkit-column-width: 100px;
-  color: #cacaca;
-  column-count: 3;
-  column-gap: 20px;
-  column-width: 100px;
-  display: none;
-  font-size: 14px;
-  height: 322px;
-  padding: 40px;
-  overflow: hidden;
-  position: relative;*/
-  top: 10px;
-  left: 350px;
-  text-align: justify;
-  width: 715px;
-  z-index: 2;
-}
+}*/
 .app-picturedet h3 {
   display: inline-block;
   float: left;
@@ -2643,14 +2670,4 @@ fieldset.app-charnameinfo legend {
 
 .loaded #loader-wrapper {
   visibility: hidden;
-}
-
-.logo summit{
-  background: url("summitlogo.jpg")
-}
-.logo geico{
-  background: url("geico-logo.jpg")
-}
-.logo montage{
-  background: url("montage.png")
 }
