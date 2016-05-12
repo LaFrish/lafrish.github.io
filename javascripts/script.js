@@ -1,3 +1,5 @@
+
+
 jQuery(document).ready(function($) {
   $(window).load(function() {
     $(".loader").delay(500).fadeOut(1000, function() {
@@ -398,3 +400,15 @@ $(".skillItem").mouseleave(function() {
     marginTop: '-50px'
   });
 });
+
+// popup to use later
+// $(document).ready(function () {
+//     $("button").click(function () {
+//         $(".pop").fadeIn(300);
+//         positionPopup();
+//     });
+//
+//     $(".pop > span, .pop").click(function () {
+//         $(".pop").fadeOut(300);
+//     });
+// });
