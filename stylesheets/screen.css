@@ -112,7 +112,7 @@ h1 {
 
 .nav {
   position: fixed;
-  z-index: 100;
+  z-index: 9999;
   right: 20px;
   top: 30%;
 }
@@ -155,7 +155,7 @@ h1 {
   background-color: #f91791;
 }
 
-/*#loading {
+#loading {
   background: repeat 0 0 fixed #000;
   position: fixed;
   top: 0;
@@ -175,7 +175,7 @@ h1 {
   margin: auto;
   filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=60);
   opacity: 0.6;
-}*/
+}
 
 strong {
   font-family: "Audrey-Normal", monospace;
@@ -444,12 +444,12 @@ strong {
 }
 
 #welcome .close {
-  margin-top: -52px;
+  /*margin-top: -52px;*/
 }
 
 #welcome .close .nav-bar .toggle-bar {
   height: 4px;
-  background-color: #fff;
+  background-color: red;
   width: 24px;
   position: absolute;
   -moz-border-radius: 1px;
@@ -467,7 +467,7 @@ strong {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
-  background: #fff;
+  background: red;
   position: absolute;
   top: -9px;
   -moz-transform: rotate(0);
@@ -496,7 +496,7 @@ strong {
 }
 
 #welcome .nav-bar {
-  background: #f91791;
+  /*background: #f91791;*/
   padding: 12px;
   left: 0;
   right: 0;
@@ -610,6 +610,7 @@ strong {
   margin: 18px auto 0;
   border-bottom: 1px solid #333;
   z-index: 9999;
+	background: #f91791
 }
 
 #welcome nav a {
@@ -816,7 +817,7 @@ body > section > .holder > .title h2:after {
 #about {
   position: relative;
   padding: 0 0 250px 0;
-  min-height: 873px;
+  /*min-height: 873px;*/
 }
 
 #about .bg-image {
@@ -914,6 +915,7 @@ body > section > .holder > .title h2:after {
   padding: 0 0 12px;
   margin: 0 20px;
   text-transform: uppercase;
+	text-align: center;
 }
 
 #about .title li:hover:after {
@@ -921,6 +923,7 @@ body > section > .holder > .title h2:after {
 }
 
 #about .title li:after {
+	text-align: center;
   position: absolute;
   content: '';
   height: 2px;
@@ -1007,7 +1010,7 @@ body > section > .holder > .title h2:after {
   margin: 0 8px 0 0;
 }
 
-#about .tab-content {
+ .tab-content {
   display: none;
 }
 
@@ -1029,7 +1032,7 @@ body > section > .holder > .title h2:after {
   max-width: 70px;
 
 }
-
+/*
 .grid {
   		padding: 0.25em;
 			overflow: hidden;
@@ -1089,7 +1092,7 @@ body > section > .holder > .title h2:after {
 		  	.grid li:nth-child(5n+1) {
 				clear: none;
 			}
-		}
+		}*/
 /*SKILLS ICONS*/
 @font-face {
 	font-family: 'devicon';
@@ -1299,17 +1302,6 @@ body > section > .holder > .title h2:after {
 	color: #494949;
 }
 
-color Skills Icons
-
-
-
-
-
-
-
-
-
-
 @font-face {
 	font-family: 'bitIcon';
 	src:url('fonts/bitIcon.eot?dm333u');
@@ -1354,7 +1346,7 @@ color Skills Icons
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   display: inline-block;
   width: 70px;
   height: 70px;
@@ -1371,7 +1363,7 @@ color Skills Icons
 skill gallery
 
 .skillgallery body {
-  background: #000;
+  background: #fff;
   font-family: 'Audrey-Normal', serif;
   font-size: 16px;
   line-height: 26px;
@@ -1381,7 +1373,7 @@ skill gallery
   width: 920px;
   padding: 10px;
   margin: 20px auto;
-  background: #000;
+  background: #fff;
 }
 
 .skillItem {
@@ -1391,6 +1383,7 @@ skill gallery
   margin-left: 10px;
   overflow: hidden;
   cursor: pointer;
+
 }
 
 .skillItem:first-child {
@@ -1408,6 +1401,7 @@ skill gallery
   line-height: 280px;
   color: rgba(0, 0, 0, 0.2);
   background: #CCC;
+	border: 2px solid #000;
 }
 
 .html {
@@ -1574,6 +1568,39 @@ color: #f91791;
 }
 .logo montage{
   background: url("montage.png")
+}
+
+/*testimonials*/
+
+#testimonials {
+	background-color: #000
+  padding: 80px 0 210px 0;
+	width: 100%;
+  text-align: center;
+  position: relative;
+	color: #fff;
+}
+#testimonials .holder {
+  width: 100%;
+  margin: 0 auto;
+	color: #fff;
+	background-color: #000
+}
+#testimonials .testimonial {
+  line-height: 34px;
+	color: #fff;
+	background-color: #000
+}
+#testimonials .testimonial .quote {
+  font-size: 24px;
+  padding: 0 0 20px;
+	color: #fff;
+	background-color: #000
+}
+#testimonials .testimonial .client-info {
+  color: #f91791;
+  font-size: 17px;
+	background-color: #000
 }
 
 
