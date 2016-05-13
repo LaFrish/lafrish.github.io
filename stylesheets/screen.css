@@ -1703,7 +1703,7 @@ circle skills
 
 #about .experience .row .brief .position {
   font-style: italic;
-  font-size: 16px;
+  font-size: 26px;
   padding: 10px 0 0 0;
 }
 
@@ -1713,6 +1713,7 @@ circle skills
 #about .experience .row .brief li {
   margin-left: 150px;
 	line-height: 20px;
+
 }
 .logo summit{
   background: url("summitlogo.jpg")
