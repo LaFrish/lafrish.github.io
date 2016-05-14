@@ -260,10 +260,10 @@ function onScroll(event){
       $('#app-pictureinfo2').click(function(e){
         e.stopPropagation();
         if ( $ap2 === 0 ) {
-          $('#app-picture2').animate({'left':'-360px'}).addClass('move2');
+          $('#app-picture2').animate({'left':'-360px'}).addClass('move1');
           $ap2 = $ap2 + 1;
         } else {
-          $('#app-picture2').animate({'left':'0px'}).removeClass('move2');
+          $('#app-picture2').animate({'left':'0px'}).removeClass('move1');
           $ap2 = 0;
         }
         $('#app-picturedet2').fadeToggle('fast');
@@ -271,7 +271,7 @@ function onScroll(event){
       $(document).click(function(){
         $ap2 = 0;
         $('#app-picturedet2:visible').fadeToggle('fast');
-        $('.move2').animate({'left':'+=100px'}).removeClass('move2');
+        $('.move1').animate({'left':'+=100px'}).removeClass('move1');
       });
     });
     $(document).ready(function(){
