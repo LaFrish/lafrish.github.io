@@ -1697,6 +1697,7 @@ background-image: url(../images/html.png);
 		/*font-family: "Vidaloka", monospace;*/
 }
 #about .experience .row .brief li {
+	list-style: circle;
   margin-left: 150px;
 	margin-right: 175px;
 	line-height: 24px;
@@ -2181,16 +2182,16 @@ background-image: url(../images/html.png);
 /*gallery*/
 
 * { box-sizing: border-box; }
-#app-container body { box-sizing: border-box;
+/*#app-container body { box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   text-align: center; color: #1c1c1c;
   background: #212121;
   background-attachment: fixed; box-sizing: border-box;
-}
+}*/
 
 .clearfix { clear: both; }
-
+/*
 #app-container {
   width: 1000px;
   margin: 0 auto;
@@ -2217,7 +2218,7 @@ fieldset.app-charnameinfo:nth-child(2) {
 }
 fieldset.app-charnameinfo legend {
   padding: 5px 10px;
-}
+}*/
 
 /* ----------------------------
 >> avatar containers
@@ -2271,7 +2272,7 @@ fieldset.app-charnameinfo legend {
 /* ----------------------------
 >> actual information fields
 ---------------------------- */
-
+/*
 .app-picturedet {
   background: #2a2a2a;
   border: 1px solid #1f1f1f;
@@ -2296,7 +2297,7 @@ fieldset.app-charnameinfo legend {
   text-align: justify;
   width: 715px;
   z-index: 3;
-}
+}*/
 #app-picturedet1 {
   background: #2a2a2a;
   border: 1px solid #1f1f1f;
@@ -2340,7 +2341,7 @@ fieldset.app-charnameinfo legend {
   height: 322px;
   padding: 40px;
   overflow: hidden;
-  position: absolute;
+  /*position: absolute;*/
   top: 10px;
   left: 350px;
   text-align: justify;
@@ -2468,6 +2469,48 @@ fieldset.app-charnameinfo legend {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.gallery_container {
+	position: relative;
+}
+.gallery_container {
+  display: inline-block;
+  width: 422px;
+  height: 322px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #2a2a2a;
+  position: relative;
+}
+.gallery_container img {
+	width: 400px;
+	height: 300px;
+
+}
+.project_info { /* holds number / description */
+  width: 400px;
+  height: 300px;
+  font-family: 'Abril Fatface';
+  font-size: 50px;
+  color: #000;
+  padding-top: 80px;
+  background: #f91791;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+.project_info:hover { opacity: 0.8;}
+.project_info span {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+}
+
 .pop {
   display:none;
   position:fixed;
@@ -2476,22 +2519,24 @@ fieldset.app-charnameinfo legend {
   width:80%;
   height:80%;
   background: white;
-  outline:10px solid green;
+  outline:10px solid #000;
+	z-index: 999;
 }
 
 .pop > h1 {
   padding:30px 30px 10px 30px;
-  color: yellow;
+  color: #f91791;
   font-size:100%;
 }
 
 .pop > p {
   padding-left:30px;
   font-size:100%;
-  color: pink;
+  color: #000;
 }
 
 .pop > span {
+	text-align: center;
   cursor:pointer;
   position:absolute;
   top:4%;
@@ -2499,8 +2544,8 @@ fieldset.app-charnameinfo legend {
   -webkit-border-radius:100px;
      -moz-border-radius:100px;
           border-radius:100px;
-  background: gray;
-  color: red;
+  background: #fff;
+  color: #f91791;
   padding:6px 0px 0px 9px;
   width:30px;
   height:30px;
