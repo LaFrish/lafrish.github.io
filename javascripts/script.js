@@ -361,11 +361,9 @@ function onScroll(event){
           });
         });
   }
-
-
-
-
     gallery();
+
+
   //filter of gallery
   $(function() {
 
@@ -383,32 +381,32 @@ function onScroll(event){
   });
 
   //skill gallery
-  $(".skillItem").mouseenter(function() {
-  var thisoverlay = $(this).find('.skillOverlay');
-
-  thisoverlay.stop(true, true).animate({
-    height: '200',
-    marginTop: '-220px'
-  });
-});
-
-$(".skillItem").mouseleave(function() {
-  var thisoverlay = $(this).find('.skillOverlay');
-
-  thisoverlay.stop(true, true).animate({
-    height: '30',
-    marginTop: '-50px'
-  });
-});
+//   $(".skillItem").mouseenter(function() {
+//   var thisoverlay = $(this).find('.skillOverlay');
+//
+//   thisoverlay.stop(true, true).animate({
+//     height: '200',
+//     marginTop: '-220px'
+//   });
+// });
+//
+// $(".skillItem").mouseleave(function() {
+//   var thisoverlay = $(this).find('.skillOverlay');
+//
+//   thisoverlay.stop(true, true).animate({
+//     height: '30',
+//     marginTop: '-50px'
+//   });
+// });
 
 // popup to use later
-// $(document).ready(function () {
-//     $("button").click(function () {
-//         $(".pop").fadeIn(300);
-//         positionPopup();
-//     });
-//
-//     $(".pop > span, .pop").click(function () {
-//         $(".pop").fadeOut(300);
-//     });
-// });
+$(document).ready(function () {
+    $("app-picture").click(function () {
+        $(".pop").fadeIn(300);
+        positionPopup();
+    });
+
+    $(".pop > span, .pop").click(function () {
+        $(".pop").fadeOut(300);
+    });
+});
