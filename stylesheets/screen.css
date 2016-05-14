@@ -29,7 +29,6 @@
 
 @import "compass";
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
 
 
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
@@ -1062,135 +1061,191 @@ text-align: center;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
 .devicon-css3-plain:hover {
 	color: #3d8fc6;
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-github-original:before,
 .devicon-github-plain:before {
 	content: "\e90b";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-github-original:hover,
 .devicon-github-plain:hover {
 	color: #181616;
+	font-size: 100px;
+	text-align: center;
 }
-
 
 .devicon-heroku-line:before,
 .devicon-heroku-original:before {
 	content: "\e60b";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-heroku-line:hover,
 .devicon-heroku-plain:hover,
 .devicon-heroku-original:hover {
 	color: #6762a6;
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-heroku-plain:before {
 	content: "\e60f";
+	font-size: 100px;
+	text-align: center;
 }
-
-
 
 .devicon-angularjs-plain:before {
 	content: "\e61d";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-angularjs-plain:hover {
 	color: #c4473a;
+	font-size: 100px;
+	text-align: center;
 }
 
 
 .devicon-atom-original:before,
 .devicon-atom-plain:before {
 	content: "\e624";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-atom-original:hover,
 .devicon-atom-plain:hover {
 	color: #67595D;
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-git-plain:before {
 	content: "\e7a8";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-git-plain:hover {
 	color: #f34f29;
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-html5-plain:before {
 	content: "\e7f7";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-html5-plain:hover {
 	color: #e54d26;
+	font-size: 100px;
+	text-align: center;
 }
 
 
 .devicon-illustrator-line:before {
 	content: "\e7f9";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-illustrator-plain:before {
 	content: "\e7fa";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-illustrator-line:hover,
 .devicon-illustrator-plain:hover {
 	color: #faa625;
+	font-size: 100px;
+	text-align: center;
 }
 
 
 .devicon-javascript-plain:before {
 	content: "\e845";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-javascript-plain:hover {
 	color: #f0db4f;
+	font-size: 100px;
+	text-align: center;
 }
 
 
 
 .devicon-jquery-plain:before {
 	content: "\e84a";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-jquery-plain:hover {
 	color: #0769ad;
+	font-size: 100px;
+	text-align: center;
 }
 
 
 .devicon-mongodb-plain:before {
 	content: "\eb44";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-mongodb-plain:hover {
 	color: #4FAA41;
+	font-size: 100px;
+	text-align: center;
 }
 
 
 .devicon-mysql-plain:before {
 	content: "\eb61";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-mysql-plain:hover {
 	color: #00618a;
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-nodejs-plain:before {
 	content: "\eb6a";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-nodejs-plain:hover {
 	color: #83CD29;
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-photoshop-line:before {
 	content: "\eb6c";
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-photoshop-plain:before {
 	content: "\eb6d";
+	font-size: 100px;
+	text-align: center;
 }
 .devicon-photoshop-line:hover,
 .devicon-photoshop-plain:hover{
 	color: #80b5e2;
+	font-size: 100px;
+	text-align: center;
 }
 
 .devicon-postgresql-plain:before {
@@ -1282,8 +1337,15 @@ text-align: center;
 .bitIcon-html:before {
 	content: "\e60d";
 }
+.bitIcon-html:before {
+	content: "\e60d";
+	font-size: 100px;
+	text-align: center;
+}
+.bitIcon-html:hover{
+	color: #fff;
 
-
+}
 #about .skills a i {
   font-size: 24px;
   -moz-border-radius: 100px;
@@ -1302,90 +1364,103 @@ text-align: center;
   color: #fff;
 }
 
-.html {
-  background: #8942d6; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #8942d6 0%, #5a0dac 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8942d6), color-stop(100%,#5a0dac)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #8942d6 0%,#5a0dac 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #8942d6 0%,#5a0dac 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #8942d6 0%,#5a0dac 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #8942d6 0%,#5a0dac 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8942d6', endColorstr='#5a0dac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+.angular {
+  background: #c4473a;
 }
 
-.jquery {
-  background: #3aaacf; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #3aaacf 0%, #06799f 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3aaacf), color-stop(100%,#06799f)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #3aaacf 0%,#06799f 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #3aaacf 0%,#06799f 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #3aaacf 0%,#06799f 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #3aaacf 0%,#06799f 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aaacf', endColorstr='#06799f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.github{
+	background: #181616;
+}
 
+.atom {
+	background: #67595D;
+}
+
+.git {
+	background: #f34f29;
+}
+.html5 {
+	background: #e54d26;
+}
+.html {
+  background: #8942d6;
+	}
+
+
+}
+.heroku {
+	background: #6762a6;
+	font-size: 100px;
+	text-align: center;
+}
+.illustrator {
+	background: #faa625;
+	font-size: 100px;
+	text-align: center;
+}
+
+.javascript {
+	background: #f0db4f;
+	font-size: 100px;
+	text-align: center;
+}
+.jquery {
+  background: #0769ad;
+	font-size: 100px;
+	text-align: center;
 }
 
 .mongodb {
   background: #4FAA41;
-  background: #61d7a4; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-size: 100px;
+	text-align: center;
 }
-
-.rails {
-  background: #a62c46;
-  background: #a62c46; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.mysql {
+	background: #00618a;
+	font-size: 100px;
+	text-align: center;
 }
-
-
-.ruby {
-  background: #d91404;
-  background: #d91404; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
 
 .node {
   background: #83CD29;
-  background: #83CD29; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #83CD29 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#83CD29)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#83CD29 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#83CD29 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#83CD29 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #61d7a4 0%,#83CD29 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#83CD29',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-.angular {
-  background: #d91404;
-  background: #d91404; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #61d7a4 0%, #218359 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#61d7a4), color-stop(100%,#218359)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-size: 100px;
+	text-align: center;
 }
 
+
+.photoshop{
+	background: #80b5e2;
+	font-size: 100px;
+	text-align: center;
+}
+.postgresql{
+	background: #336791;
+	font-size: 100px;
+	text-align: center;
+}
+.rails {
+  background: #a62c46;
+	font-size: 100px;
+	text-align: center;
+}
+
+.ruby {
+  background: #d91404;
+	font-size: 100px;
+	text-align: center;
+}
+.sass{
+	background: #cc6699;
+	font-size: 100px;
+	text-align: center;
+}
+.wordpress {
+	background: #494949;
+	font-size: 100px;
+	text-align: center;
+}
 circle skills
 
 .ch-item {
@@ -1439,7 +1514,27 @@ circle skills
 	transform-style: preserve-3d;
 
 }
+.ch-img{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background-position: center center;
+	background: #fff;
 
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
 .ch-info > div {
 	display: block;
 	position: absolute;
@@ -1464,18 +1559,41 @@ circle skills
 	background: #000;
 }
 
-.ch-img-1 {
-	background-image: url(../images/10.jpg);
+.ch-img-html {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
 }
-
-.ch-img-2 {
-	background-image: url(../images/11.jpg);
+.ch-img-javascript {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
 }
-
-.ch-img-3 {
-	background-image: url(../images/12.jpg);
+.ch-img-jquery {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
 }
-
+.ch-img-rails {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
+}
+.ch-img-javascript {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
+}
+.ch-img-angular {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
+}
+.ch-img-node {
+	content: "\e7a8";
+background: #e54d26;
+background-image: url(../images/html.png);
+}
 .ch-info h3 {
 	color: #fff;
 	text-transform: uppercase;
@@ -1502,7 +1620,6 @@ circle skills
 .ch-info p a {
 	display: block;
 	color: #fff;
-	color: rgba(255,255,255,0.7);
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1514,7 +1631,6 @@ circle skills
 
 .ch-info p a:hover {
 	color: #fff222;
-	color: rgba(255,242,34, 0.8);
 }
 
 
@@ -1548,35 +1664,46 @@ circle skills
 }
 
 #about .experience .row img {
-	margin-left: 50px;
-	margin-right: 50px;
-  display: inline-block;
-  float: left;
+	margin: 0 0 0 350px;
+	/*margin-left: 100px;
+	margin-right: 100px;*/
+  /*display: inline-block;*/
+  /*float: left;*/
 }
 
 #about .experience .row .brief {
-  padding-left: 225px;
+  /*padding-left: 10px;
+	padding-right: 80px;*/
 }
 
 #about .experience .row .brief .company-name {
-  font-family: "Abril Fatface", monospace;
+	font-family: "Abril Fatface", monospace;
 	font-size: 24px;
 
 }
 
-
 #about .experience .row .brief .position {
-  font-style: italic;
-  font-size: 26px;
+	/*font-family: "Audrey-Normal", monospace;*/
+	font-family: "Abril Fatface", monospace;
+	color: #f91791;
+  font-style: bold;
+  font-size: 24px;
   padding: 10px 0 0 0;
+	text-align: center;
 }
 
 #about .experience .row .brief span {
   display: block;
+		/*font-family: "Vidaloka", monospace;*/
 }
 #about .experience .row .brief li {
   margin-left: 150px;
-	line-height: 20px;
+	margin-right: 175px;
+	line-height: 24px;
+	font-size: 18px;
+	font-family: "Playfair Display", monospace;
+	font-style: bold;
+	/*font-family: "Vidaloka", monospace;*/
 
 }
 .logo summit{
@@ -1603,7 +1730,7 @@ circle skills
 	background-color: #000;
 }
 #portfolio  .testimonial .quote {
-	font-family: "Audrey-Normal";
+	font-family: "Playfair Display", monospace;
 	margin:20px 20px 20px 20px;
   font-size: 24px;
   padding: 50px 50px 50px 50px;
@@ -2264,9 +2391,7 @@ fieldset.app-charnameinfo legend {
   height: 322px;
   padding: 40px;
   overflow: hidden;
-
   left: 350px;
-
   width: 715px;
   z-index: 2;
 	position: relative;
