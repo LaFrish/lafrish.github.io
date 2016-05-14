@@ -324,8 +324,6 @@ strong {
   color: #fff;
 }
 
-
-
 .toggles button {
   font-family: "Abril Fatface";
   background-color: #fff;
@@ -400,7 +398,7 @@ strong {
   z-index: 0;
 }
 
-* { margin: 0; padding: 0; }
+
 #welcome .background {
   min-height: 100vh;
   display: flex;
@@ -923,7 +921,6 @@ body > section > .holder > .title h2:after {
 }
 
 #about .title li:after {
-	text-align: center;
   position: absolute;
   content: '';
   height: 2px;
@@ -941,13 +938,12 @@ body > section > .holder > .title h2:after {
 }
 
 #about .tabs-container {
-  text-align: center;
   position: relative;
 }
 
 #about .tabs-menu {
   display: inline-block;
-  margin: 0 auto 70px auto;
+  margin: 0  300px 50px;
   width: 100%;
 }
 
@@ -1027,6 +1023,7 @@ text-align: center;
 #about .bio {
   float: left;
   line-height: 24px;
+
 }
 
 #about .bio > p {
@@ -1038,67 +1035,7 @@ text-align: center;
   max-width: 70px;
 
 }
-/*
-.grid {
-  		padding: 0.25em;
-			overflow: hidden;
-		}
-		.grid li {
-			float: left;
-			width: 50%;
-			padding: 0.25em;
-		}
-		.grid i {
-			display: block;
-		}
-		.grid li:nth-child(odd) {
-			clear: left;
-		}
 
-		@media screen and (min-width: 40em) {
-			.grid li {
-		    	width: 33.3333333333333333%;
-		  	}
-		  	.grid li:nth-child(3n+1) {
-		  		clear: left;
-		  	}
-		  	.grid li:nth-child(odd) {
-				clear: none;
-			}
-		}
-		@media screen and (min-width: 55em) {
-			.grid li {
-		    	width: 25%;
-		  	}
-		  	.grid li:nth-child(4n+1) {
-		  		clear: left;
-		  	}
-		  	.grid li:nth-child(3n+1) {
-				clear: none;
-			}
-		}
-		@media screen and (min-width: 72em) {
-			.grid li {
-		    	width: 20%;
-		  	}
-		  	.grid li:nth-child(5n+1) {
-		  		clear: left;
-		  	}
-		  	.grid li:nth-child(4n+1) {
-				clear: none;
-			}
-		}
-		@media screen and (min-width: 90em) {
-			.grid li {
-		    	width: 16.666666666%;
-		  	}
-		  	.grid li:nth-child(6n+1) {
-		  		clear: left;
-		  	}
-		  	.grid li:nth-child(5n+1) {
-				clear: none;
-			}
-		}*/
 /*SKILLS ICONS*/
 @font-face {
 	font-family: 'devicon';
@@ -1365,51 +1302,6 @@ text-align: center;
   color: #fff;
 }
 
-
-skill gallery
-
-.skillgallery body {
-  background: #fff;
-  font-family: 'Audrey-Normal', serif;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.wrapper {
-  width: 920px;
-  padding: 10px;
-  margin: 20px auto;
-  background: #fff;
-}
-
-.skillItem {
-  float: left;
-  width: 300px;
-  height: 300px;
-  margin-left: 10px;
-  overflow: hidden;
-  cursor: pointer;
-
-}
-
-.skillItem:first-child {
-  margin-left: 0;
-}
-
-.fakeImage {
-  width: 200px;
-  height: 200px;
-	border-radius: 20px;
-  font-size: 60px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 280px;
-  color: rgba(0, 0, 0, 0.2);
-  background: #CCC;
-	border: 2px solid #000;
-}
-
 .html {
   background: #8942d6; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  #8942d6 0%, #5a0dac 100%); /* FF3.6+ */
@@ -1492,37 +1384,6 @@ skill gallery
   background: -ms-radial-gradient(center, ellipse cover,  #61d7a4 0%,#218359 100%); /* IE10+ */
   background: radial-gradient(ellipse at center,  #61d7a4 0%,#218359 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61d7a4', endColorstr='#218359',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-.skillOverlay {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  padding: 10px;
-  margin-top: -25px;
-  color: #666;
-  background: white;
-  overflow: hidden;
-  z-index: 10;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-
-
-  -webkit-box-shadow: 0 -6px 6px -6px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 -6px 6px -6px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 -6px 6px -6px rgba(0, 0, 0, 0.5);
-}
-
-.skillItemTitel {
-  display: block;
-  height: 20px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000;
-	border-radius: 20px;
-}
-
-.clear {
-  clear: both;
 }
 
 circle skills
@@ -2403,12 +2264,14 @@ fieldset.app-charnameinfo legend {
   height: 322px;
   padding: 40px;
   overflow: hidden;
-  /*position: relative;*/
-  /*top: 10px;*/
+
   left: 350px;
-  /*text-align: justify;*/
+
   width: 715px;
   z-index: 2;
+	position: relative;
+	/*top: 10px;*/
+	/*text-align: justify;*/
 }
 #app-picturedet5{
   background: #2a2a2a;
@@ -2471,6 +2334,52 @@ fieldset.app-charnameinfo legend {
   text-align: center;
 }
 
+* {
+  margin:0;
+  padding:0;
+  border:none;
+  list-style:none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pop {
+  display:none;
+  position:fixed;
+  top:10.3%;
+  left:10.3%;
+  width:80%;
+  height:80%;
+  background: white;
+  outline:10px solid green;
+}
+
+.pop > h1 {
+  padding:30px 30px 10px 30px;
+  color: yellow;
+  font-size:100%;
+}
+
+.pop > p {
+  padding-left:30px;
+  font-size:100%;
+  color: pink;
+}
+
+.pop > span {
+  cursor:pointer;
+  position:absolute;
+  top:4%;
+  right:4%;
+  -webkit-border-radius:100px;
+     -moz-border-radius:100px;
+          border-radius:100px;
+  background: gray;
+  color: red;
+  padding:6px 0px 0px 9px;
+  width:30px;
+  height:30px;
+}
 
 #resume {
   background-color: #fff;
@@ -2804,21 +2713,6 @@ fieldset.app-charnameinfo legend {
     float: none;
   }
 
-
-  #resume {
-    width: 90%;
-    padding: 80px 5% 160px 5%;
-  }
-
-  #resume .resume .quote {
-    font-size: 17px;
-    line-height: 1.4;
-  }
-
-  #resume .resume .client-info {
-    line-height: 1.2;
-  }
-}
 
 #loader-wrapper .loader-section {
   position: fixed;
