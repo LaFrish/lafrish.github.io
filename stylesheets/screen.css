@@ -974,6 +974,9 @@ text-align: center;
   color: #f91791;
 }
 
+#about .title h2:after {
+  background-color: #f91791;
+}
 #about .tabs-menu li a {
 	text-align: center;
   text-transform: uppercase;
@@ -1727,44 +1730,39 @@ circle skills
 
 /*testimonials*/
 
-#testimonials {
-	background-color: #000
-  padding: 80px 0 210px 0;
-	width: 100%;
-  text-align: center;
-  position: relative;
-	color: #fff;
-}
-#testimonials .holder {
+#portfolio  .holder {
   width: 100%;
   margin: 0 auto;
 	color: #fff;
-	background-color: #000
+	background-color: #000;
 }
-#testimonials .testimonial {
+#portfolio  .testimonial {
   line-height: 34px;
 	color: #fff;
-	background-color: #000
+	background-color: #000;
 }
-#testimonials .testimonial .quote {
+#portfolio  .testimonial .quote {
 	font-family: "Audrey-Normal";
 	margin:20px 20px 20px 20px;
   font-size: 24px;
   padding: 50px 50px 50px 50px;
 	color: #fff;
-	background-color: #000
+	background-color: #000;
 }
-#testimonials .testimonial .client-info {
+#portfolio  .testimonial .client-info {
   color: #f91791;
   font-size: 28px;
-	background-color: #000
+	background-color: #000;
 }
 
 
 #portfolio {
-  background-color: #000;
+	background-color: #000;
   padding: 80px 0 210px 0;
+	width: 100%;
+  text-align: center;
   position: relative;
+	color: #fff;
 }
 
 #portfolio .slide_container {
@@ -2192,8 +2190,6 @@ circle skills
   -o-filter: $filter;
 }
 
-
-
 /*gallery*/
 
 * { box-sizing: border-box; }
@@ -2524,6 +2520,9 @@ fieldset.app-charnameinfo legend {
   background: #f91791;
   position: absolute;
 }
+#resume .title h2:after {
+  background-color: #f91791;
+}
 
 #contactMe h2 {
   font-size: 40px;
@@ -2607,7 +2606,7 @@ fieldset.app-charnameinfo legend {
   padding: 40px 0 0 0;
 }
 
-#featured {
+/*#featured {
   background-color: #ededed;
   text-align: center;
   padding: 80px 0 180px 0;
@@ -2650,7 +2649,7 @@ fieldset.app-charnameinfo legend {
 
 #featured a + a {
   margin: 0 0 0 15px;
-}
+}*/
 
 #resume .resume .quote {
   font-size: 22px;
@@ -2804,6 +2803,7 @@ fieldset.app-charnameinfo legend {
     top: 4px;
     float: none;
   }
+
 
   #resume {
     width: 90%;
