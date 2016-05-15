@@ -234,135 +234,6 @@ function onScroll(event){
   }
 });
 
-  // gallery
-  // function gallery(){
-  //   $(document).ready(function(){
-  //     var $ap1 = 0;
-  //     $('#app-pictureinfo1').click(function(e){
-  //       e.stopPropagation();
-  //       if ( $ap1 === 0 ) {
-  //         $('#app-picture1').animate({'left':'-360px'}).addClass('move1');
-  //         $ap1 = $ap1 + 1;
-  //       } else {
-  //         $('#app-picture1').animate({'left':'0px'}).removeClass('move1');
-  //       }
-  //       $('#app-picturedet1').fadeToggle('fast');
-  //     });
-  //     $(document).click(function(){
-  //       $ap1 = 0;
-  //       $('#app-picturedet1:visible').fadeToggle('fast');
-  //       $('.move1').animate({'left':'-=100px'}).removeClass('move1');
-  //       });
-  //     });
-  //
-  //     $(document).ready(function(){
-  //     var $ap2 = 0;
-  //     $('#app-pictureinfo2').click(function(e){
-  //       e.stopPropagation();
-  //       if ( $ap2 === 0 ) {
-  //         $('#app-picture2').animate({'left':'-360px'}).addClass('move2');
-  //         $ap2 = $ap2 + 1;
-  //       } else {
-  //         $('#app-picture2').animate({'left':'0px'}).removeClass('move2');
-  //         $ap2 = 0;
-  //       }
-  //       $('#app-picturedet2').fadeToggle('fast');
-  //     });
-  //     $(document).click(function(){
-  //       $ap2 = 0;
-  //       $('#app-picturedet2:visible').fadeToggle('fast');
-  //       $('.move2').animate({'left':'+=200px'}).removeClass('move2');
-  //     });
-  //   });
-  //   $(document).ready(function(){
-  //     var $ap3 = 0;
-  //     $('#app-pictureinfo3').click(function(e){
-  //       e.stopPropagation();
-  //       if ( $ap3 === 0 ) {
-  //         $('#app-picture3').animate({'left':'-360px'}).addClass('move3');
-  //         $ap3 = $ap3 + 1;
-  //       } else {
-  //         $('#app-picture3').animate({'left':'0px'}).removeClass('move3');
-  //       }
-  //       $('#app-picturedet3').fadeToggle('fast');
-  //     });
-  //     $(document).click(function(){
-  //       $ap3 = 0;
-  //       $('#app-picturedet3:visible').fadeToggle('fast');
-  //       $('.move3').animate({'left':'+=100px'}).removeClass('move3');
-  //       });
-  //     });
-  //     $(document).ready(function(){
-  //     var $ap4 = 0;
-  //     $('#app-pictureinfo4').click(function(e){
-  //       e.stopPropagation();
-  //       if ( $ap4 === 0 ) {
-  //         $('#app-picture4').animate({'left':'-360px'}).addClass('move4');
-  //         $ap4 = $ap4 + 1;
-  //       } else {
-  //         $('#app-picture4').animate({'left':'0px'}).removeClass('move4');
-  //         $ap4 = 0;
-  //       }
-  //       $('#app-picturedet4').fadeToggle('fast');
-  //     });
-  //     $(document).click(function(){
-        // $ap1 = 0;
-        // $ap2 = 0;
-        // $ap3 = 0;
-        // $ap4 = 0;
-        // $ap5 = 0;
-        // $ap6 = 0;
-        // $('#app-picturedet1:visible').fadeToggle('fast');
-        // $('.move1').animate({'left':'-=100px'}).removeClass('move1');
-        // $('#app-picturedet2:visible').fadeToggle('fast');
-        // $('.move2').animate({'left':'+=100px'}).removeClass('move2');
-        // $('#app-picturedet3:visible').fadeToggle('fast');
-        // $('.move3').animate({'left':'+=100px'}).removeClass('move3');
-  //       $('#app-picturedet4:visible').fadeToggle('fast');
-  //       $('.move4').animate({'left':'-=100px'}).removeClass('move4');
-  //     });
-  //   });
-  //   $(document).ready(function(){
-  //     var $ap5 = 0;
-  //     $('#app-pictureinfo5').click(function(e){
-  //       e.stopPropagation();
-  //       if ( $ap5 === 0 ) {
-  //         $('#app-picture5').animate({'left':'-360px'}).addClass('move5');
-  //         $ap5 = $ap5 + 1;
-  //       } else {
-  //         $('#app-picture5').animate({'left':'0px'}).removeClass('move5');
-  //       }
-  //       $('#app-picturedet5').fadeToggle('fast');
-  //     });
-  //     $(document).click(function(){
-  //       $ap5 = 0;
-  //       $('#app-picturedet5:visible').fadeToggle('fast');
-  //       $('.move5').animate({'left':'+=100px'}).removeClass('move5');
-  //       });
-  //     });
-  //     $(document).ready(function(){
-  //       var $ap6 = 0;
-  //       $('#app-pictureinfo6').click(function(e){
-  //         e.stopPropagation();
-  //         if ( $ap6 === 0 ) {
-  //           $('#app-picture6').animate({'left':'-360px'}).addClass('move6');
-  //           $ap6 = $ap6 + 1;
-  //         } else {
-  //           $('#app-picture6').animate({'left':'0px'}).removeClass('move6');
-  //         }
-  //         $('#app-picturedet6').fadeToggle('fast');
-  //       });
-  //       $(document).click(function(){
-  //
-  //         $ap6 = 0;
-  //
-  //         $('#app-picturedet6:visible').fadeToggle('fast');
-  //         $('.move6').animate({'left':'+=100px'}).removeClass('move6');
-  //         });
-  //       });
-  // }
-  //   gallery();
-
 
   //filter of gallery
   $(function() {
@@ -380,28 +251,9 @@ function onScroll(event){
     });
   });
 
-  //skill gallery
-//   $(".skillItem").mouseenter(function() {
-//   var thisoverlay = $(this).find('.skillOverlay');
-//
-//   thisoverlay.stop(true, true).animate({
-//     height: '200',
-//     marginTop: '-220px'
-//   });
-// });
-//
-// $(".skillItem").mouseleave(function() {
-//   var thisoverlay = $(this).find('.skillOverlay');
-//
-//   thisoverlay.stop(true, true).animate({
-//     height: '30',
-//     marginTop: '-50px'
-//   });
-// });
-
 // popup to use later
 $(document).ready(function () {
-    $("button").click(function () {
+    $(".gal_btn").click(function () {
         $(".pop").fadeIn(300);
         positionPopup();
     });
