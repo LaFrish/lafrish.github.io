@@ -1,1 +1,0 @@
-www.farishtahaider.com
