@@ -1577,6 +1577,11 @@ background-image: url(../images/html.png);
 .ch-img-rails {
 	content: "\e7a8";
 background: #e54d26;
+background-image: url(..images/ruby.png;
+}
+.ch-img-ruby {
+	content: "\ebca";
+background: #d91404;
 background-image: url(../images/html.png);
 }
 .ch-img-javascript {
@@ -2511,6 +2516,31 @@ fieldset.app-charnameinfo legend {
   font-style: italic;
 }
 
+.gal_btn{
+	font-family: 'Abril Fatface', serif;
+	background-color: #fff;
+	color: #000;
+	border: 3px solid #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	height: 45px;
+	line-height: 47px;
+	padding: 0 25px;
+	min-width: 130px;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.gal_btn:hover{
+background-color: #f91791;
+
+}
 .pop {
   display:none;
   position:fixed;
@@ -2536,6 +2566,7 @@ fieldset.app-charnameinfo legend {
 }
 
 .pop > span {
+	font-size: 30px;
 	text-align: center;
   cursor:pointer;
   position:absolute;
