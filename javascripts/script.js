@@ -251,14 +251,72 @@ function onScroll(event){
     });
   });
 
+
+  // $( document ).on( "click", function( event ) {
+  //   $( event.target ).closest( "li" ).toggleClass( "hilight" );
+  // });
 // popup to use later
 $(document).ready(function () {
     $(".gal_btn").click(function () {
         $(".pop").fadeIn(300);
         positionPopup();
     });
-
+//close
     $(".pop > span, .pop").click(function () {
         $(".pop").fadeOut(300);
+    });
+});
+//trivia portfolio
+$(document).ready(function () {
+    $(".gal_btn1").click(function () {
+        $(".pop1").fadeIn(300);
+        positionPopup();
+    });
+//close
+    $(".pop1 > span, .pop1").click(function () {
+        $(".pop1").fadeOut(300);
+    });
+});
+//cheerie portfolio
+$(document).ready(function () {
+    $(".gal_btn2").click(function () {
+        $(".pop2").fadeIn(300);
+        positionPopup();
+    });
+//close
+    $(".pop2 > span2, .pop2").click(function () {
+        $(".pop2").fadeOut(300);
+    });
+});
+//icare portfolio
+$(document).ready(function () {
+    $(".gal_btn3").click(function () {
+        $(".pop3").fadeIn(300);
+        positionPopup();
+    });
+//close
+    $(".pop3 > span3, .pop3").click(function () {
+        $(".pop3").fadeOut(300);
+    });
+});
+//node portfolio
+$(document).ready(function () {
+    $(".gal_btn4").click(function () {
+        $(".pop4").fadeIn(300);
+        positionPopup();
+    });
+//close
+    $(".pop4 > span4, .pop4").click(function () {
+        $(".pop4").fadeOut(300);
+    });
+});
+$(document).ready(function () {
+    $(".gal_btn5").click(function () {
+        $(".pop5").fadeIn(300);
+        positionPopup();
+    });
+//close
+    $(".pop5 > span5, .pop5").click(function () {
+        $(".pop5").fadeOut(300);
     });
 });
