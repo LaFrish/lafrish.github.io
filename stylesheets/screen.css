@@ -97,6 +97,13 @@ h1 {
   font-family: 'Abril Fatface', serif;
 }
 
+#skills h4{
+	/*text-align: center;*/
+	margin-top: 50px;
+  font-family: 'Abril Fatface', serif;
+	font-size: 22px;
+	color: #fff;
+}
 
 @keyframes fadeInRight {
   0% {
@@ -1045,6 +1052,7 @@ text-align: center;
 		url('fonts/devicon.svg?-hdf3wh#devicon') format('svg');
 	font-weight: normal;
 	font-style: normal;
+	font-size: 100px;
 }
 
 [class^="devicon-"], [class*=" devicon-"] {
@@ -1069,6 +1077,7 @@ text-align: center;
 
 .devicon-github-original:before,
 .devicon-github-plain:before {
+	color: #fff;
 	content: "\e90b";
 	font-size: 100px;
 	text-align: center;
@@ -1083,6 +1092,7 @@ text-align: center;
 
 .devicon-heroku-line:before,
 .devicon-heroku-original:before {
+	color: #fff;
 	content: "\e60b";
 	font-size: 100px;
 	text-align: center;
@@ -1096,12 +1106,14 @@ text-align: center;
 }
 
 .devicon-heroku-plain:before {
+	color: #fff;
 	content: "\e60f";
 	font-size: 100px;
 	text-align: center;
 }
 
 .devicon-angularjs-plain:before {
+	color: #fff;
 	content: "\e61d";
 	font-size: 100px;
 	text-align: center;
@@ -1115,6 +1127,7 @@ text-align: center;
 
 .devicon-atom-original:before,
 .devicon-atom-plain:before {
+	color: #fff;
 	content: "\e624";
 	font-size: 100px;
 	text-align: center;
@@ -1127,6 +1140,7 @@ text-align: center;
 }
 
 .devicon-git-plain:before {
+	color: #fff;
 	content: "\e7a8";
 	font-size: 100px;
 	text-align: center;
@@ -1138,6 +1152,7 @@ text-align: center;
 }
 
 .devicon-html5-plain:before {
+	color: #fff;
 	content: "\e7f7";
 	font-size: 100px;
 	text-align: center;
@@ -1150,12 +1165,14 @@ text-align: center;
 
 
 .devicon-illustrator-line:before {
+	color: #fff;
 	content: "\e7f9";
 	font-size: 100px;
 	text-align: center;
 }
 
 .devicon-illustrator-plain:before {
+	color: #fff;
 	content: "\e7fa";
 	font-size: 100px;
 	text-align: center;
@@ -1170,6 +1187,7 @@ text-align: center;
 
 
 .devicon-javascript-plain:before {
+	color: #fff;
 	content: "\e845";
 	font-size: 100px;
 	text-align: center;
@@ -1183,6 +1201,7 @@ text-align: center;
 
 
 .devicon-jquery-plain:before {
+	color: #fff;
 	content: "\e84a";
 	font-size: 100px;
 	text-align: center;
@@ -1196,6 +1215,7 @@ text-align: center;
 
 
 .devicon-mongodb-plain:before {
+	color: #fff;
 	content: "\eb44";
 	font-size: 100px;
 	text-align: center;
@@ -1209,6 +1229,7 @@ text-align: center;
 
 
 .devicon-mysql-plain:before {
+	color: #fff;
 	content: "\eb61";
 	font-size: 100px;
 	text-align: center;
@@ -1220,6 +1241,7 @@ text-align: center;
 }
 
 .devicon-nodejs-plain:before {
+	color: #fff;
 	content: "\eb6a";
 	font-size: 100px;
 	text-align: center;
@@ -1231,12 +1253,14 @@ text-align: center;
 	text-align: center;
 }
 .devicon-photoshop-line:before {
+	color: #fff;
 	content: "\eb6c";
 	font-size: 100px;
 	text-align: center;
 }
 
 .devicon-photoshop-plain:before {
+	color: #fff;
 	content: "\eb6d";
 	font-size: 100px;
 	text-align: center;
@@ -1249,6 +1273,7 @@ text-align: center;
 }
 
 .devicon-postgresql-plain:before {
+	color: #fff;
 	content: "\eb7d";
 }
 .devicon-postgresql-plain:hover{
@@ -1259,6 +1284,7 @@ text-align: center;
 	color: #6181b6;
 }
 .devicon-python-plain:before {
+	color: #fff;
 	content: "\eb89";
 }
 .devicon-python-plain:hover {
@@ -1267,6 +1293,7 @@ text-align: center;
 
 
 .devicon-rails-plain:before {
+	color: #fff;
 	content: "\eba3";
 }
 
@@ -1276,6 +1303,7 @@ text-align: center;
 
 
 .devicon-ruby-plain:before {
+	color: #fff;
 	content: "\ebca";
 }
 
@@ -1285,6 +1313,7 @@ text-align: center;
 
 .devicon-sass-original:before,
 .devicon-sass-plain:before {
+	color: #fff;
 	content: "\ebcb";
 }
 .devicon-sass-original:hover,
@@ -1294,6 +1323,7 @@ text-align: center;
 
 
 .devicon-wordpress-plain:before {
+	color: #fff;
 	content: "\ebfe";
 }
 .devicon-wordpress-plain:hover {
@@ -1335,6 +1365,7 @@ text-align: center;
 	content: "\e60c";
 }
 .bitIcon-html:before {
+	color: #fff;
 	content: "\e60d";
 }
 .bitIcon-html:before {
@@ -1364,8 +1395,6 @@ text-align: center;
   color: #fff;
 }
 
-
-
 .angular {
   background: #c4473a;
 }
@@ -1387,13 +1416,14 @@ text-align: center;
 .html {
   background: #8942d6;
 	}
-
+.css {
+	background: aqua;
+		}
 
 }
 .heroku {
 	background: #6762a6;
 	font-size: 100px;
-	text-align: center;
 }
 .illustrator {
 	background: #faa625;
@@ -1558,47 +1588,15 @@ circle skills
 	transform: rotate3d(0,1,0,180deg);
 	background: #000;
 }
+.ch-info-front {
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-o-transform: rotate3d(0,1,0,180deg);
+	-ms-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+	background: #000;
+}
 
-.ch-img-html {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(../images/html.png);
-}
-.ch-img-javascript {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(../images/html.png);
-}
-.ch-img-jquery {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(../images/html.png);
-}
-.ch-img-rails {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(..images/ruby.png;
-}
-.ch-img-ruby {
-	content: "\ebca";
-background: #d91404;
-background-image: url(../images/html.png);
-}
-.ch-img-javascript {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(../images/html.png);
-}
-.ch-img-angular {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(../images/html.png);
-}
-.ch-img-node {
-	content: "\e7a8";
-background: #e54d26;
-background-image: url(../images/html.png);
-}
 .ch-info h3 {
 	color: #fff;
 	text-transform: uppercase;
