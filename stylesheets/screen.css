@@ -2551,7 +2551,7 @@ z-index: 3;
 	z-index: 999;
 }
 
-.pop > h6 {
+.pop > h1 {
 	padding:30px 30px 10px 30px;
 	color: #f91791;
 	font-size:100%;
@@ -2901,7 +2901,7 @@ z-index: 3;
 	-moz-border-radius:100px;
 	border-radius:100px;
 	background: #fff;
-	color: #000;
+	color: #f91791;
 	padding:6px 0px 0px 9px;
 	width:30px;
 	height:30px;
