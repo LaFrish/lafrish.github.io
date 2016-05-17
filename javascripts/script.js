@@ -251,21 +251,8 @@ function onScroll(event){
     });
   });
 
+//portfolio GALLERY
 
-  // $( document ).on( "click", function( event ) {
-  //   $( event.target ).closest( "li" ).toggleClass( "hilight" );
-  // });
-// popup to use later
-$(document).ready(function () {
-    $(".gal_btn").click(function () {
-        $(".pop").fadeIn(300);
-        positionPopup();
-    });
-//close
-    $(".pop > span, .pop").click(function () {
-        $(".pop").fadeOut(300);
-    });
-});
 //trivia portfolio
 $(document).ready(function () {
     $(".gal_btn1").click(function () {
@@ -273,7 +260,7 @@ $(document).ready(function () {
         positionPopup();
     });
 //close
-    $(".pop1 > span, .pop1").click(function () {
+    $(".pop1 > span1, .pop1").click(function () {
         $(".pop1").fadeOut(300);
     });
 });
