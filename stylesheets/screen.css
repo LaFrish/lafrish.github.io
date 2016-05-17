@@ -2198,31 +2198,6 @@ margin: 0 auto;
 position: relative;
 }
 
-fieldset.app-charnameinfo {
-border-top: 2px solid #f91791;
-border-bottom: none;
-border-left: none;
-border-right: none;
-display: block;
-font-style: italic;
-font-size: 16px;
-letter-spacing: 0px;
-margin: 0 auto;
-opacity: 0.5;
-padding: 0;
-text-transform: lowercase;
-width: 300px;
-}
-fieldset.app-charnameinfo:nth-child(2) {
-margin-bottom: 50px;
-}
-fieldset.app-charnameinfo legend {
-padding: 5px 10px;
-}*/
-
-/* ----------------------------
->> avatar containers
----------------------------- */
 .gallery_container {
 	width: 100%
 }
