@@ -74,7 +74,9 @@ caption, th, td {
 }
 
 q, blockquote {
-	quotes: none;
+	font-family: "Audrey-Normal";
+	font-weight: bolder;
+	text-align: center;
 }
 
 q:before, q:after, blockquote:before, blockquote:after {
@@ -190,6 +192,14 @@ strong {
 .clear-fix {
 	clear: both;
 }
+a:link {
+color: #000
+}
+a:visited{
+	color: #000;
+}
+/*a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked*/
 
 .button {
 	font-family: "Abril Fatface"
@@ -413,7 +423,7 @@ strong {
 #welcome .text {
 	animation: inherit;
 	margin: auto;
-	background: red;
+	background: #fff;
 	padding: 1em;
 	position: relative;
 	text-align: center;
@@ -472,7 +482,7 @@ height: 4px;
 -moz-border-radius: 1px;
 -webkit-border-radius: 1px;
 border-radius: 1px;
-background: red;
+background: #fff;
 position: absolute;
 top: -9px;
 -moz-transform: rotate(0);
@@ -682,6 +692,8 @@ color: #f91791;
 	line-height: 50px;
 	color: #fff;
 }
+
+
 
 #welcome .welcome .social {
 	clear: both;
@@ -990,12 +1002,12 @@ body > section > .holder > .title h2:after {
 
 #about .tab {
 	float: left;
-	text-align: left;
-	width: 60%;
+	text-align: center;
+	width: 100%;
 }
 
 #about .links {
-	margin: 35px 0 0 0;
+	margin: 75px 0 0 0;
 }
 
 #about .links a + a {
@@ -1033,6 +1045,9 @@ body > section > .holder > .title h2:after {
 
 #bio > p {
 	padding: 0 0 16px 0;
+	text-align: center;
+	font-size: 24px;
+	line-height: 30px;
 }
 
 
