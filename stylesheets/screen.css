@@ -1022,17 +1022,14 @@ body > section > .holder > .title h2:after {
 	display: none;
 }
 
-#about #bio {
+#bio {
+	float: left;
+	line-height: 24px;
+	padding-bottom: 200px;
 	display: block;
 }
 
-#about .bio {
-	float: left;
-	line-height: 24px;
-
-}
-
-#about .bio > p {
+#bio > p {
 	padding: 0 0 16px 0;
 }
 
@@ -3184,9 +3181,7 @@ padding-bottom: 42px;
 		background-position: right bottom;
 		}*/
 
-		#about #bio {
-			padding-bottom: 200px;
-		}
+
 
 		#about .tab {
 			float: none;
