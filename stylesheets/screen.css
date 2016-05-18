@@ -2,7 +2,11 @@
 * In this file you should write your main styles. (or centralize your imports)
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+@import url('Audrey-Normal.css');
+@font-face{
+	font-family:"Amazone";
+	src:url("http://www.myfontfree.com/data/1/a/amazone/unicode.amazonen.ttf");
+}
 @font-face {
 	font-family:'Audrey-Normal';
 	src: url('Audrey-Normal_gdi.eot');
@@ -17,22 +21,14 @@
 	unicode-range: U+0020-25CA;
 }
 
-@font-face {
-	font-family: 'Audrey-Normal';
-	src: url('Audrey-Normal.otf');
-}
 
 @font-face {
-	font-family: 'Audrey-Normal';
-	src: url('fonts/Audrey-Normal.otf');
+	font-family: "Audrey-Normal";
+	src: url("fonts/Audrey-Normal.otf");
 }
 
 @import "compass";
-
-
-
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
-
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
 
 * {
@@ -76,7 +72,7 @@ caption, th, td {
 q, blockquote {
 	margin-top: 20px;
 	font-size: 23px;
-	font-family: "Audrey-Normal";
+	font-family: "Amazone";
 	font-weight: bolder;
 	text-align: center;
 
@@ -99,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 h1 {
 	position: relative;
 	text-align: center;
-	font-family: 'Abril Fatface', serif;
+	font-family:'Abril Fatface', serif;
 }
 
 #skills h4{
@@ -189,7 +185,7 @@ background-color: #f91791;
 }
 
 strong {
-	font-family: "Abril Fatface", monospace;
+	font-family: "Abril Fatface", serif;
 }
 
 .clear-fix {
@@ -205,7 +201,7 @@ a:visited{
 a:active - a link the moment it is clicked*/
 
 .button {
-	font-family: "Abril Fatface"
+	font-family: "Abril Fatface", serif;
 	color: #000;
 	border: 1px solid #f91791;
 	-moz-border-radius: 3px;
@@ -345,7 +341,7 @@ a:active - a link the moment it is clicked*/
 }
 
 #resume button {
-	font-family: "Abril Fatface";
+	font-family: "Abril Fatface", serif;
 	background-color: #fff;
 	color: #000;
 	border: 1px solid #f91791;
@@ -678,7 +674,7 @@ color: #f91791;
 
 #welcome .welcome h1 strong {
 	color: #f91791;
-	font-family: Audrey-Normal;
+	font-family: "Audrey-Normal", monospace;
 	text-transform: uppercase;
 	z-index: 999;
 }
@@ -1847,14 +1843,14 @@ circle skills
 }
 
 #about .experience .row .brief .company-name {
-	font-family: "Abril Fatface", monospace;
+	font-family: "Abril Fatface", serif;
 	font-size: 24px;
 
 }
 
 #about .experience .row .brief .position {
 	/*font-family: "Audrey-Normal", monospace;*/
-	font-family: "Abril Fatface", monospace;
+	font-family: "Abril Fatface", serif;
 	color: #f91791;
 	font-style: bold;
 	font-size: 24px;
@@ -2405,7 +2401,7 @@ position: relative;
 .project_info { /* holds number / description */
 	width: 400px;
 	height: 300px;
-	font-family: 'Abril Fatface';
+	font-family: "Abril Fatface", serif;
 	font-size: 50px;
 	color: #000;
 	padding-top: 80px;
