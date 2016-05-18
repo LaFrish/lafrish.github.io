@@ -113,7 +113,7 @@ h1 {
 /*
 .nav {
 position: fixed;
-z-index: 9999;
+z-index: 99;
 right: 20px;
 top: 30%;
 }
@@ -155,7 +155,7 @@ margin: 15px 0;
 .easynav a:hover, .easynav a.active {
 background-color: #f91791;
 }*/
-
+/*
 #loading {
 	background: repeat 0 0 fixed #000;
 	position: fixed;
@@ -176,7 +176,7 @@ background-color: #f91791;
 	margin: auto;
 	filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=60);
 	opacity: 0.6;
-}
+}*/
 
 strong {
 	font-family: "Abril Fatface", serif;
@@ -191,8 +191,6 @@ color: #000
 a:visited{
 	color: #000;
 }
-/*a:hover - a link when the user mouses over it
-a:active - a link the moment it is clicked*/
 
 .button {
 	font-family: "Abril Fatface", serif;
@@ -405,9 +403,8 @@ a:active - a link the moment it is clicked*/
 	background:  repeat 0 0 fixed, no-repeat center -80px fixed #000;
 	background-size: auto, cover;
 	position: relative;
-	z-index: 0;
+	z-index: 10;
 }
-
 
 #welcome .background {
 	min-height: 100vh;
@@ -435,12 +432,12 @@ font-weight: 800;
 */
 
 #welcome header {
-	margin-top: 0;
+	/*margin-top: 0;*/
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 99;
+	z-index: 1;
 	-moz-transform: translateY(0rem);
 	-ms-transform: translateY(0rem);
 	-webkit-transform: translateY(0rem);
@@ -450,21 +447,65 @@ font-weight: 800;
 	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 }
+
+#mainnav {
+  position: absolute;
+  z-index: 102;
+}
+#mainnav li {
+  margin: 85px 0;
+  right: -550px;
+  position: relative;
+  display: none;
+	z-index: 103;
+}
+#mainnav a {
+  color: #fff;
+  text-shadow: 2px 2px 0 #f91791;
+  text-decoration: none;
+  font-size: 3.5em;
+	z-index: 103;
+}
+
+.hamb {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5em;
+  z-index: 104;
+}
+.hamb a {
+  color: #f91791;
+  text-decoration: none;
+	z-index: 999999;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,1);
+}
+#bubble {
+	background: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	display: none;
+	z-index: 5000;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
 /*
 #welcome .close {
-/*margin-top: -52px;*/
-/*}*/
-/*
+position: fixed;
+}
+
 #welcome .close .nav-bar .toggle-bar {
 height: 4px;
-background-color: #f91791;
+background-color: #fff;
 width: 24px;
 position: absolute;
 -moz-border-radius: 1px;
 -webkit-border-radius: 1px;
 border-radius: 1px;
 top: 18px;
-
 }
 
 #welcome .close .nav-bar .toggle-bar:before {
@@ -482,7 +523,6 @@ top: -9px;
 -ms-transform: rotate(0);
 -webkit-transform: rotate(0);
 transform: rotate(0);
-z-index: 9999;
 }
 
 #welcome .close .nav-bar .toggle-bar:after {
@@ -500,12 +540,12 @@ top: 9px;
 -ms-transform: rotate(0);
 -webkit-transform: rotate(0);
 transform: rotate(0);
-z-index: 9999;
-}*/
 
-/*#welcome .nav-bar {*/
-/*background: #f91791;*/
-/*padding: 12px;
+}
+
+#welcome .nav-bar {
+background: #f91791;
+padding: 12px;
 left: 0;
 right: 0;
 margin: 0 auto;
@@ -513,7 +553,7 @@ text-align: center;
 width: 24px;
 height: 17px;
 font-size: 28px;
-z-index: 100;
+
 cursor: pointer;
 position: relative;
 border: 1px solid #f91791;
@@ -522,18 +562,21 @@ margin-top: -1px;
 -moz-border-radius: 0 0 3px 3px;
 -webkit-border-radius: 0;
 border-radius: 0 0 3px 3px;
-}*/
+}
 
-/*#welcome .nav-bar:hover .toggle-bar {
+#welcome .nav-bar:hover .toggle-bar {
 background-color: #f91791;
+
 }
 
 #welcome .nav-bar:hover .toggle-bar:before {
 background-color: #f91791;
+
 }
 
 #welcome .nav-bar:hover .toggle-bar:after {
 background-color: #f91791;
+
 }
 
 #welcome .nav-bar .toggle-bar {
@@ -549,7 +592,7 @@ position: absolute;
 -webkit-border-radius: 1px;
 border-radius: 1px;
 top: 9px;
-z-index: 9999
+
 }
 
 #welcome .nav-bar .toggle-bar:before {
@@ -571,7 +614,7 @@ transform: rotate(45deg);
 -o-transition: -o-transform 0.25s, top 0.2s ease;
 -webkit-transition: -webkit-transform 0.25s, top 0.2s ease;
 transition: transform 0.25s, top 0.2s ease;
-z-index: 9999
+
 }
 
 #welcome .nav-bar .toggle-bar:after {
@@ -593,20 +636,20 @@ transform: rotate(-45deg);
 -o-transition: -o-transform 0.25s, top 0.2s ease;
 -webkit-transition: -webkit-transform 0.25s, top 0.2s ease;
 transition: transform 0.25s, top 0.2s ease;
-z-index: 9999
+
 }
 
 #welcome nav {
 left: 0;
 right: 0;
-z-index: 100;
+
 text-align: center;
 }
 
 #welcome nav .bg {
 background: #f91791;
 height: 52px;
-z-index: 9999;
+
 }
 
 #welcome nav .holder {
@@ -617,7 +660,7 @@ left: 0;
 bottom: 0;
 margin: 18px auto 0;
 border-bottom: 1px solid #333;
-z-index: 9999;
+
 background: #f91791
 }
 
@@ -633,15 +676,16 @@ font-family: "Audrey-Normal", monospace;
 -o-transition: all 0.5s ease-in-out;
 -webkit-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
-z-index: 9999;
+
 }
 
 #welcome nav a:hover {
 color: #f91791;
+
 }
 
 #welcome nav a .active {
-color: #f91791;
+color: yellow;
 }*/
 
 #welcome .logo {
@@ -663,21 +707,19 @@ color: #f91791;
 #welcome .welcome h1 {
 	font-size: 12vw;
 	display: block;
-	z-index: 999;
 }
 
 #welcome .welcome h1 strong {
 	color: #f91791;
 	font-family: "Audrey-Normal", monospace;
 	text-transform: uppercase;
-	z-index: 999;
+
 }
 
 #welcome .welcome p {
 	font-size: 2vw;
 	padding: 16px 0 50px 0;
 	line-height: 1.3em;
-	z-index: 999;
 }
 
 #welcome .welcome .button {
@@ -2504,9 +2546,9 @@ position: relative;
 	left:10.3%;
 	width:80%;
 	height:80%;
-	background: white;
+	background: #fff;
 	outline:10px solid #000;
-	z-index: 999;
+	z-index: 9;
 }
 
 .pop1 > h6 {
@@ -2578,9 +2620,9 @@ span1:hover{
 	left:10.3%;
 	width:80%;
 	height:80%;
-	background: white;
+	background: #fff;
 	outline:10px solid #000;
-	z-index: 999;
+	z-index: 9;
 }
 
 .pop2 > h6 {
@@ -2650,9 +2692,9 @@ span2:hover{
 	left:10.3%;
 	width:80%;
 	height:80%;
-	background: white;
+	background: #fff;
 	outline:10px solid #000;
-	z-index: 999;
+	z-index: 9;
 }
 
 .pop3 > h6 {
@@ -2721,9 +2763,9 @@ span3:hover{
 	left:10.3%;
 	width:80%;
 	height:80%;
-	background: white;
+	background: #fff;
 	outline:10px solid #000;
-	z-index: 999;
+	z-index: 9;
 }
 
 .pop4 > h6 {
@@ -2792,9 +2834,9 @@ span4:hover{
 	left:10.3%;
 	width:80%;
 	height:80%;
-	background: white;
+	background: #fff;
 	outline:10px solid #000;
-	z-index: 999;
+	z-index: 9;
 }
 
 .pop5 > h6 {
@@ -3176,7 +3218,7 @@ text-transform: uppercase;
 			width: 51%;
 			height: 100%;
 			background: #222;
-			z-index: 1000;
+			z-index: 10;
 		}
 
 		#loader-wrapper .loader-section .section-left {
