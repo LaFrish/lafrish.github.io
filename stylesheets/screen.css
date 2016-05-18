@@ -3,10 +3,6 @@
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url('Audrey-Normal.css');
-@font-face{
-	font-family:"Amazone";
-	src:url("http://www.myfontfree.com/data/1/a/amazone/unicode.amazonen.ttf");
-}
 @font-face {
 	font-family:'Audrey-Normal';
 	src: url('Audrey-Normal_gdi.eot');
@@ -20,8 +16,6 @@
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
-
-
 @font-face {
 	font-family: "Audrey-Normal";
 	src: url("fonts/Audrey-Normal.otf");
@@ -72,7 +66,7 @@ caption, th, td {
 q, blockquote {
 	margin-top: 20px;
 	font-size: 23px;
-	font-family: "Amazone";
+	font-family: "Audrey-Normal", monospace;
 	font-weight: bolder;
 	text-align: center;
 
