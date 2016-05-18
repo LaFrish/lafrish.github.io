@@ -74,9 +74,12 @@ caption, th, td {
 }
 
 q, blockquote {
+	margin-top: 20px;
+	font-size: 23px;
 	font-family: "Audrey-Normal";
 	font-weight: bolder;
 	text-align: center;
+
 }
 
 q:before, q:after, blockquote:before, blockquote:after {
@@ -962,8 +965,9 @@ body > section > .holder > .title h2:after {
 
 #about .tabs-menu {
 	display: inline-block;
-	margin: 0  300px 50px;
+	/*margin: 50px 0 0 0;*/
 	width: 100%;
+		text-align: center;
 }
 
 #about .tabs-menu .current:after {
@@ -1044,6 +1048,7 @@ body > section > .holder > .title h2:after {
 }
 
 #bio > p {
+	margin-top: 30px;
 	padding: 0 0 16px 0;
 	text-align: center;
 	font-size: 24px;
@@ -1554,6 +1559,7 @@ body > section > .holder > .title h2:after {
 
 circle skills
 .ch-grid {
+	margin-top: 30px;
 	margin: 20px 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -1817,6 +1823,7 @@ circle skills
 
 
 #about .experience .row {
+	margin-top: 30px;
 	padding: 0 0 40px 0;
 	overflow: hidden;
 }
@@ -1879,6 +1886,9 @@ circle skills
 .logo montage{
 	background: url("montage.png")
 }
+
+
+/*education*/
 
 /*testimonials*/
 
@@ -2804,7 +2814,6 @@ span4:hover{
 }
 
 .pop5 > p1 {
-	margin: auto;
 	font-size:20px;
 	color: #000;
 	font-family: "Playfair Display";
@@ -2834,7 +2843,9 @@ span5:hover{
 }
 
 .btn_container{
-	bottom: auto;
+	margin-top: 50px;
+
+	vertical-align: bottom;
 }
 
 #resume {
