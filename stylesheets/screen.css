@@ -2953,10 +2953,7 @@ span5:hover{
 	font-size: 17px;
 }
 
-@media screen and (max-width: 1024px) {
-	#resume {
-		height: 580px;
-	}
+
 
 
 #contactMe {
