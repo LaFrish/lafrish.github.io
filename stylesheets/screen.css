@@ -113,7 +113,7 @@ h1 {
 /*
 .nav {
 position: fixed;
-z-index: 99;
+z-index: 9999;
 right: 20px;
 top: 30%;
 }
@@ -432,7 +432,7 @@ font-weight: 800;
 */
 
 #welcome header {
-	/*margin-top: 0;*/
+	margin-top: 0;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -477,20 +477,19 @@ font-weight: 800;
 .hamb a {
   color: #f91791;
   text-decoration: none;
-	z-index: 999999;
+	z-index: 104;
 	text-shadow:
 		0 0 1px #fff,
 		0 1px 2px rgba(0,0,0,1);
 }
 #bubble {
-	background: rgba(255, 255, 255, 0.8);
-	position: fixed;
-	display: none;
-	z-index: 5000;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  position: fixed;
+  display: none;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
 }
 /*
 #welcome .close {
@@ -707,19 +706,21 @@ color: yellow;
 #welcome .welcome h1 {
 	font-size: 12vw;
 	display: block;
+	z-index: 1;
 }
 
 #welcome .welcome h1 strong {
 	color: #f91791;
 	font-family: "Audrey-Normal", monospace;
 	text-transform: uppercase;
-
+	z-index: 1;
 }
 
 #welcome .welcome p {
 	font-size: 2vw;
 	padding: 16px 0 50px 0;
 	line-height: 1.3em;
+	z-index: 999;
 }
 
 #welcome .welcome .button {
@@ -935,8 +936,9 @@ body > section > .holder > .title h2:after {
 	content: "";
 	top: -46px;
 	left: 0;
-	background: #fcfefe;
+	background: #fff;
 	position: absolute;
+	z-index: 99;
 }
 
 #about:after {
@@ -2548,7 +2550,7 @@ position: relative;
 	height:80%;
 	background: #fff;
 	outline:10px solid #000;
-	z-index: 9;
+	z-index: 999;
 }
 
 .pop1 > h6 {
@@ -2622,7 +2624,7 @@ span1:hover{
 	height:80%;
 	background: #fff;
 	outline:10px solid #000;
-	z-index: 9;
+	z-index: 999;
 }
 
 .pop2 > h6 {
@@ -2694,7 +2696,7 @@ span2:hover{
 	height:80%;
 	background: #fff;
 	outline:10px solid #000;
-	z-index: 9;
+	z-index: 999;
 }
 
 .pop3 > h6 {
@@ -2765,7 +2767,7 @@ span3:hover{
 	height:80%;
 	background: #fff;
 	outline:10px solid #000;
-	z-index: 9;
+	z-index: 999;
 }
 
 .pop4 > h6 {
@@ -2836,7 +2838,7 @@ span4:hover{
 	height:80%;
 	background: #fff;
 	outline:10px solid #000;
-	z-index: 9;
+	z-index: 999;
 }
 
 .pop5 > h6 {
