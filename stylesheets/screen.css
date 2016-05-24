@@ -1,7 +1,4 @@
-/* Welcome to Compass.
-* In this file you should write your main styles. (or centralize your imports)
-* Import this file using the following HTML or equivalent:
-* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
 @import url('Audrey-Normal.css');
 @font-face {
 	font-family:'Audrey-Normal';
@@ -105,6 +102,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	}
 }
 
+/*nav */
 #menuToggle a
 {
   text-decoration: none;
@@ -431,7 +429,7 @@ a:visited{
 	display: inline-block;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 	overflow: hidden;
 	font-size: 18px;
 	text-align: center;
@@ -656,6 +654,7 @@ a:visited{
 	height: 50px;
 	line-height: 50px;
 	color: #fff;
+	z-index: 0;
 }
 
 #welcome .welcome .social {
@@ -2905,6 +2904,7 @@ span5:hover{
 	border-color: #fff;
 	color: #fff;
 	clear: both;
+	z-index: 0;
 }
 
 #contactMe .button:hover {
