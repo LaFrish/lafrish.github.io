@@ -142,15 +142,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
   cursor: pointer;
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
 
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+
 #menuToggle span
 {
   display: block;
@@ -181,10 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform-origin: 0% 100%;
 }
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -201,19 +196,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
+
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu
 {
   position: absolute;
@@ -226,7 +215,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #f91791;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+
 
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -239,63 +228,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 115px;
 }
 
-#menu li hover{
+#menu li:hover{
   color: #fff;
 }
-/*
- * And let's fade it in from the left
- */
+
 #menuToggle input:checked ~ ul
 {
   transform: scale(1.0, 1.0);
   opacity: 1;
 }
-/*
-.nav {
-position: fixed;
-z-index: 9999;
-right: 20px;
-top: 30%;
-}
-
-.nav a {
-display: block;
-clear: both;
--moz-border-radius: 50px;
--webkit-border-radius: 50px;
-border-radius: 50px;
-width: 11px;
-height: 11px;
-background-color: #fff;
-margin: 15px 0;
-}
-
-.nav a:hover, .easynav a .active {
-background-color: #f91791;
-}
 
 
-.easynav {
-position: fixed;
-z-index: 100;
-right: 20px;
-top: 30%;
-}
-.easynav a {
-display: block;
-clear: both;
--moz-border-radius: 50px;
--webkit-border-radius: 50px;
-border-radius: 50px;
-width: 11px;
-height: 11px;
-background-color: #fff;
-margin: 15px 0;
-}
-.easynav a:hover, .easynav a.active {
-background-color: #f91791;
-}*/
-/*
 #loading {
 	background: repeat 0 0 fixed #000;
 	position: fixed;
@@ -347,7 +290,7 @@ a:visited{
 	display: inline-block;
 	text-transform: uppercase;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 	overflow: hidden;
 	font-size: 18px;
 	text-align: center;
@@ -404,7 +347,7 @@ a:visited{
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=0);
-	opacity: 0;
+	opacity: 1;
 	-moz-animation-duration: 1s;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -488,7 +431,7 @@ a:visited{
 	display: inline-block;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 0;
+	z-index: 1;
 	overflow: hidden;
 	font-size: 18px;
 	text-align: center;
@@ -517,7 +460,7 @@ a:visited{
 	-ms-transform-origin: 0% 100%;
 	-webkit-transform-origin: 0% 100%;
 	transform-origin: 0% 100%;
-	z-index: 1;
+	z-index: -1;
 }
 
 #resume button:hover {
@@ -610,18 +553,7 @@ a:visited{
   z-index: -1;
   background: rgba(0, 0, 0, 0.9);
 }
-/*
-.intro h2 {
-font-size: 2.0em;
-font-weight: 300;
-line-height: 1.4;
-}
 
-.intro h2 strong {
-letter-spacing: -2px;
-font-weight: 800;
-}
-*/
 
 #welcome header {
 	margin-top: 0;
@@ -683,201 +615,6 @@ font-weight: 800;
   z-index: 999;
   background: rgba(0, 0, 0, 0.5);
 }
-/*
-#welcome .close {
-position: fixed;
-}
-
-#welcome .close .nav-bar .toggle-bar {
-height: 4px;
-background-color: #fff;
-width: 24px;
-position: absolute;
--moz-border-radius: 1px;
--webkit-border-radius: 1px;
-border-radius: 1px;
-top: 18px;
-}
-
-#welcome .close .nav-bar .toggle-bar:before {
-display: block;
-content: "";
-width: 100%;
-height: 4px;
--moz-border-radius: 1px;
--webkit-border-radius: 1px;
-border-radius: 1px;
-background: #fff;
-position: absolute;
-top: -9px;
--moz-transform: rotate(0);
--ms-transform: rotate(0);
--webkit-transform: rotate(0);
-transform: rotate(0);
-}
-
-#welcome .close .nav-bar .toggle-bar:after {
-display: block;
-content: "";
-width: 100%;
-height: 4px;
--moz-border-radius: 1px;
--webkit-border-radius: 1px;
-border-radius: 1px;
-background: #fff;
-position: absolute;
-top: 9px;
--moz-transform: rotate(0);
--ms-transform: rotate(0);
--webkit-transform: rotate(0);
-transform: rotate(0);
-
-}
-
-#welcome .nav-bar {
-background: #f91791;
-padding: 12px;
-left: 0;
-right: 0;
-margin: 0 auto;
-text-align: center;
-width: 24px;
-height: 17px;
-font-size: 28px;
-
-cursor: pointer;
-position: relative;
-border: 1px solid #f91791;
-border-top-color: #fff;
-margin-top: -1px;
--moz-border-radius: 0 0 3px 3px;
--webkit-border-radius: 0;
-border-radius: 0 0 3px 3px;
-}
-
-#welcome .nav-bar:hover .toggle-bar {
-background-color: #f91791;
-
-}
-
-#welcome .nav-bar:hover .toggle-bar:before {
-background-color: #f91791;
-
-}
-
-#welcome .nav-bar:hover .toggle-bar:after {
-background-color: #f91791;
-
-}
-
-#welcome .nav-bar .toggle-bar {
-height: 0;
--moz-transition: height 0.25s, top 0.2s ease;
--o-transition: height 0.25s, top 0.2s ease;
--webkit-transition: height 0.25s, top 0.2s ease;
-transition: height 0.25s, top 0.2s ease;
-background-color: #f91791;
-width: 24px;
-position: absolute;
--moz-border-radius: 1px;
--webkit-border-radius: 1px;
-border-radius: 1px;
-top: 9px;
-
-}
-
-#welcome .nav-bar .toggle-bar:before {
-display: block;
-content: "";
-width: 100%;
-height: 4px;
--moz-border-radius: 1px;
--webkit-border-radius: 1px;
-border-radius: 1px;
-background: #f91791;
-position: absolute;
-top: 8px;
--moz-transform: rotate(45deg);
--ms-transform: rotate(45deg);
--webkit-transform: rotate(45deg);
-transform: rotate(45deg);
--moz-transition: -moz-transform 0.25s, top 0.2s ease;
--o-transition: -o-transform 0.25s, top 0.2s ease;
--webkit-transition: -webkit-transform 0.25s, top 0.2s ease;
-transition: transform 0.25s, top 0.2s ease;
-
-}
-
-#welcome .nav-bar .toggle-bar:after {
-display: block;
-content: "";
-width: 100%;
-height: 4px;
--moz-border-radius: 1px;
--webkit-border-radius: 1px;
-border-radius: 1px;
-background: #f91791;
-position: absolute;
-top: 8px;
--moz-transform: rotate(-45deg);
--ms-transform: rotate(-45deg);
--webkit-transform: rotate(-45deg);
-transform: rotate(-45deg);
--moz-transition: -moz-transform 0.25s, top 0.2s ease;
--o-transition: -o-transform 0.25s, top 0.2s ease;
--webkit-transition: -webkit-transform 0.25s, top 0.2s ease;
-transition: transform 0.25s, top 0.2s ease;
-
-}
-
-#welcome nav {
-left: 0;
-right: 0;
-
-text-align: center;
-}
-
-#welcome nav .bg {
-background: #f91791;
-height: 52px;
-
-}
-
-#welcome nav .holder {
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-bottom: 0;
-margin: 18px auto 0;
-border-bottom: 1px solid #333;
-
-background: #f91791
-}
-
-#welcome nav a {
-color: #7B7B7B;
-text-transform: uppercase;
-text-decoration: none;
-padding: 0px 20px 15px;
-position: relative;
-font-size: 16px;
-font-family: "Audrey-Normal", monospace;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
--webkit-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-
-}
-
-#welcome nav a:hover {
-color: #f91791;
-
-}
-
-#welcome nav a .active {
-color: yellow;
-}*/
 
 #welcome .logo {
 	background-position: 0 -248px;
@@ -898,14 +635,14 @@ color: yellow;
 #welcome .welcome h1 {
 	font-size: 12vw;
 	display: block;
-	z-index: 1;
+	z-index: 0;
 }
 
 #welcome .welcome h1 strong {
 	color: #f91791;
 	font-family: "Audrey-Normal", monospace;
 	text-transform: uppercase;
-	z-index: 1;
+	z-index: 0;
 }
 
 #welcome .welcome p {
@@ -920,8 +657,6 @@ color: yellow;
 	line-height: 50px;
 	color: #fff;
 }
-
-
 
 #welcome .welcome .social {
 	clear: both;
@@ -2654,7 +2389,7 @@ position: relative;
 }
 
 
-.project .button{
+/*.project .button{
 	font-family: 'Abril Fatface', serif;
 	background-color: #fff;
 	color: #000;
@@ -2674,10 +2409,37 @@ position: relative;
 	font-size: 18px;
 	text-align: center;
 	cursor: pointer;
-}
+}*/
+/*.project .button:hover{
+background-color: yellow;
+}*/
 #resume .button:hover {
 	color: #fff;
 }
+
+.toggles button {
+	font-family: "Abril Fatface";
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #f91791;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	height: 45px;
+	line-height: 47px;
+	/*padding: 25px 25px 25px 25px;*/
+	min-width: 130px;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+
 
 #resume .links a {
 	margin: 0 0 12px 0 !important;
@@ -2730,6 +2492,7 @@ position: relative;
 	font-size: 18px;
 	text-align: center;
 	cursor: pointer;
+	z-index: 1;
 }
 .gal_btn1:hover{
 	background-color: yellow;
