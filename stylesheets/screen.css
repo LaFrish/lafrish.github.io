@@ -1,5 +1,6 @@
 
 @import url('Audrey-Normal.css');
+
 @font-face {
 	font-family:'Audrey-Normal';
 	src: url('Audrey-Normal_gdi.eot');
@@ -673,7 +674,6 @@ body > section > .holder > .title h2:after {
 	/*min-width: 180px;
 	min-height: 29px;*/
 	text-align: left;
-	/*text-indent: 4px;*/
 	margin-left: -10px;
 	vertical-align: baseline;
 	animation: inherit;
@@ -2932,51 +2932,6 @@ span5:hover{
 #contactMe .copy {
 	padding: 40px 0 0 0;
 }
-
-/*#featured {
-background-color: #ededed;
-text-align: center;
-padding: 80px 0 180px 0;
-position: relative;
-}
-
-#featured:after {
--moz-transform: skewY(-3deg);
--ms-transform: skewY(-3deg);
--webkit-transform: skewY(-3deg);
-transform: skewY(-3deg);
-height: 135px;
-width: 100%;
-content: "";
-bottom: -80px;
-left: 0;
-background: #F4F4F4;
-position: absolute;
-}
-
-#featured h2 {
-font-size: 18px;
-text-transform: uppercase;
-/* font-family: 'Audrey-Normal'; */
-/*padding-bottom: 42px;
-}*/
-
-#featured .galleries {
-	display: inline-block;
-}
-
-#featured a {
-	float: left;
-	display: inline-block;
-}
-
-#featured a img {
-	max-width: 80%;
-}
-
-#featured a + a {
-	margin: 0 0 0 15px;
-	}
 
 	#resume .resume .quote {
 		font-size: 22px;
