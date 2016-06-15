@@ -21,8 +21,7 @@
 
 @import "compass";
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
-@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey|Bitter|Cutive|Cutive+Mono|Gravitas+One|Inconsolata|Josefin+Sans|Muli|Open+Sans|Petit+Formal+Script|Playfair+Display|Pontano+Sans|Prata|Raleway|Roboto|Roboto+Mono|Rubik|Sacramento|Source+Code+Pro|Vidaloka';
+
 * {
 	box-sizing: border-box;
 }
@@ -208,7 +207,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-
   background: #f91791;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -259,7 +257,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 strong {
-	font-family: "Abril Fatface", serif;
+	color: #f91791
 }
 
 .clear-fix {
@@ -670,22 +668,27 @@ body > section > .holder > .title h2:after {
 }
 
 .rw-words{
-	font-family: 'Bitter', serif;
-	display: inline-block;
-	min-width: 180px;
+	font-family: 'Abril Fatface', serif;
+	display: inline;
+	min-width: 600px;
 	min-height: 29px;
 	text-align: left;
-	margin-left: 10px;
+	/*margin-left: -50px;*/
 	vertical-align: baseline;
-	animation: relative;
+	animation: inherit;
 	padding-bottom: 23px;
-	position: absolute;
+	/*position: absolute;*/
+}
+.align{
+	text-align: left;
 }
 .rw-words-1 span{
-	font-family: 'Bitter', serif;
+		margin-left: 10px;
+	text-align: left;
+	font-family: 'Abril Fatface', serif;
 	color: #f91791;
 	position: absolute;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	opacity: 0;
 	vertical-align: baseline;
 	-webkit-animation: rotateWord 18s linear infinite 0s;
@@ -1477,7 +1480,7 @@ body > section > .holder > .title h2:after {
 	text-align: center;
 }
 h5{
-font-family: monospace;
+	font-family: "Vidaloka", monospace;
 	font-size: 20px;
 	text-align: center;
 	font-weight: bold;
@@ -1782,7 +1785,6 @@ h3 {
 }
 
 .experience .row .brief .position {
-	/*font-family: "Audrey-Normal", monospace;*/
 	font-family: "Abril Fatface", serif;
 	color: #f91791;
 	font-style: bold;
@@ -1793,18 +1795,6 @@ h3 {
 
 .experience .row .brief span {
 	display: block;
-	/*font-family: "Vidaloka", monospace;*/
-}
-.experience .row .brief li {
-	list-style: circle;
-	margin-left: 150px;
-	margin-right: 175px;
-	line-height: 24px;
-	font-size: 18px;
-	font-family: "Playfair Display", monospace;
-	font-style: bold;
-	/*font-family: "Vidaloka", monospace;*/
-
 }
 
 .education .row {
@@ -1820,38 +1810,45 @@ h3 {
 
 .education .row img {
 	width: 220px;
-	height: 225px;
+	height: 220px;
 	margin-left: 100px;
 	margin-right: 100px;
 	display: inline-block;
 	float: left;
 }
 
+.education .row .ga img{
+	width: 200px;
+	height: 225px;
+	margin-left: 100px;
+	margin-right: 100px;
+	display: inline-block;
+	float: left;
+}
 .education .row .brief {
 	margin-top: 50px;
 	padding-left: 10px;
 	padding-right: 80px;
 }
 
-.education .row .brief .company-name {
-	font-family: "Abril Fatface", serif;
-	font-size: 24px;
+.education .row .brief .name {
+	font-family: 'Abril Fatface', monospace;
+	font-size: 30px;
+	color: #f91791;
 
 }
 
 .education .row .brief .position {
-	/*font-family: "Audrey-Normal", monospace;*/
-	font-family: "Abril Fatface", serif;
-	color: #f91791;
-	font-style: bold;
+	font-family: "Vidaloka", monospace;
+	line-height: 30px;
 	font-size: 24px;
 	padding: 10px 0 0 0;
-	text-align: center;
+	text-align: left;
 }
 
 .education .row .brief span {
 	display: block;
-	/*font-family: "Vidaloka", monospace;*/
+
 }
 .education .row .brief li {
 	list-style: circle;
@@ -1863,6 +1860,8 @@ h3 {
 	font-style: bold;
 	/*font-family: "Vidaloka", monospace;*/
 }
+
+
 .logo .summit{
 	background: url("summitlogo.jpg");
 }
@@ -2998,9 +2997,6 @@ span6:hover{
 	color: #f91791;
 	font-size: 17px;
 }
-
-
-
 
 #contactMe {
 	background-color: #f91791;
