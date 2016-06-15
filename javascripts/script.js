@@ -306,3 +306,14 @@
           $(".pop5").fadeOut(300);
         });
       });
+      //yearbook
+      $(document).ready(function () {
+        $(".gal_btn6").click(function () {
+          $(".pop6").fadeIn(600);
+          positionPopup();
+        });
+        //close
+        $(".pop6 > span6, .pop6").click(function () {
+          $(".pop6").fadeOut(300);
+        });
+      });
