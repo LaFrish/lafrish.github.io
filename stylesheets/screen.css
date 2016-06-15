@@ -2895,12 +2895,83 @@ span5:hover{
 	text-shadow: 2px 2px 4px #f91791;
 }
 
+
 .btn_container{
 	margin-top: 50px;
 
 	vertical-align: bottom;
 }
+.gal_btn6{
+	font-family: 'Abril Fatface', serif;
+	background-color: #fff;
+	color: #000;
+	border: 3px solid #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	height: 45px;
+	line-height: 47px;
+	padding: 0 25px;
+	min-width: 130px;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+.gal_btn6:hover{
+	background-color: yellow;
+}
 
+.pop6 {
+	display:none;
+	position:fixed;
+	top:10.3%;
+	left:10.3%;
+	width:80%;
+	height:80%;
+	background: #fff;
+	outline:10px solid #000;
+	z-index: 999;
+}
+
+.pop6 > h6 {
+	padding:50px 30px 20px 30px;
+	color: #f91791;
+	font-size:50px;
+}
+
+.pop6 > p1 {
+	font-size:20px;
+	color: #000;
+	font-family: "Playfair Display";
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.pop6 > span6 {
+	font-size: 30px;
+	text-align: center;
+	cursor:pointer;
+	position:absolute;
+	top:4%;
+	right:4%;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	color: #f91791;
+	padding:6px 0px 0px 9px;
+	width:30px;
+	height:30px;
+}
+
+span6:hover{
+	color: yellow;
+	text-shadow: 2px 2px 4px #f91791;
+}
 #resume {
 	background-color: #fff;
 	padding: 80px 0 210px 0;
