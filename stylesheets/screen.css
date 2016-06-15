@@ -22,7 +22,7 @@
 @import "compass";
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,900,700italic,700,400italic|Abril+Fatface|Satisfy|Cookie|Ultra|Rochester|Monoton|Oleo+Script+Swash+Caps:400,700|Arizonia|Lily+Script+One|Sail|Clicker+Script|Amita:400,700|Mr+Bedfort|Euphoria+Script|Vidaloka|Goudy+Bookletter+1911|Sofia);
-
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey|Bitter|Cutive|Cutive+Mono|Gravitas+One|Inconsolata|Josefin+Sans|Muli|Open+Sans|Petit+Formal+Script|Playfair+Display|Pontano+Sans|Prata|Raleway|Roboto|Roboto+Mono|Rubik|Sacramento|Source+Code+Pro|Vidaloka';
 * {
 	box-sizing: border-box;
 }
@@ -83,14 +83,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	display: block;
 }
 
-
+/*
 #skills h4{
-	/*text-align: center;*/
+	text-align: center;
 	margin-top: 50px;
 	font-family: 'Abril Fatface', serif;
 	font-size: 22px;
 	color: #fff;
-}
+}*/
 
 @keyframes fadeInRight {
 	0% {
@@ -670,6 +670,7 @@ body > section > .holder > .title h2:after {
 }
 
 .rw-words{
+	font-family: 'Bitter', serif;
 	display: inline-block;
 	min-width: 180px;
 	min-height: 29px;
@@ -681,6 +682,7 @@ body > section > .holder > .title h2:after {
 	position: absolute;
 }
 .rw-words-1 span{
+	font-family: 'Bitter', serif;
 	color: #f91791;
 	position: absolute;
 	font-weight: bold;
@@ -1510,14 +1512,7 @@ circle skills
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 	cursor: default;
 }
-.ch-box {
-	width: 100%;
-	height: 100%;
-	/*border-radius: 50%;*/
-	position: relative;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-	cursor: default;
-}
+
 .ch-info-wrap{
 	position: absolute;
 	width: 180px;
@@ -1535,7 +1530,6 @@ circle skills
 	transition: all 0.4s ease-in-out;
 	top: 20px;
 	left: 20px;
-	/*background: #f9f9f9 url(../images/1167.png);*/
 	box-shadow:
 	0 0 0 20px rgba(255,255,255,0.2),
 	inset 0 0 3px rgba(115,114, 23, 0.8);
@@ -1544,6 +1538,7 @@ circle skills
 
 
 .ch-info{
+	font-family: 'Prata', serif;
 	position: absolute;
 	width: 180px;
 	height: 180px;
@@ -1563,8 +1558,9 @@ circle skills
 }
 
 .ch-info .ch-info-back {
+	font-family: 'Prata', serif;
 	transform: rotate3d(0,1,0,180deg);
-	background: #000;
+
 }
 /*.ch-info{
 	position: absolute;
@@ -1589,13 +1585,13 @@ circle skills
 
 .ch-info h3 {
 	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	text-align: center;
+	/*letter-spacing: 2px;*/
 	font-size: 14px;
-	margin: 0 15px;
+	/*margin: 0 15px;
 	padding: 40px 0 0 0;
-	height: 90px;
-	font-family: 'Open Sans', Arial, sans-serif;
+	height: 90px;*/
+	font-family: 'Prata', serif;
 	text-shadow:
 		0 0 1px #fff,
 		0 1px 2px rgba(0,0,0,0.3);
@@ -1615,11 +1611,10 @@ circle skills
 	color: rgba(255,255,255,0.7);
 	font-style: normal;
 	font-weight: 700;
-	text-transform: uppercase;
 	font-size: 9px;
 	letter-spacing: 1px;
 	padding-top: 4px;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Prata', serif;
 }
 
 .ch-info p a:hover {
@@ -1878,7 +1873,7 @@ circle skills
 /*education*/
 
 /*testimonials*/
-#portfolio h4{
+h4{
 	text-align: center;
 	margin-top: 45px;
 	margin-bottom: 10px;
