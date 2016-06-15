@@ -1476,7 +1476,13 @@ body > section > .holder > .title h2:after {
 	font-size: 100px;
 	text-align: center;
 }
-
+h5{
+font-family: monospace;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+}
 circle skills
 .ch-grid {
 	margin-top: 30px;
@@ -1583,7 +1589,8 @@ circle skills
 }*/
 
 
-.ch-info h3 {
+/*.ch-info */
+h3 {
 	color: #fff;
 	text-align: center;
 	/*letter-spacing: 2px;*/
@@ -1598,12 +1605,13 @@ circle skills
 }
 
 .ch-info p {
+	font-family: 'Arapey', serif;
 	color: #fff;
 	padding: 10px 5px;
-	font-style: italic;
+
 	margin: 0 30px;
-	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
+	font-size: 20px;
+	/*border-top: 1px solid rgba(255,255,255,0.5);*/
 }
 
 .ch-info p a {
