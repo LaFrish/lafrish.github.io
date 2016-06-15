@@ -1388,7 +1388,7 @@ body > section > .holder > .title h2:after {
 	text-align: center;
 }
 .css {
-	background: aqua;
+	background: #80b5e2;
 	font-size: 100px;
 	text-align: center;
 }
@@ -1809,7 +1809,16 @@ circle skills
 /*education*/
 
 /*testimonials*/
-
+#portfolio h4{
+	/*text-align: center;*/
+	margin-top: 45px;
+	margin-bottom: 10px;
+	font-family: 'Abril Fatface', serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: #fff;
+}
+/*
 #portfolio  .holder {
 	width: 100%;
 	margin: 0 auto;
@@ -1834,7 +1843,7 @@ circle skills
 	font-size: 28px;
 	background-color: #000;
 }
-
+*/
 
 #portfolio {
 	background-color: #000;
