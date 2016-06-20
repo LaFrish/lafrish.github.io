@@ -103,7 +103,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*nav */
-
 #menuToggle a
 {
   text-decoration: none;
@@ -317,6 +316,7 @@ a:visited{
 	transform-origin: 0% 100%;
 	z-index: -1;
 }
+
 
 .button:hover {
 	color: #fff;
