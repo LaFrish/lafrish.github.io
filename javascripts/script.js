@@ -243,6 +243,9 @@
           get_current.show(500);
         });
       });
+// $(document).ready(function(){
+//   $('.checkbox')
+// }
 
       //
       // $(document).ready(function() {
