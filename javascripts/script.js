@@ -236,19 +236,31 @@
 
       //filter of gallery
       $(function() {
-
         $('.toggles button').click(function(){
           var get_id = this.id;
           var get_current = $('.gallery_containers .' + get_id);
-
           $('.gallery_container').not( get_current ).hide(500);
           get_current.show(500);
         });
-
-        $('#showall').click(function() {
-          $('.gallery_container').show(500);
-        });
       });
+
+      //
+      // $(document).ready(function() {
+      //   $(".toggles button").click(function(event) {
+      //     event.preventDefault();
+      //     $(this).parent().addClass("current");
+      //     $(this).parent().siblings().removeClass("current");
+      //     var button = this.button;
+      //     var get_id = this.id;
+      //     var current = $('.gallery_containers .' + get_id);
+      //     $('.gallery_container').not(current).hide(500);
+      //     get_current.show(500);
+      //     $(".toggles button").not(current).css("display");
+      //     current.css();
+      //   });
+      // });
+
+
 
       //portfolio GALLERY
 
@@ -259,7 +271,7 @@
           positionPopup();
         });
         //close
-        $(".pop1 > span1, .pop1").click(function () {
+        $(".pop1 > span1").click(function () {
           $(".pop1").fadeOut(300);
         });
       });
@@ -270,7 +282,7 @@
           positionPopup();
         });
         //close
-        $(".pop2 > span2, .pop2").click(function () {
+        $(".pop2 > span2").click(function () {
           $(".pop2").fadeOut(300);
         });
       });
@@ -281,7 +293,7 @@
           positionPopup();
         });
         //close
-        $(".pop3 > span3, .pop3").click(function () {
+        $(".pop3 > span3").click(function () {
           $(".pop3").fadeOut(300);
         });
       });
@@ -292,7 +304,7 @@
           positionPopup();
         });
         //close
-        $(".pop4 > span4, .pop4").click(function () {
+        $(".pop4 > span4").click(function () {
           $(".pop4").fadeOut(300);
         });
       });
@@ -302,7 +314,7 @@
           positionPopup();
         });
         //close
-        $(".pop5 > span5, .pop5").click(function () {
+        $(".pop5 > span5").click(function () {
           $(".pop5").fadeOut(300);
         });
       });
@@ -313,7 +325,7 @@
           positionPopup();
         });
         //close
-        $(".pop6 > span6, .pop6").click(function () {
+        $(".pop6 > span6").click(function () {
           $(".pop6").fadeOut(300);
         });
       });
