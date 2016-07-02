@@ -198,16 +198,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
-
+#menu{
   position: absolute;
-  width: 1600px;
-	height: 1600px;
+  width: 100%;
+	height: 30000px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   background: #f91791;
+	text-align: left;
+
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -232,8 +232,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: scale(1.0, 1.0);
   opacity: 1;
 }
-
-
+#menuToggle input:checked ~ li
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+#menu input:checked ~ li
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
 #loading {
 	background: repeat 0 0 fixed #000;
 	position: fixed;
@@ -479,7 +487,7 @@ a:visited{
 
 #welcome
 {
-	background:  repeat 0 0 fixed, no-repeat center -80px fixed #000;
+	/*background:  repeat 0 0 fixed, no-repeat center -80px fixed #000;*/
 	background-size: auto, cover;
 	position: relative;
 	z-index: 1;
@@ -823,9 +831,59 @@ h4{
 	to{background-position: 0}
 }
 
+#welcome .skewed-bg{
+	padding: 200px 0;
+	-webkit-transform: skew(0deg, -3deg);
+	-moz-transform: skew(0deg, -3deg);
+	-ms-transform: skew(0deg, -3deg);
+	-o-transform: skew(0deg, -3deg);
+	transform: skew(0deg, -3deg);
+	margin-top: -200px;
+	background: #000;
+}
 
-#about:before {
-	z-index: 1;
+#welcome .skewed-bg .content {
+	-webkit-transform: skew(0deg, 3deg);
+  -moz-transform: skew(0deg, 3deg);
+  -ms-transform: skew(0deg, 3deg);
+  -o-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
+  text-align: center;
+}
+#about .skewed-bg{
+	padding: 200px 0;
+	-webkit-transform: skew(0deg, -3deg);
+	-moz-transform: skew(0deg, -3deg);
+	-ms-transform: skew(0deg, -3deg);
+	-o-transform: skew(0deg, -3deg);
+	transform: skew(0deg, -3deg);
+	margin-top: -200px;
+	background: #fff;
+	height: 90px;
+	width: 100%;
+	content: "";
+	top: -46px;
+	left: 0;
+	position: absolute;
+}
+
+#about .skewed-bg .content {
+	-webkit-transform: skew(0deg, 3deg);
+  -moz-transform: skew(0deg, 3deg);
+  -ms-transform: skew(0deg, 3deg);
+  -o-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
+  text-align: center;
+}
+/*#about:before {*/
+	/*padding: 200px 0;
+	-webkit-transform: skew(0deg, -3deg);
+	-moz-transform: skew(0deg, -3deg);
+	-ms-transform: skew(0deg, -3deg);
+	-o-transform: skew(0deg, -3deg);
+	transform: skew(0deg, -3deg);
+	margin-top: -200px;*/
+	/*z-index: 1;
 	-moz-transform: skewY(-3deg);
 	-ms-transform: skewY(-3deg);
 	-webkit-transform: skewY(-3deg);
@@ -836,9 +894,11 @@ h4{
 	top: -46px;
 	left: 0;
 	background: #fff;
-	position: absolute;
+	position: absolute;*/
 
-}
+/*}*/
+
+
 
 #about:after {
 	-moz-transform: skewY(-3deg);
@@ -1714,7 +1774,7 @@ h3 {
 .ch-item:hover .ch-info-wrap {
 	box-shadow:
 		0 0 0 0 rgba(255,255,255,0.8),
-		inset 0 0 3px rgba(115,114, 23, 0.8);
+		inset 0 0 3px rgba(0,0,0,0.3);
 }
 
 .ch-item:hover .ch-info {
@@ -2552,7 +2612,12 @@ position: relative;
 	display: block;
 	font-size: 16px;
 }
+/*.toggles:active{
+	color: #fff;
+	background-color: #f91791;
+	border: 1px solid #000;
 
+}*/
 /*.project .button{
 	font-family: 'Abril Fatface', serif;
 	background-color: #fff;
@@ -2603,12 +2668,31 @@ background-color: yellow;
 	text-align: center;
 	cursor: pointer;
 }
-
-#resume .toggles button .current:after {
+#resume .current .button .fade-in .four button{
 	color: #fff;
 	background-color: #f91791;
+	border: 1px solid #000;
 }
-
+#resume .toggles button .current{
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+#resume .toggles button .current:before {
+	color: #fff;
+	background-color: #f91791;
+	border: 1px solid #000;
+}
+#resume .toggles button .current:after {
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+#resume .toggles button .current:active {
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+}
 #resume .toggles button .current a {
 	text-align: center;
 	color: #f91791;
@@ -2680,6 +2764,7 @@ background-color: yellow;
 	background-color: yellow;
 }
 
+
 .pop1 {
 	display:none;
 	position:fixed;
@@ -2691,7 +2776,14 @@ background-color: yellow;
 	outline:10px solid #000;
 	z-index: 999;
 }
-
+.pop1 < .mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 9000;
+	background-color: #000;
+	display: none;
+}
 .pop1 > h6 {
 	padding:50px 30px 20px 30px;
 	color: #f91791;
