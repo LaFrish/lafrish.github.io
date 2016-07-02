@@ -1,19 +1,19 @@
 
-      $(document).ready(function($) {
+      jQuery(document).ready(function($) {
         $(window).load(function() {
           $(".loader").delay(500).fadeOut(1000, function() {
             $(".load_page").fadeOut(1000)
           })
         })
       });
-      $(document).ready(function($) {
+      jQuery(document).ready(function($) {
         $("#tagline").hide();
         $(window).load(function() {
           $("#tagline").delay(1800).fadeIn(1500)
         })
       });
 
-      $(document).ready(function($) {
+      jQuery(document).ready(function($) {
         $(window).load(function() {
           $(".loader").delay(500).fadeOut(1000, function() {
             $(".load_page").fadeOut(1000)
@@ -142,6 +142,7 @@
           adaptiveHeight: false,
           auto: true,
           mode: 'fade',
+          speed: 900
         });
       });
 
@@ -244,20 +245,20 @@
         });
       });
       //
-      // $(document).ready(function() {
-      //   $(".toggles button").click(function(event) {
-      //     event.preventDefault();
-      //     $(this).parent().addClass("current");
-      //     $(this).parent().siblings().removeClass("current");
-      //     var button = this.button;
-      //     var get_id = this.id;
-      //     var current = $('.gallery_containers .' + get_id);
-      //     $('.gallery_container').not(current).hide(500);
-      //     get_current.show(500);
-      //     $(".toggles button").not(current).css("display");
-      //     current.css();
-      //   });
-      // });
+        // $(document).ready(function() {
+        //   $(".toggles button").click(function(event) {
+        //     event.preventDefault();
+        //     $(this).parent().addClass("current");
+        //     $(this).parent().siblings().removeClass("current");
+        //     var button = this.button;
+        //     var get_id = this.id;
+        //     var current = $('.gallery_containers .' + get_id);
+        //     $('.gallery_container').not(current).hide(500);
+        //     get_current.show(500);
+        //     $(".toggles button").not(current).css("display");
+        //     current.css();
+        //   });
+        // });
 
 
 

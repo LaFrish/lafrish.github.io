@@ -54,22 +54,23 @@
 	})(window,document,'script','dataLayer','GTM-PXCWVZ');</script>
 	<!-- End Google Tag Manager -->
 	<section id="welcome">
-		<header class="close">
-			<nav role='navigation' id="menuToggle">
-					<input type="checkbox" />
-					<span></span>
-					<span></span>
-					<span></span>
-						<ul id="menu">
-							<li><a href="#welcome">Home</a></li>
-							<li><a href="#about">About Me</a></li>
-							<li><a href="#portfolio">Skills</a></li>
-							<li><a href="#resume">Portfolio</a></li>
-							<li><a href="#contactMe">Contact Me</a></li>
-						</ul>
-				  </div>
-				</nav>
-		</header>
+		<div class="skewed-bg">
+			<div class="content">
+				<header class="close ">
+					<nav role='navigation' id="menuToggle">
+							<input type="checkbox" />
+							<span></span>
+							<span></span>
+							<span></span>
+								<ul id="menu">
+									<li><a href="#welcome">Home</a></li>
+									<li><a href="#about">About Me</a></li>
+									<li><a href="#portfolio">Skills</a></li>
+									<li><a href="#resume">Portfolio</a></li>
+									<li><a href="#contactMe">Contact Me</a></li>
+								</ul>
+						</nav>
+					</header>
 		<div class="welcome">
 			<i class="logo fade-in one"></i>
 			<h1 class="fade-in two">Hello, <strong>World</strong></h1>
@@ -86,13 +87,16 @@
 			<div class="scroll-down clear"><i class="fa fa-angle-double-down animated infinite bounce"></i>
 			</div>
 		</div>
-
+	</div>
+</div>
 	</section>
 	<section id="about">
-		<div class="bg-image"></div>
-		<div class="holder">
-			<div class="title scrollflow -slide-top -opacity"><h2>About Me</h2></div>
-			<div id="tabs-container">
+		<!-- <div class="skewed-bg">
+			<div class="content"> -->
+				<div class="bg-image"></div>
+					<div class="holder">
+						<div class="title scrollflow -slide-top -opacity"><h2>About Me</h2></div>
+							<div id="tabs-container">
 				<ul class="tabs-menu title scrollflow -slide-top -opacity">
 					<li class="current"><a href="#bio">Bio</a></li>
 					<li><a href="#education">Education</a></li>
@@ -107,6 +111,8 @@
 								<a href="mailto:farishta.haider@gmail.com" class="button"><i class="fa fa-paper-plane"></i> Hire Me</a>
 							</div>
 						</div>
+						<!-- </div>
+						</div> -->
 					</aside>
 					<aside class="education tab-content"  id="education">
 						<div class="row">
@@ -270,7 +276,9 @@
 						</div>
 					</li>
 				</ul>
-</div>
+			</div>
+		<!-- </div>
+</div> -->
 </section>
 <section id="portfolio">
 	<div class="holder">
@@ -589,25 +597,28 @@
 				</div>
 				<div class="gallery_containers">
 					<div class="project">
+						<div class="canvas">
 						<div class="web showall gallery_container">
 							<img src="http://i.imgur.com/0JgJmIjh.png" alt="Trivia Night Game">
 							<div class='project_info' onclick=''>
 								Trivia Night
 								<button class="gal_btn1 fade-in four">View Details</button>
 							</div>
-							<div class="pop1">
-								<span1>✖</span1>
-								<h6>Trivia Night</h6>
-								<!-- <div class="javascript">
-									<h4>JavaScript</h4>
-									<i class="devicon-javascript-plain"></i>
-								</div> -->
-								<p1> A trivia game written in Vanilla <strong>JavaScript</strong>.</p1></br>
-								<p1> This was our first WDI project. We had a topic to choose from and were restricted from using jQuery. I chose Trivia because it was a fun game that I personally enjoy.</p1></br>
-								<p1>I have already made some updates since the project was completed but still would like to add a scoreboard and more dynanic notifiers when you get the questions correct or wrong.</p1></br>
-								<div class="btn_container">
-									<button class="button fade-in four"><a href="https://github.com/LaFrish/Trivia_Night", target= '_blank'><i class="fa fa-github"> Github Repo</i></a></button>
-									<button class="button fade-in four"><a href="http://lafrish.github.io/Trivia_Night/", target= '_blank'><i class="fa fa-globe"> Trivia Night Site</i></a></button>
+							<!-- <div class="canvas"> -->
+								<div class="pop1 mask">
+									<span1>✖</span1>
+									<h6>Trivia Night</h6>
+									<!-- <div class="javascript">
+										<h4>JavaScript</h4>
+										<i class="devicon-javascript-plain"></i>
+									</div> -->
+									<p1> A trivia game written in Vanilla <strong>JavaScript</strong>.</p1></br>
+									<p1> This was our first WDI project. We had a topic to choose from and were restricted from using jQuery. I chose Trivia because it was a fun game that I personally enjoy.</p1></br>
+									<p1>I have already made some updates since the project was completed but still would like to add a scoreboard and more dynanic notifiers when you get the questions correct or wrong.</p1></br>
+									<div class="btn_container">
+										<button class="button fade-in four"><a href="https://github.com/LaFrish/Trivia_Night", target= '_blank'><i class="fa fa-github"> Github Repo</i></a></button>
+										<button class="button fade-in four"><a href="http://lafrish.github.io/Trivia_Night/", target= '_blank'><i class="fa fa-globe"> Trivia Night Site</i></a></button>
+									</div>
 								</div>
 							</div>
 						</div>
