@@ -1,3 +1,8 @@
+$('.menu-burger, .menu-items').on('click', function() {
+  $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
+  $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+});
+
       $(document).ready(function($) {
         $(window).load(function() {
           $(".loader").delay(500).fadeOut(1000, function() {
@@ -19,6 +24,16 @@
           })
         })
       });
+      $(document).ready(function() {
+        $('#menu li a').on('click', function() {
+        $('#menuToggle').hide(300);
+        $('#menuToggle input').removeClass('checked');
+      //   $('#menuToggle', 'span').show(100);
+      })
+});
+      // $(document).on('click', '.close', function() {
+      //   $('#menuToggle').removeClass('closed open');
+      // })
 
       function isMobile() {
         return ((navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/webOS/i)) || (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/BlackBerry/)))
@@ -258,45 +273,12 @@
         //     current.css();
         //   });
         // });
-//         function popout(){
-//           $(document).ready(function() {
-//
-//             var id = '#dialog';
-//             var maskHeight = $(document).height();
-//             var maskWidth = $(window).width();
-//             var winH = $(window).height();
-//             var winW = $(window).width();
-//
-//             $('#mask').css({'width':maskWidth,'height':maskHeight});
-//             $('#mask').fadeIn(500);
-//             $('#mask').fadeTo("slow",0.9);
-//
-//             $(id).css('top',  winH/2-$(id).height()/2);
-//             $(id).css('left', winW/2-$(id).width()/2);
-//             $(id).fadeIn(2000);
-//
-//             $('.window .close').click(function (e) {
-//               e.preventDefault();
-//
-//               $('#mask').hide();
-//               $('.window').hide();
-//             });
-//
-//             $('.gal_btn1').click(function () {
-//               $(this).hide();
-//               $('.window').hide();
-//             });
-//           });
-//         }
-// popout();
-
       //portfolio GALLERY
 
       //trivia portfolio
       $(document).ready(function () {
         $(".gal_btn1").click(function () {
           $(".pop1").fadeIn(300);
-          $(".overlay").fadeIn(300);
           positionPopup();
         });
         //close
