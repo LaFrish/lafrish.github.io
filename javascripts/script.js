@@ -1,4 +1,3 @@
-
       jQuery(document).ready(function($) {
         $(window).load(function() {
           $(".loader").delay(500).fadeOut(1000, function() {

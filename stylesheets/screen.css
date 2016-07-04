@@ -330,7 +330,7 @@ a:visited{
 	color: #fff;
 }
 
-.button:hover:before {
+.button:hover {
 	filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=10000);
 	opacity: 100;
 	-moz-transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0em, 0);
@@ -471,7 +471,7 @@ a:visited{
 	color: #fff;
 }
 
-#resume button:hover:before {
+#resume button:hover {
 	filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=10000);
 	opacity: 100;
 	-moz-transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0em, 0);
@@ -2642,9 +2642,9 @@ position: relative;
 /*.project .button:hover{
 background-color: yellow;
 }*/
-#resume .button:hover {
+/*#resume .button:hover {
 	color: #fff;
-}
+}*/
 
 .toggles button {
 	font-family: "Abril Fatface";
