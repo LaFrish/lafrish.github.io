@@ -258,8 +258,37 @@
         //     current.css();
         //   });
         // });
-
-
+//         function popout(){
+//           $(document).ready(function() {
+//
+//             var id = '#dialog';
+//             var maskHeight = $(document).height();
+//             var maskWidth = $(window).width();
+//             var winH = $(window).height();
+//             var winW = $(window).width();
+//
+//             $('#mask').css({'width':maskWidth,'height':maskHeight});
+//             $('#mask').fadeIn(500);
+//             $('#mask').fadeTo("slow",0.9);
+//
+//             $(id).css('top',  winH/2-$(id).height()/2);
+//             $(id).css('left', winW/2-$(id).width()/2);
+//             $(id).fadeIn(2000);
+//
+//             $('.window .close').click(function (e) {
+//               e.preventDefault();
+//
+//               $('#mask').hide();
+//               $('.window').hide();
+//             });
+//
+//             $('.gal_btn1').click(function () {
+//               $(this).hide();
+//               $('.window').hide();
+//             });
+//           });
+//         }
+// popout();
 
       //portfolio GALLERY
 
@@ -267,6 +296,7 @@
       $(document).ready(function () {
         $(".gal_btn1").click(function () {
           $(".pop1").fadeIn(300);
+          $(".overlay").fadeIn(300);
           positionPopup();
         });
         //close

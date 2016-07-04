@@ -2841,13 +2841,26 @@ background-color: yellow;
 	outline:10px solid #000;
 	z-index: 999;
 }
-.pop1 < .mask {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 9000;
-	background-color: #000;
-	display: none;
+.pop1:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: -2;
+}
+
+.pop1:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
 }
 .pop1 > h6 {
 	padding:50px 30px 20px 30px;
@@ -2922,7 +2935,27 @@ span1:hover{
 	outline:10px solid #000;
 	z-index: 999;
 }
+.pop2:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: -2;
+}
 
+.pop2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
 .pop2 > h6 {
 	padding:50px 30px 20px 30px;
 	color: #f91791;
@@ -2994,7 +3027,27 @@ span2:hover{
 	outline:10px solid #000;
 	z-index: 999;
 }
+.pop3:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: -2;
+}
 
+.pop3:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
 .pop3 > h6 {
 	padding:50px 30px 20px 30px;
 	color: #f91791;
@@ -3065,7 +3118,27 @@ span3:hover{
 	outline:10px solid #000;
 	z-index: 999;
 }
+.pop4:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: -2;
+}
 
+.pop4:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
 .pop4 > h6 {
 	padding:50px 30px 20px 30px;
 	color: #f91791;
@@ -3136,7 +3209,27 @@ span4:hover{
 	outline:10px solid #000;
 	z-index: 999;
 }
+.pop5:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: -2;
+}
 
+.pop5:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
 .pop5 > h6 {
 	padding:50px 30px 20px 30px;
 	color: #f91791;
@@ -3214,7 +3307,27 @@ span5:hover{
 	outline:10px solid #000;
 	z-index: 999;
 }
+.pop6:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: -2;
+}
 
+.pop6:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
 .pop6 > h6 {
 	padding:50px 30px 20px 30px;
 	color: #f91791;
@@ -3534,7 +3647,6 @@ span6:hover{
 		.experience .row .brief {
 			padding: 15px 0 0 0;
 		}
-
 
 		#about .links a {
 			margin: 0 0 12px 0 !important;
