@@ -1,19 +1,18 @@
-
-      jQuery(document).ready(function($) {
+      $(document).ready(function($) {
         $(window).load(function() {
           $(".loader").delay(500).fadeOut(1000, function() {
             $(".load_page").fadeOut(1000)
           })
         })
       });
-      jQuery(document).ready(function($) {
+      $(document).ready(function($) {
         $("#tagline").hide();
         $(window).load(function() {
           $("#tagline").delay(1800).fadeIn(1500)
         })
       });
 
-      jQuery(document).ready(function($) {
+      $(document).ready(function($) {
         $(window).load(function() {
           $(".loader").delay(500).fadeOut(1000, function() {
             $(".load_page").fadeOut(1000)
