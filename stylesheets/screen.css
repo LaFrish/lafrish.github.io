@@ -39,6 +39,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: "Abril Fatface";
+	body { padding-top: 70px; }
 }
 
 html {
@@ -103,6 +104,69 @@ color: #fff;
 }
 
 /*nav */
+.navbar-header:before,
+.navbar-header:after {
+  display: table;
+  content: " ";
+}
+.navbar-header {
+  padding-top: 0;
+  padding-left: 0;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+.navbar-fixed-top .navbar-header {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+.container > .navbar-header{
+margin-right: -15px;
+margin-left: -15px;
+}
+@media (min-width: 768px) {
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+	margin-right: 0;
+	margin-left: 0;
+}
+}
+
+.navbar-fixed-top {
+position: absolute;
+right: 0;
+left: 0;
+z-index: 1030;
+top: 0;
+border-width: 0 0 1px;
+height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .25s;
+}
+@media (min-width: 768px) {
+.navbar-fixed-top{
+	border-radius: 0;
+}
+}
 
 .menu, .menu-bg, .menu-burger {
   position: fixed;
@@ -113,10 +177,12 @@ color: #fff;
   border-radius: 100%;
   right: 25px;
   top: 25px;
+	/*z-index: 1030;*/
+	border-width: 0 0 1px;
 }
 
 .menu-bg {
-	position: fixed;
+	position: absolute;
   background: #f91791;
   pointer-events: none;
   transition: .3s;
@@ -146,11 +212,8 @@ color: #fff;
 .menu-items {
 	font-family: 'Abril Fatface', serif;
 	font-size: 125px;
-	line-height: 125px;
+	line-height: 120px;
   position: absolute;
-  /*font-weight: bold;*/
-  /*font-size: 150px;*/
-  /*letter-spacing: 10px;*/
   color: #fff;
   width: 100%;
   text-align: left;
@@ -161,9 +224,7 @@ color: #fff;
   pointer-events: none;
 	-webkit-font-smoothing: antialiased;
 }
-/*.menu-items a{
-  color: #fff;
-}*/
+
 .menu-items div {
 	color: #fff;
   transition: 1s;
@@ -186,7 +247,7 @@ color: #fff;
 }
 .menu-items.fs div a{
 	color: #fff;
-		text-decoration: none;
+	text-decoration: none;
 }
 .menu-items.fs div a:hover{
 	color: #000;
