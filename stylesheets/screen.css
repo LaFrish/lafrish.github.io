@@ -2423,7 +2423,7 @@ margin: 20px 0 0 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: #000;
 	z-index: -2;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -2529,7 +2529,7 @@ span1:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: #000;
 	z-index: -2;
 }
 
@@ -2630,7 +2630,7 @@ span2:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: #000;
 	z-index: -2;
 }
 
@@ -2730,7 +2730,7 @@ span3:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: #000;
 	z-index: -2;
 }
 
@@ -2830,7 +2830,7 @@ span4:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: #000;
 	z-index: -2;
 }
 
@@ -2937,7 +2937,7 @@ span5:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: #000;
 	z-index: -2;
 }
 
@@ -3380,4 +3380,8 @@ weight:25px;
 	.loaded #loader-wrapper {
 		visibility: hidden;
 	}
+}
+
+.tech{
+	vertical-align: middle;
 }
