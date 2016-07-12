@@ -763,28 +763,6 @@ h4{
 	transform: skew(0deg, 3deg);
 	text-align: center;
 }
-/*#about:before {*/
-/*padding: 200px 0;
--webkit-transform: skew(0deg, -3deg);
--moz-transform: skew(0deg, -3deg);
--ms-transform: skew(0deg, -3deg);
--o-transform: skew(0deg, -3deg);
-transform: skew(0deg, -3deg);
-margin-top: -200px;*/
-/*z-index: 1;
--moz-transform: skewY(-3deg);
--ms-transform: skewY(-3deg);
--webkit-transform: skewY(-3deg);
-transform: skewY(-3deg);
-height: 90px;
-width: 100%;
-content: "";
-top: -46px;
-left: 0;
-background: #fff;
-position: absolute;*/
-
-/*}*/
 
 #about:after {
 	-moz-transform: skewY(-3deg);
@@ -2156,33 +2134,6 @@ border: 1px solid #000;
 .space20{
 	margin-top: 20px;
 }
-/*#resume .btn_container .button{
-	font-family: 'Abril Fatface';
-	background-color: #fff;
-	color: #000;
-	border: 1px solid #f91791
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	text-decoration: none;
-	height: 45px;
-	line-height: 47px;
-	padding: 0 25px;
-	min-width: 130px;
-	display: inline-block;
-	text-transform: uppercase;
-	position: relative;
-	overflow: hidden;
-	font-size: 18px;
-	text-align: center;
-	cursor: pointer;
-	z-index: 1;
-}
-#resume .btn_container .button:hover{
-	background-color: #f91791;
-	color: #fff;
-	border: 1px solid #000;
-}*/
 
 .pop1 {
 	display:none;
@@ -2940,9 +2891,13 @@ weight:25px;
 		background-position: -260% -158px;
 	}
 }
+@media screen and (max-width: 780px) {
+	body > section > .holder > .title  {
+		font-size: 35px;
+	}
 
 @media screen and (max-width: 780px) {
-	body > section > .holder > .title h2 {
+	body > section > .holder > .title h2{
 		font-size: 35px;
 	}
 
@@ -3126,4 +3081,16 @@ weight:25px;
 
 .tech{
 	vertical-align: middle;
+}
+
+
+@media screen and (max-width: 320px) {
+	#resume {
+		font-size: 18px;
+
+	}
+	#resume .gallery_container img{
+		width: 300px;
+		font-size: 18px;
+	}
 }
