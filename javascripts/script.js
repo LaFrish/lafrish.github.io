@@ -279,7 +279,6 @@ $('.menu-burger, .menu-items').on('click', function() {
       $(document).ready(function () {
         $(".gal_btn1").click(function () {
           $(".pop1").fadeIn(300);
-          positionPopup();
         });
         //close
         $(".pop1 > span1").click(function () {
@@ -290,7 +289,6 @@ $('.menu-burger, .menu-items').on('click', function() {
       $(document).ready(function () {
         $(".gal_btn2").click(function () {
           $(".pop2").fadeIn(300);
-          positionPopup();
         });
         //close
         $(".pop2 > span2").click(function () {
@@ -301,7 +299,6 @@ $('.menu-burger, .menu-items').on('click', function() {
       $(document).ready(function () {
         $(".gal_btn3").click(function () {
           $(".pop3").fadeIn(300);
-          positionPopup();
         });
         //close
         $(".pop3 > span3").click(function () {
@@ -312,7 +309,6 @@ $('.menu-burger, .menu-items').on('click', function() {
       $(document).ready(function () {
         $(".gal_btn4").click(function () {
           $(".pop4").fadeIn(300);
-          positionPopup();
         });
         //close
         $(".pop4 > span4").click(function () {
@@ -322,7 +318,6 @@ $('.menu-burger, .menu-items').on('click', function() {
       $(document).ready(function () {
         $(".gal_btn5").click(function () {
           $(".pop5").fadeIn(300);
-          positionPopup();
         });
         //close
         $(".pop5 > span5").click(function () {
@@ -333,7 +328,6 @@ $('.menu-burger, .menu-items').on('click', function() {
       $(document).ready(function () {
         $(".gal_btn6").click(function () {
           $(".pop6").fadeIn(600);
-          positionPopup();
         });
         //close
         $(".pop6 > span6").click(function () {
