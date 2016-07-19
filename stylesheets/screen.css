@@ -137,7 +137,7 @@ color: #fff;
 .menu-burger {
 	position: fixed;
   color: #fff;
-  padding-top: 11px;
+  padding-top: 10px;
   -webkit-user-select: none;
   cursor: pointer;
   transition: .4s;
