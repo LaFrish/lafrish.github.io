@@ -315,3 +315,23 @@ $(document).ready(function () {
 		$(".pop6").fadeOut(300);
 	});
 });
+//protrakr
+$(document).ready(function () {
+	$(".gal_btn7").click(function () {
+		$(".pop7").fadeIn(600);
+	});
+	//close
+	$(".pop7 > span7").click(function () {
+		$(".pop7").fadeOut(300);
+	});
+});
+//MMG trivia
+$(document).ready(function () {
+	$(".gal_btn8").click(function () {
+		$(".pop8").fadeIn(800);
+	});
+	//close
+	$(".pop8 > span8").click(function () {
+		$(".pop8").fadeOut(300);
+	});
+});

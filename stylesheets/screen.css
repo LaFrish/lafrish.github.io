@@ -1163,6 +1163,22 @@ h4{
 .devicon-apache-plain.colored {
 	color: #303284;
 }
+.devicon-react-original:before,
+.devicon-react-plain:before {
+	content: "\e601";
+}
+
+.devicon-react-plain:hover,
+.devicon-react-original:hover {
+	color: #61dafb;
+}
+.devicon-bootstrap-plain:before {
+	content: "\e62f";
+}
+.devicon-bootstrap-plain:hover {
+	color: #59407f;
+}
+
 @font-face {
 	font-family: 'bitIcon';
 	src:url('fonts/bitIcon.eot?dm333u');
@@ -1228,6 +1244,11 @@ h4{
 
 .angular {
 	background: #c4473a;
+	text-align: center;
+}
+
+.bootstrap {
+	background: #59407f;
 	text-align: center;
 }
 
@@ -1311,7 +1332,10 @@ h4{
 	background: #a62c46;
 	text-align: center;
 }
-
+.react {
+	background: #61dafb;
+	text-align: center;
+}
 .ruby {
 	background: #d91404;
 	text-align: center;
@@ -2506,6 +2530,201 @@ span6:hover{
 	text-shadow: 2px 2px 4px #f91791;
 }
 
+.gal_btn7{
+	font-family: 'Abril Fatface', serif;
+	background-color: #fff;
+	color: #000;
+	border: 3px solid #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	height: 45px;
+	line-height: 47px;
+	padding: 0 25px;
+	min-width: 130px;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+.pop7 {
+	display:none;
+	position:fixed;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top:10.3%;
+	left:10.3%;
+	width:80%;
+	height:80%;
+	background: #fff;
+	outline:10px solid #000;
+	z-index: 999;
+}
+.pop7:after {
+	position: fixed;
+	content: "";
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	z-index: -2;
+}
+
+.pop7:before {
+	position: absolute;
+	content: "";
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #FFF;
+	z-index: -1;
+}
+.pop7 > h6 {
+	padding:50px 30px 20px 30px;
+	color: #f91791;
+	font-size:50px;
+}
+
+.pop7 > p1 {
+	font-size:20px;
+	color: #000;
+	font-family: "Playfair Display";
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.pop7 > span7 {
+	font-size: 30px;
+	text-align: center;
+	cursor:pointer;
+	position:absolute;
+	top:4%;
+	right:4%;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	color: #f91791;
+	padding:6px 0px 0px 9px;
+	width:30px;
+	height:30px;
+}
+
+span7:hover{
+	color: yellow;
+	text-shadow: 2px 2px 4px #f91791;
+}
+
+
+===
+.gal_btn8{
+	font-family: 'Abril Fatface', serif;
+	background-color: #fff;
+	color: #000;
+	border: 3px solid #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	height: 45px;
+	line-height: 48px;
+	padding: 0 25px;
+	min-width: 130px;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+.pop8 {
+	display:none;
+	position:fixed;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top:10.3%;
+	left:10.3%;
+	width:80%;
+	height:80%;
+	background: #fff;
+	outline:10px solid #000;
+	z-index: 999;
+}
+.pop8:after {
+	position: fixed;
+	content: "";
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	z-index: -2;
+}
+
+.pop8:before {
+	position: absolute;
+	content: "";
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #FFF;
+	z-index: -1;
+}
+.pop8 > h6 {
+	padding:50px 30px 20px 30px;
+	color: #f91791;
+	font-size:50px;
+}
+
+.pop8 > p1 {
+	font-size:20px;
+	color: #000;
+	font-family: "Playfair Display";
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.pop8 > span8 {
+	font-size: 30px;
+	text-align: center;
+	cursor:pointer;
+	position:absolute;
+	top:4%;
+	right:4%;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	color: #f91791;
+	padding:6px 0px 0px 9px;
+	width:30px;
+	height:30px;
+}
+
+span8:hover{
+	color: yellow;
+	text-shadow: 2px 2px 4px #f91791;
+}
 #resume {
 	background-color: #fff;
 	padding: 80px 0 210px 0;
