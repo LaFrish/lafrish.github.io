@@ -1981,15 +1981,36 @@ border: 1px solid #000;
 .pop1:after {
 	position: fixed;
 	content: "";
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
 }
 
 .pop1:before {
@@ -2079,16 +2100,37 @@ span1:hover{
 }
 .pop2:after {
 	position: fixed;
+	content: "";
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	content: "";
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
 }
 
 .pop2:before {
@@ -2178,16 +2220,37 @@ span2:hover{
 }
 .pop3:after {
 	position: fixed;
+	content: "";
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	content: "";
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
 }
 
 .pop3:before {
@@ -2276,18 +2339,38 @@ span3:hover{
 }
 .pop4:after {
 	position: fixed;
+	content: "";
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	content: "";
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
 }
 
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
 .pop4:before {
 	position: absolute;
 	-moz-border-radius: 3px;
@@ -2373,16 +2456,37 @@ span4:hover{
 }
 .pop5:after {
 	position: fixed;
+	content: "";
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	content: "";
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
 }
 
 .pop5:before {
@@ -2469,17 +2573,38 @@ span5:hover{
 	z-index: 999;
 }
 .pop6:after {
-	position: fixed;
-	content: "";
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background: #000;
-	z-index: -2;
+position: fixed;
+content: "";
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: -2;
+height: 2000px;
+width: 100%;
+margin-top: -340px;
+margin-bottom: -1000px;
+transform: skew(0deg, -5deg);
+-webkit-animation: zigzag 1s linear infinite;
+animation: zigzag 1s linear infinite;
+background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+100% {
+	background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+}
+}
+@keyframes zigzag {
+100% {
+	background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+}
 }
 
 .pop6:before {
@@ -2575,8 +2700,29 @@ span6:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
 }
 
 .pop7:before {
@@ -2674,9 +2820,31 @@ span7:hover{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #000;
 	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
 }
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+
 
 .pop8:before {
 	position: absolute;
@@ -2725,6 +2893,13 @@ span8:hover{
 	color: yellow;
 	text-shadow: 2px 2px 4px #f91791;
 }
+
+.tech-row{
+	background-color: #f91791;
+	width: 100%;
+	height: 50px;
+}
+
 #resume {
 	background-color: #fff;
 	padding: 80px 0 210px 0;
@@ -3120,4 +3295,39 @@ span8:hover{
 			}
 		}
 	}
+}
+
+.pop6:after {
+	position: fixed;
+	content: "";
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -2;
+  height: 2000px;
+  width: 100%;
+  margin-top: -340px;
+  margin-bottom: -1000px;
+  transform: skew(0deg, -5deg);
+  -webkit-animation: zigzag 1s linear infinite;
+  animation: zigzag 1s linear infinite;
+  background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
+  background-size: 0.75em 0.75em;
+
+}
+
+@-webkit-keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
+}
+@keyframes zigzag {
+  100% {
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+  }
 }
