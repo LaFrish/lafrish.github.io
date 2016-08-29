@@ -1960,8 +1960,6 @@ border: 1px solid #000;
 	margin-top: 20px;
 }
 
-
-
 .pop1 {
 	display:none;
 	position:fixed;
@@ -1970,11 +1968,12 @@ border: 1px solid #000;
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:1px solid #000;
 	z-index: 999;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+
 }
 .pop1:after {
 	position: fixed;
@@ -2093,7 +2092,7 @@ span1:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:2px solid #000;
 	z-index: 999;
 }
 .pop2:after {
@@ -2213,7 +2212,7 @@ span2:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline: 2px solid #000;
 	z-index: 999;
 }
 .pop3:after {
@@ -2332,7 +2331,7 @@ span3:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:2px solid #000;
 	z-index: 999;
 }
 .pop4:after {
@@ -2449,7 +2448,7 @@ span4:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:2px solid #000;
 	z-index: 999;
 }
 .pop5:after {
@@ -2568,7 +2567,7 @@ span5:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:2px solid #000;
 	z-index: 999;
 }
 .pop6:after {
@@ -2687,7 +2686,7 @@ span6:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:2px solid #000;
 	z-index: 999;
 }
 .pop7:after {
@@ -2808,7 +2807,7 @@ span7:hover{
 	width:80%;
 	height:80%;
 	background: #fff;
-	outline:10px solid #000;
+	outline:2px solid #000;
 	z-index: 999;
 }
 .pop8:after {
