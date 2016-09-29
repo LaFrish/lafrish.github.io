@@ -107,7 +107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	top: 50px;
 	transform: translate3d(50%, -50%, 0);
 	transform-origin: center center;
-	box-shadow: 0 1px 2px rgba(0,0,0,1);
+	box-shadow: 0 2px 3px rgba(0,0,0,1);
 }
 .menu-bg.fs {
 	transform: translate3d(50%, -50%, 0);
@@ -128,13 +128,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .menu-burger.fs {
 	transform: rotate(-180deg) translateY(10px);
+	color: #fff;
 }
+
+
+/*
+.menu-burger:after,
+.menu-burger:before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 4px;
+    background: #ec008c;
+    position: absolute;
+    z-index: -1;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.menu-burger:before {
+    top: -8px
+}
+
+.menu-burger:after {
+    top: 8px
+}
+
+.menu-burger:hover {
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+    -webkit-transition: top 0.4s;
+    transition: top 0.4s
+}
+
+.menu:hover .menu-burger:before {
+    top: -9px
+}
+
+.menu:hover .menu-burger:after {
+    top: 9px
+}*/
+
+
+
 
 .menu-items {
 	font-family: 'Abril Fatface', serif;
 	font-size: 125px;
 	line-height: 120px;
-	position: absolute;
+	position: fixed;
 	color: #fff;
 	width: 100%;
 	text-align: left;
@@ -3402,4 +3446,298 @@ span8:hover{
   100% {
     background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
   }
+}
+
+
+@media (min-width: 0) and (max-width: 656px) {
+    .container {
+        width:640px
+    }
+}
+
+@media (min-width: 657px) and (max-width: 977px) {
+    .container {
+        width:640px
+    }
+}
+
+@media (min-width: 977px) and (max-width: 1296px) {
+    .container {
+        width:960px
+    }
+}
+
+@media (min-width: 1297px) {
+    .container {
+        width:1280px
+    }
+}
+
+
+
+body>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    height: 80px;
+    font: 60px "Galaxie";
+    color: #fff;
+    padding-top: 0px;
+    background: none;
+    z-index: 1000;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body>nav .bar {
+    z-index: 2000;
+    margin-top: 0px;
+    width: 100%;
+    height: 100px;
+    background: none;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body>nav .nav-background {
+    z-index: 1500;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: table;
+    -moz-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body>nav #logo {
+    width: 144px;
+    height: 74px;
+    padding: 58px 40px;
+    z-index: 1000;
+    background-image: url("/content/images/util/logo.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body>nav #toggle {
+    width: 104px;
+    height: 74px;
+    padding: 45px 40px;
+    z-index: 1000;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1)
+}
+
+body>nav #toggle .patty {
+    width: 24px;
+    height: 4px;
+    margin: 10px 0;
+    background: #ec008c;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+body>nav #toggle .patty:after,body>nav #toggle .patty:before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 4px;
+    background: #ec008c;
+    position: absolute;
+    z-index: -1;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+body>nav #toggle .patty:before {
+    top: -8px
+}
+
+body>nav #toggle .patty:after {
+    top: 8px
+}
+
+body>nav #toggle:hover {
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+    -webkit-transition: top 0.4s;
+    transition: top 0.4s
+}
+
+body>nav #toggle:hover .patty:before {
+    top: -9px
+}
+
+body>nav #toggle:hover .patty:after {
+    top: 9px
+}
+
+body>nav ul {
+    visibility: hidden;
+    top: -10%;
+    width: 100%;
+    padding: 0;
+    opacity: 0;
+    display: table-cell;
+    vertical-align: middle;
+    -moz-transform: perspective(600px) rotateX(10deg);
+    -webkit-transform: perspective(600px) rotateX(10deg);
+    transform: perspective(600px) rotateX(10deg);
+    -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+    -o-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+    -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63)
+}
+
+body>nav li {
+    list-style: none;
+    text-align: center
+}
+
+body>nav li a {
+    padding: 8px 0 0;
+    width: 100%;
+    display: block;
+    letter-spacing: -0.06em
+}
+
+body>nav li a:hover {
+    background: #fff
+}
+
+body>nav li a:focus {
+    outline: 0
+}
+
+body>nav.solid .bar {
+    margin-top: -20px;
+    background-color: #ec008c;
+    background-color: rgba(217,40,130,0.9)
+}
+
+body>nav.solid #logo {
+    background-image: url("/content/images/util/logo_white.png")
+}
+
+body>nav.solid #toggle .patty {
+    background: #fff
+}
+
+body>nav.solid #toggle .patty:before {
+    background: #fff
+}
+
+body>nav.solid #toggle .patty:after {
+    background: #fff
+}
+
+body>nav.open {
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+    transition: none;
+    height: 100%
+}
+
+body>nav.open .bar {
+    margin-top: 0px;
+    background: none
+}
+
+body>nav.open #logo {
+    background-image: url("/content/images/util/logo_white.png") !important
+}
+
+body>nav.open .patty {
+    background: none !important
+}
+
+body>nav.open .patty:after {
+    top: 0 !important;
+    background: #fff !important;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+body>nav.open .patty:before {
+    top: 0 !important;
+    background: #fff !important;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+body>nav.open .nav-background {
+    background-color: #ec008c !important;
+    background-color: rgba(217,40,130,0.9) !important
+}
+
+body>nav.open ul {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    -moz-transform: perspective(600px) rotateX(0deg);
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    transform: perspective(600px) rotateX(0deg)
+}
+
+body>nav.closing {
+    height: 100%
+}
+
+body>nav.closing ul {
+    top: 10%;
+    visibility: visible;
+    opacity: 0;
+    -moz-transform: perspective(600px) rotateX(-10deg);
+    -webkit-transform: perspective(600px) rotateX(-10deg);
+    transform: perspective(600px) rotateX(-10deg);
+    -moz-transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1);
+    -o-transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.63, 0.64, 0.3, 1)
+}
+
+body>nav.hide-it {
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    -webkit-transition: all 0s;
+    transition: all 0s;
+    display: none
 }
