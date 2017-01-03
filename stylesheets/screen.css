@@ -2017,6 +2017,7 @@ border: 1px solid #000;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+	padding: 20px;
 
 }
 .pop1:after {
@@ -2817,8 +2818,6 @@ span7:hover{
 	text-shadow: 2px 2px 4px #f91791;
 }
 
-
-===
 .gal_btn8{
 	font-family: 'Abril Fatface', serif;
 	background-color: #fff;
@@ -2853,6 +2852,7 @@ span7:hover{
 	background: #fff;
 	outline:2px solid #000;
 	z-index: 999;
+	padding: 20px;
 }
 .pop8:after {
 	position: fixed;
