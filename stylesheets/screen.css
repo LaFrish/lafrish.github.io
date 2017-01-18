@@ -25,9 +25,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	vertical-align: baseline;
 }
-header, section, footer, aside, nav, main, article, figure {
+/*header, section, footer, aside, nav, main, article, figure {
     display: block;
-}
+}*/
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
