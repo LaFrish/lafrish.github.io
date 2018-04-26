@@ -243,7 +243,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 strong {
-	color: #f91791
+	color: #f91791;
+	
 }
 
 .clear-fix {
@@ -836,6 +837,14 @@ h4{
 	width: 100%;
 }
 
+.fa-angle-double-down{
+	color: #fff;
+}
+
+.fa-angle-double-down:hover{
+	color: #f91791;
+}
+
 #about .links {
 	margin: 20px 0 0 0;
 
@@ -879,6 +888,10 @@ h4{
 	text-align: center;
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.experience .row img.tekLogo {
+	padding-left: 190px;
 }
 
 
