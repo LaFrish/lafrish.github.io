@@ -335,3 +335,408 @@ $(document).ready(function () {
 		$(".pop8").fadeOut(300);
 	});
 });
+
+
+
+jQuery(document).ready(function($){
+	var gallery = $('.cd-gallery'),
+		foldingPanel = $('.cd-folding-panel'),
+		mainContent = $('.cd-main');
+	/* open folding content */
+	gallery.on('click', 'a', function(event){
+		event.preventDefault();
+		openItemInfo($(this).attr('href'));
+	});
+
+	/* close folding content */
+	foldingPanel.on('click', '.cd-close', function(event){
+		event.preventDefault();
+		toggleContent('', false);
+	});
+	gallery.on('click', function(event){
+		/* detect click on .cd-gallery::before when the .cd-folding-panel is open */
+		if($(event.target).is('.cd-gallery') && $('.fold-is-open').length > 0 ) toggleContent('', false);
+	})
+
+	function openItemInfo(url) {
+		var mq = viewportSize();
+		if( gallery.offset().top > $(window).scrollTop() && mq != 'mobile') {
+			/* if content is visible above the .cd-gallery - scroll before opening the folding panel */
+			$('body,html').animate({
+				'scrollTop': gallery.offset().top
+			}, 100, function(){
+	           	toggleContent(url, true);
+	        });
+	    } else if( gallery.offset().top + gallery.height() < $(window).scrollTop() + $(window).height()  && mq != 'mobile' ) {
+			/* if content is visible below the .cd-gallery - scroll before opening the folding panel */
+			$('body,html').animate({
+				'scrollTop': gallery.offset().top + gallery.height() - $(window).height()
+			}, 100, function(){
+	           	toggleContent(url, true);
+	        });
+		} else {
+			toggleContent(url, true);
+		}
+	}
+
+	function toggleContent(url, bool) {
+		if( bool ) {
+			/* load and show new content */
+			var foldingContent = foldingPanel.find('.cd-fold-content');
+
+            foldingContent.html(
+                '<div class="cd-fold-content single-page">'+
+
+                '   <h2>Title</h2>'+
+                '   <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, laboriosam?</em>'+
+                '   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempora nostrum aut quam praesentium veritatis nisi, odio eius, voluptatibus, iure neque commodi corrupti, inventore laborum fugiat itaque. Pariatur rem veritatis earum quia maxime praesentium accusantium ipsam veniam tenetur hic tempora, unde ipsa esse, aut est repellendus porro, maiores corporis illo!</p>'+
+                '</div>');
+                setTimeout(function(){
+                    $('body').addClass('overflow-hidden');
+                    foldingPanel.addClass('is-open');
+                    mainContent.addClass('fold-is-open');
+                }, 100);
+
+			/*foldingContent.load(url+' .cd-fold-content > *', function(event){
+				setTimeout(function(){
+					$('body').addClass('overflow-hidden');
+					foldingPanel.addClass('is-open');
+					mainContent.addClass('fold-is-open');
+				}, 100);
+
+			});*/
+		} else {
+			/* close the folding panel */
+			var mq = viewportSize();
+			foldingPanel.removeClass('is-open');
+			mainContent.removeClass('fold-is-open');
+
+			(mq == 'mobile' || $('.no-csstransitions').length > 0 )
+				/* according to the mq, immediately remove the .overflow-hidden or wait for the end of the animation */
+				? $('body').removeClass('overflow-hidden')
+
+				: mainContent.find('.cd-item').eq(0).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					$('body').removeClass('overflow-hidden');
+					mainContent.find('.cd-item').eq(0).off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
+				});
+		}
+
+	}
+
+	function viewportSize() {
+		/* retrieve the content value of .cd-main::before to check the actua mq */
+		return window.getComputedStyle(document.querySelector('.cd-main'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
+	}
+});
+
+
+/////////////////////////////// variables
+
+var source = $(".cd-main .item");
+var output = $(".output");
+var elements = $(".controls, .cont-output");
+var speed = 500;
+// speed of all the jQuery animations
+var windowWidth = $(window).width();
+var count = source.length;
+var target;
+var that;
+var ratio = [];
+
+/////////////////////////////// document ready
+
+source.each(function(){
+  var imageSrc = $(this).children('img').attr('src');
+  $(this).css('background-image', 'url(' + imageSrc + ')');
+});
+
+source.clone().appendTo(output);
+
+output.children(".item").children().remove();
+
+/////////////////////////////// update lightbox content
+
+function updateContent(){
+
+  $(".cont-output").empty();
+
+  $(".cd-main .item").eq(that.index())
+    .find(".content")
+    .clone()
+    .appendTo(".cont-output");
+
+}
+
+/////////////////////////////// item click
+
+source.click(function(){
+
+  output.empty();
+  source.clone().appendTo(output);
+  output.children(".item").children().remove();
+
+  that = $(this);
+  target = output.find(".vp");
+  var index = that.index();
+  var clone = output.children().eq(index);
+
+  clone.css({
+    'width': that.width() + 'px',
+    'height': that.height() + 'px',
+    'top': that.offset().top - $(window).scrollTop() + 'px',
+    'left': that.offset().left + 'px'
+  });
+
+  output.show(function(){
+    clone.addClass("vp root");
+    clone.stop().animate({
+      'width': '100vw',
+      'height': '300px',
+      'top': '0',
+      'left': '0'
+    }, speed, function(){
+      elements.fadeIn(speed);
+    });
+  });
+
+  updateContent();
+
+});
+
+/////////////////////////////// close expanded view
+
+function closeExpand(){
+
+  target.stop().animate({
+    'width': '100vw',
+    'height': '300px',
+    'top': '0',
+    'left': '0'
+  }, speed, function(){
+    $(".prev, .next, .expand, .cont-output").fadeIn(speed);
+  });
+
+  $(".close").stop().animate({
+    'top': '20px',
+    'right': '20px',
+    'border-radius': '0',
+    'border-top-left-radius': '5px',
+    'border-top-right-radius': '5px'
+  }, speed);
+
+  target.removeClass("big")
+  $(".expand-bg").fadeOut();
+
+}
+
+/////////////////////////////// close expanded view (on document click)
+
+$(".expand-bg").click(function(){
+
+  target = $(".root");
+
+  closeExpand();
+
+});
+
+/////////////////////////////// close expanded view (on close click)
+
+$(".close").click(function(){
+
+  target = $(".root");
+
+  if(target.hasClass("big")){
+    closeExpand();
+  }
+
+/////////////////////////////// close lightbox view
+
+  else{
+
+    var to;
+    source.each(function(){
+
+      if($(".root").css('background-image') == $(this).css('background-image')){
+         to = $(this);
+      }
+    });
+
+    elements.fadeOut(speed);
+
+    target.stop().delay(200).animate({
+      'width': to.width() + 'px',
+      'height': to.height() + 'px',
+      'top': to.offset().top - $(window).scrollTop() + 'px',
+      'left': to.offset().left + 'px'
+    }, speed, function(){
+
+      target.css({
+        'width': '',
+        'height': '',
+        'top': '',
+        'left': ''
+      });
+
+      output.children().removeClass("vp");
+      output.children().css({
+        'background-image': '',
+        'top': '',
+        'left': '',
+        'width': '',
+        'height': ''
+      });
+      output.hide();
+
+    });
+
+  }
+
+});
+
+/////////////////////////////// expand view
+
+$(".expand").click(function(){
+
+  target = $(".root");
+
+  $(".prev, .next, .expand, .cont-output").fadeOut(speed, function(){
+
+    target.stop().animate({
+      'width': '94vw',
+      'height': '52.875vw',
+      'top': '3vh',
+      'left': '3vw'
+    }, speed);
+
+    $(".close").stop().animate({
+      'top': '3vh',
+      'right': '3vw',
+      'border-radius': '0',
+      'border-bottom-left-radius': '5px'
+    }, speed);
+
+    target.addClass("big");
+
+  });
+
+  $(".expand-bg").fadeIn();
+
+});
+
+/////////////////////////////// prev
+
+$(".prev").click(function(){
+
+  $(".content").css('animation-name', 'contentFadeR');
+
+  target = output.find(".vp");
+
+  if(target.is(':first-child')){
+    that = target.parent().children().last();
+    target.removeClass("vp");
+    that.addClass("vp");
+    target = output.find(".vp");
+  }
+
+  else{
+    that = target.prev();
+    target.removeClass("vp");
+    that.addClass("vp");
+    target = output.find(".vp");
+  }
+
+  var index = target.index();
+  var bg = source.eq(index).css('background-image');
+  $(".root").css('background-image', bg);
+
+  updateContent();
+
+});
+
+/////////////////////////////// next
+
+$(".next").click(function(){
+
+  $(".content").css('animation-name', 'contentFadeL');
+
+  target = output.find(".vp");
+
+  if(target.is(':last-child')){
+    that = target.parent().children().first();
+    target.removeClass("vp");
+    that.addClass("vp");
+    target = output.find(".vp");
+  }
+
+  else{
+    that = target.next();
+    target.removeClass("vp");
+    target.next().addClass("vp");
+    target = output.find(".vp");
+  }
+
+  var index = target.index();
+  var bg = source.eq(index).css('background-image');
+  $(".root").css('background-image', bg);
+
+  updateContent();
+
+});
+
+$(document).ready(function(){
+
+   var $sm = 480;
+   var $md = 768;
+
+   function resizeThis() {
+      $imgH = $('.middle img').width();
+      if ($(window).width() >= $sm) {
+         $('.left,.right,.section').css('height', $imgH);
+      } else {
+         $('.left,.right,.section').css('height', 'auto');
+      }
+   }
+
+   resizeThis();
+
+   $(window).resize(function(){
+      resizeThis();
+   });
+
+   $(window).scroll(function() {
+      $('.section').each(function(){
+         var $elementPos = $(this).offset().top;
+         var $scrollPos = $(window).scrollTop();
+
+         var $sectionH = $(this).height();
+         var $h = $(window).height();
+         var $sectionVert = (($h/2)-($sectionH/4));
+
+
+         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos) {
+            $(this).addClass('animate');
+         } else {
+            $(this).removeClass('animate');
+         }
+      });
+   });
+
+   $('.btn-primary').click(function(){
+      alert('I lied');
+   });
+});
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
