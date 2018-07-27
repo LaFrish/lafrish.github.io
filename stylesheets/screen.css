@@ -244,7 +244,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 strong {
 	color: #f91791;
-	
+
 }
 
 .clear-fix {
@@ -477,7 +477,9 @@ a:visited{
 	line-height: 1.3em;
 	z-index: 999;
 }
-
+#welcome .welcome .buttonContainer {
+    /* margin-top: -10px; */
+}
 #welcome .welcome .button {
 	height: 50px;
 	line-height: 50px;
@@ -493,6 +495,7 @@ a:visited{
 
 #welcome .welcome .scroll-down {
 	font-size: 40px;
+	margin-top: 50px;
 }
 
 .scroll .nav-bar {
@@ -698,7 +701,7 @@ h4{
 	-o-transform: skew(0deg, -3deg);
 	transform: skew(0deg, -3deg);
 	margin-top: -200px;
-	background: #000;
+		background: linear-gradient(19deg, #000, #000);
 }
 
 #welcome .skewed-bg .content {
@@ -710,13 +713,13 @@ h4{
 	text-align: center;
 }
 #about .skewed-bg{
-	padding: 200px 0;
+padding: 200px 0;
 	-webkit-transform: skew(0deg, -3deg);
 	-moz-transform: skew(0deg, -3deg);
 	-ms-transform: skew(0deg, -3deg);
 	-o-transform: skew(0deg, -3deg);
 	transform: skew(0deg, -3deg);
-	margin-top: -200px;
+ 	margin-top: -200px;
 	background: #fff;
 	height: 90px;
 	width: 100%;
@@ -1623,8 +1626,8 @@ circle skills
 }
 
 .education .row + .row {
-	border-top: 1px solid #ccc;
-	padding: 40px 0;
+	/* border-top: 1px solid #ccc; */
+	/* padding: 40px 0; */
 }
 
 .education .row img {
