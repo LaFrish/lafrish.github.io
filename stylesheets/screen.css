@@ -1625,9 +1625,14 @@ circle skills
 	overflow: hidden;
 }
 
-.education .row + .row {
-	/* border-top: 1px solid #ccc; */
+.education .divider{
+	border-top: 1px solid #ccc;
 	/* padding: 40px 0; */
+	  margin: 80px 0;
+	height: 0;
+	-webkit-box-sizing: content-box;
+		 -moz-box-sizing: content-box;
+					box-sizing: content-box;
 }
 
 .education .row img {
