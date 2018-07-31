@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Open+Sans+Condensed:300,700|Quicksand:300,400,500,700');
 
 @font-face {
 	font-family:'Audrey-Normal';
@@ -17,6 +18,30 @@
 	src: url("fonts/Audrey-Normal.otf");
 }
 
+@font-face {
+	font-family: 'bitIcon';
+	src:url('fonts/bitIcon.eot?dm333u');
+	src:url('fonts/bitIcon.eot?dm333u#iefix') format('embedded-opentype'),
+	url('fonts/bitIcon.ttf?dm333u') format('truetype'),
+	url('fonts/bitIcon.woff?dm333u') format('woff'),
+	url('fonts/bitIcon.svg?dm333u#bitIcon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="bitIcon-"], [class*=" bitIcon-"] {
+	font-family: 'bitIcon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -28,6 +53,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /*header, section, footer, aside, nav, main, article, figure {
     display: block;
 }*/
+
+* { box-sizing: border-box; }
+
+.clearfix { clear: both; }
+
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -86,6 +116,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	}
 }
 
+h4{
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 10px;
+	font-family: 'Abril Fatface', serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: #fff;
+}
+
+h5{
+	font-family: "Vidaloka", monospace;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+}
+.space{
+	padding-right: 10px;
+}
+.space20{
+	margin-top: 20px;
+}
 /*nav */
 .menu, .menu-bg, .menu-burger {
 	position: fixed;
@@ -132,50 +185,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	transform: rotate(-180deg) translateY(10px);
 	color: #fff;
 }
-
-
-/*
-.menu-burger:after,
-.menu-burger:before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 4px;
-    background: #ec008c;
-    position: absolute;
-    z-index: -1;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s
-}
-
-.menu-burger:before {
-    top: -8px
-}
-
-.menu-burger:after {
-    top: 8px
-}
-
-.menu-burger:hover {
-    -moz-transition: top 0.4s;
-    -o-transition: top 0.4s;
-    -webkit-transition: top 0.4s;
-    transition: top 0.4s
-}
-
-.menu:hover .menu-burger:before {
-    top: -9px
-}
-
-.menu:hover .menu-burger:after {
-    top: 9px
-}*/
-
-
-
-
 .menu-items {
 	font-family: 'Abril Fatface', serif;
 	font-size: 125px;
@@ -627,15 +636,7 @@ body > section > .holder > .title h2:after {
 @media screen and (max-width: 320px){
 	.rw-sentence { font-size: 9px; }
 }
-h4{
-	text-align: center;
-	margin-top: 45px;
-	margin-bottom: 10px;
-	font-family: 'Abril Fatface', serif;
-	font-size: 22px;
-	line-height: 30px;
-	color: #fff;
-}
+
 
 #about {
 	position: relative;
@@ -1243,28 +1244,6 @@ padding: 200px 0;
 	color: #59407f;
 }
 
-@font-face {
-	font-family: 'bitIcon';
-	src:url('fonts/bitIcon.eot?dm333u');
-	src:url('fonts/bitIcon.eot?dm333u#iefix') format('embedded-opentype'),
-	url('fonts/bitIcon.ttf?dm333u') format('truetype'),
-	url('fonts/bitIcon.woff?dm333u') format('woff'),
-	url('fonts/bitIcon.svg?dm333u#bitIcon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="bitIcon-"], [class*=" bitIcon-"] {
-	font-family: 'bitIcon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 
 .bitIcon-css-sq:before {
 	content: "\e606";
@@ -1288,6 +1267,8 @@ padding: 200px 0;
 	color: #8942d6;
 	background: #8942d6;
 }
+
+
 #about .skills a i {
 	font-size: 24px;
 	-moz-border-radius: 100px;
@@ -1343,7 +1324,6 @@ padding: 200px 0;
 	text-align: center;
 }
 
-
 .heroku {
 	background-color: #6762a6;
 }
@@ -1377,13 +1357,10 @@ padding: 200px 0;
 	background: #00618a;
 	text-align: center;
 }
-
 .node {
 	background: #83CD29;
 	text-align: center;
 }
-
-
 .photoshop{
 	background: #80b5e2;
 	text-align: center;
@@ -1422,14 +1399,8 @@ padding: 200px 0;
 	text-align: center;
 }
 
-h5{
-	font-family: "Vidaloka", monospace;
-	font-size: 20px;
-	text-align: center;
-	font-weight: bold;
-	margin-top: 50px;
-}
-circle skills
+
+/* circle skills */
 .ch-grid {
 	margin-top: 30px;
 	margin: 20px 0 0 0;
@@ -1514,9 +1485,6 @@ circle skills
 
 }
 
-/*.ch-info */
-
-
 .ch-info p {
 	font-family: 'Arapey', serif;
 	color: #fff;
@@ -1550,122 +1518,46 @@ circle skills
 	transform: rotate3d(0,1,0,-180deg);
 }
 
-.experience .row {
-	margin-top: 30px;
+
+
+
+@media (min-width: 768px) {
+  .containerHeading {
+    font-size: 50px;
+  }
 }
 
-.experience .row + .row {
-	border-top: 1px solid #ccc;
-	padding: 40px 0;
+@media (min-width: 992px) {
+  .containerHeading {
+    /* margin-top: 120px; */
+  }
 }
 
-.experience .row img {
-	text-align: center;
-	padding-left: 375px;
-	padding-right: 325px;
-	display: inline-block;
-}
 
-.experience .row .brief {
-
-}
-
-.experience .row .brief .company-name {
-	margin-top: 25px;
-	text-align: center;
-	font-family: 'Abril Fatface', monospace;
-	font-size: 30px;
-	color: #f91791;
-}
-
-.experience .row .brief .position {
-	text-align: center;
-	font-family: "Vidaloka", monospace;
-	line-height: 30px;
-	font-size: 24px;
-	text-align: left;
-	margin-right: 100px;
-	color: black;
-}
-.experience .row .brief .position2 {
-	text-align: center;
-	font-family: "Vidaloka", monospace;
-	line-height: 30px;
-	font-size: 24px;
-	text-align: left;
-	margin-right: 100px;
-	color: black;
-}
-.experience .row .position2 li {
-	width: 100%;
-	list-style: circle;
-	margin-left: 300px;
-	margin-right: 100px;
-	line-height: 24px;
-	font-size: 18px;
-	font-style: bold;
-	font-family: "Vidaloka", monospace;
-}
-.experience .row .brief li {
-	width: 500px;
-	list-style: circle;
-	margin-left: 275px;
-	line-height: 24px;
-	font-size: 18px;
-	font-style: bold;
-	font-family: "Vidaloka", monospace;
-}
-.experience .row .brief span {
-	display: block;
-}
-
+/* EDUCATION  */
 .education .row {
-	margin-top: 150px;
+	margin-top: 100px;
 	padding: 0 0 40px 0;
 	overflow: hidden;
 }
 
-.education .divider{
-	border-top: 1px solid #ccc;
-	/* padding: 40px 0; */
-	  margin: 80px 0;
-	height: 0;
-	-webkit-box-sizing: content-box;
-		 -moz-box-sizing: content-box;
-					box-sizing: content-box;
-}
-
-.education .row img {
-	width: 220px;
-	height: 220px;
-	margin-left: 100px;
-	margin-right: 100px;
-	display: inline-block;
-	float: left;
-}
-
-.education .row .ga img{
-	width: 200px;
-	height: 225px;
-	margin-left: 100px;
-	margin-right: 100px;
-	display: inline-block;
-	float: left;
-}
 .education .row .brief {
-	margin-top: 50px;
-	padding-left: 10px;
-	padding-right: 80px;
+	padding-left: 100px;
+	margin-bottom: 50px;
 }
 
 .education .row .brief .name {
 	font-family: 'Abril Fatface', monospace;
 	font-size: 30px;
 	color: #f91791;
+	line-height: 35px;
 }
 
+.education .row .brief .city {
+	color:#000;
+}
 .education .row .brief .position {
-	font-family: "Vidaloka", monospace;
+	font-family: 'Raleway', sans-serif;
 	line-height: 30px;
 	font-size: 24px;
 	padding: 10px 0 0 0;
@@ -1676,32 +1568,67 @@ circle skills
 	display: block;
 
 }
-.education .row .brief li {
-	list-style: circle;
-	margin-left: 150px;
-	margin-right: 175px;
+
+/* EXPERIENCE */
+.companyHeading {
+	font-family: 'Abril Fatface';
+  line-height:  40px;
+  letter-spacing: -1px;
+	font-size: 40px;
+		color: #f91791;
+}
+.containerHeading {
+  font-weight: 300;
+  letter-spacing: -1px;
+	line-height: 40px;
+	width: 120%;
+	overflow: visible;
+}
+.containerHeading {
+	font-family: 'Abril Fatface';
+  line-height: 40px;
+  letter-spacing: -1px;
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+
+/* .experience .row + .row {
+ padding: 40px 0;
+} */
+
+.experience .row  {
+	margin-top: 100px;
+	padding: 0 0 40px 0;
+	overflow: hidden;
+}
+
+.experience .row .muted {
+	text-indent: 15px;
+	color: #777;
+	font-size: 30px;
+	font-family: 'Audrey-Normal';
+}
+
+.experience .row .position {
+	text-align: center;
+	font-family: "Vidaloka", monospace;
+	line-height: 30px;
+	font-size: 24px;
+	text-align: left;
+	color: #777;
+}
+
+
+.experience .row  li {
+	list-style: disc;
+	margin-left: 34px;
 	line-height: 24px;
-	font-size: 18px;
-	font-family: "Playfair Display", monospace;
-	font-style: bold;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
 }
 
 
-.logo .summit{
-	background: url("summitlogo.jpg");
-}
-.logo .geico{
-	background: url("geico-logo.jpg");
-}
-.logo .montage{
-	background: url("montage.png");
-}
-.logo .umd {
-	background: url("university-of-maryland-logo.png");
-}
-.logo .ga {
-	background: url("1ga_logo.jpg");
-}
 
 /*testimonials*/
 
@@ -1728,6 +1655,7 @@ circle skills
 }
 
 
+/*PORTFOLIO*/
 #portfolio {
 	background-color: #000;
 	padding: 80px 0 210px 0;
@@ -1829,9 +1757,6 @@ circle skills
 
 /*gallery*/
 
-* { box-sizing: border-box; }
-
-.clearfix { clear: both; }
 
 #resume button {
 	font-family: "Abril Fatface", serif;
@@ -2020,12 +1945,7 @@ border: 1px solid #000;
 	filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
 	opacity: 1;
 }
-.space{
-	padding-right: 10px;
-}
-.space20{
-	margin-top: 20px;
-}
+
 
 .pop1 {
 	display:none;
@@ -3763,4 +3683,217 @@ body>nav.hide-it {
     -webkit-transition: all 0s;
     transition: all 0s;
     display: none
+}
+
+
+ .col-md-1, .col-md-2,  .col-md-3, .col-lg-3, .col-md-4, .col-md-5, .col-lg-5,.col-md-6, .col-lg-6, .col-md-7, .col-lg-7, .col-md-8, .col-md-9, .col-lg-9, .col-md-10, .col-lg-10, .col-md-11, .col-lg-11, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 11.66666667%;
+		border-left: 2px solid #f91791;
+		background-color: gray;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0;
+  }
 }

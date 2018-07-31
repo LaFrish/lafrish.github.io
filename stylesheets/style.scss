@@ -1,0 +1,161 @@
+
+
+
+
+
+#portfolio{
+	.holder{
+		.title{
+			h2{
+
+			}
+		}
+		.toggles .links{
+			button{
+
+			}
+		}
+		.gallery_containers{
+			.project{
+				.gallery_container{
+					img{
+
+					}
+					.project_info{
+						.space20{
+
+						}
+						button{
+
+						}
+					}
+					.pop1{
+						span1{
+
+						}
+						h6{
+
+						}
+						.techUsed{
+							h3{
+								strong{
+
+								}
+							}
+
+						}
+						p1{
+							strong{
+
+							}
+						}
+						.links .scrollflow{
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+#contactMe {
+  background-color: #f91791;
+  text-align: center;
+  padding: 100px 0 120px 0;
+  position: relative;
+  color: #fff;
+  &:before {
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    height: 90px;
+    width: 100%;
+    content: "";
+    top: -46px;
+    left: 0;
+    background: #f91791;
+    position: absolute;
+  }
+  h2 {
+    font-size: 40px;
+    padding: 0 0 35px;
+    color: #fff;
+    font-family: "Audrey-Normal", monospace;
+  }
+  .button {
+    border-color: #fff;
+    color: #fff;
+    clear: both;
+    z-index: 0;
+    &:hover {
+      color: #f91791;
+      background: #fff;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+    }
+    &:before {
+      background: #fff;
+    }
+  }
+  .contact-info {
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: "Audrey-Normal", monospace;
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+    }
+    div {
+      display: inline-block;
+      + div {
+        margin: 0 0 0 20px;
+      }
+    }
+    .fa-mobile {
+      font-size: 38px;
+      float: left;
+      margin-right: 10px;
+      margin-top: -6px;
+    }
+  }
+  .social {
+    margin: 40px 0;
+    a i {
+      font-size: 24px;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 100px;
+      border: 2px solid #fff;
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      margin: 0 5px;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #f91791;
+      }
+    }
+  }
+  .copy {
+    padding: 40px 0 0 0;
+  }
+}
