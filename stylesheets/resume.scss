@@ -1,0 +1,389 @@
+@font-face {
+	font-family:'Audrey-Normal';
+	src: url('Audrey-Normal_gdi.eot');
+	src: url('Audrey-Normal_gdi.eot?#iefix') format('embedded-opentype'),
+	url('Audrey-Normal_gdi.woff') format('woff'),
+	url('Audrey-Normal_gdi.ttf') format('truetype'),
+	url('Audrey-Normal_gdi.otf') format('opentype'),
+	url('Audrey-Normal_gdi.svg#Audrey-Normal') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+@font-face {
+	font-family: "Audrey-Normal";
+	src: url("fonts/Audrey-Normal.otf");
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Raleway');
+
+// FONTS
+$mainFont: "Audrey-Normal";
+$subFont: "Montserrat";
+$rale: "Raleway";
+
+
+// COLORS
+$blue: #95C6C4;
+$mainColor: #070707;
+$gray: #8c8c8c;
+
+html{
+	 // border: 10px solid $mainColor;
+	 z-index: -1;
+}
+
+
+.menu, .menu-bg, .menu-burger {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 100%;
+	border-width: 0 0 1px;
+	z-index:100;
+
+}
+
+.menu-bg {
+	// width: 50px;
+	// height: 50px;
+	position: fixed;
+	background: #f91791;
+	transition: .25s;
+	right: 45px;
+	top: 30px;
+	transform: translate3d(50%, -50%, 0);
+	transform-origin: center center;
+	box-shadow: 0 2px 3px rgba(0,0,0,1);
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	color: $blue;
+	cursor: pointer;
+	a {
+			text-decoration: none;
+		i {
+			text-align: center;
+			font-size: 24px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+			display: block;
+			line-height: 50px;
+			// margin: 0 5px;
+			-moz-transition: all 0.25s ease-in-out;
+			-o-transition: all 0.25s ease-in-out;
+			-webkit-transition: all 0.25s ease-in-out;
+			transition: all 0.25s ease-in-out;
+			color: #fff;
+			&:hover {
+				background-color: $blue;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+
+
+body{
+  color:black;
+  width: 100%;
+	margin: 0;
+  .banner{
+		// margin: 0;
+		padding:20px;
+    // width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    height: 300px;
+    background-color: $blue;
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid $mainColor;
+		display: block;
+
+    .heading{
+      font-family: $mainFont;
+      font-size: 50px;
+      letter-spacing: 20px;
+      margin-top: 9%;
+    }
+    .subHeading{
+      font-family: $subFont;
+      font-weight: 300;
+      font-size: 20px;
+      margin-top: 0%;
+      letter-spacing: 20px;
+    }
+  }
+		header{
+			z-index: 10;
+			padding: 0.25em 0;
+			text-align: center;
+			position: sticky;
+			top: 0;
+	    background-color: #fff;
+	    height: 50px;
+	    color: $mainColor;
+	    // border: 3px solid $mainColor;
+			// border-right: 3px solid $mainColor;
+			border-bottom: 3px solid $mainColor;
+			border-left: 3px solid $mainColor;
+ 		  border-right: 3px solid $mainColor;
+	    font-family: $mainFont;
+			-moz-transition: all 0.50s ease-in-out;
+			-o-transition: all 0.50s ease-in-out;
+			-webkit-transition: all 0.50s ease-in-out;
+			transition: all 0.50s ease-in-out;
+
+	    div{
+	      width: 30%;
+	      display: inline-flex;
+	      a{
+	        text-decoration: none;
+	        display: inline-flex;
+	        font-size: 20px;
+	        color: $mainColor;
+	        &:hover {
+	          color: $blue;
+	          i{
+	            color: $blue;
+	          }
+	        }
+	      i{
+	        font-size: 20px;
+	        color: $mainColor;
+	      }
+	    }
+	  }
+		.email{
+			float: left;
+			padding-left: 10%;
+			a{
+				margin-top: 15px;
+				&:hover {
+					color: $blue;
+					i{
+						color: $blue;
+					}
+				}
+			i{
+				padding-top: 4px;
+				margin-right: 20px;
+			}
+		}
+	}
+		.tel{
+		    a{
+		      margin-top: 17px;
+		      padding-left: 20px;
+		      font-size: 18px;
+		    	i{
+		      padding-right: 2px;
+		      transform: rotate(100deg);
+		      -ms-transform: rotate(100deg);
+		      -webkit-transform: rotate(100deg);
+		      font-size: 18px;
+		      margin-right: 20px;
+		    }
+				&:hover{
+		      color: $blue;
+		    }
+		  }
+		}
+	  .website{
+	    float: right;
+			margin-left: -10px;
+	    a{
+	      margin-top: 15px;
+
+	      i{
+					margin-left: -10px;
+	        padding-top: 3px;
+	        font-size: 18px;
+	        margin-right: 20px;
+	      }
+	    &:hover{
+	      color: $blue;
+	    }
+	  }
+	}
+}
+  .container{
+		 border-left: 3px solid $mainColor;
+		  border-right: 3px solid $mainColor;
+    // width: 100%;
+	  .row{
+	    padding: 25px 5% 10px 5%;
+	    .profile{
+	      h2{
+	        font-family: $mainFont;
+	        color:  $mainColor;
+	      }
+	      p{
+	        font-family: $subFont;
+	        color:  $mainColor;
+	      }
+	    }
+	  }
+	  .mainRow{
+	    .leftColumn{
+	      margin-left: 5%;
+	      width: 25%;
+	      display: inline-block;
+	      position: relative;
+	      .section{
+	        margin-bottom: 50px;
+	        h2{
+	          font-family: $mainFont;
+	          color:  $mainColor;
+	        }
+	        ul{
+						list-style: none;
+	          li{
+	            font-family: $subFont;
+	            color:  $mainColor;
+	            font-size: 15px;
+	            line-height: 20px;
+							text-indent: -1em;
+							&::before{
+								color: $blue;
+								content: "•";
+								padding-right:4px;
+								vertical-align:middle;
+								font-size:30px;
+							}
+	          }
+	        }
+	      }
+	      .languages{
+	      }
+	      .hardSkills{
+					padding-left: 0px ;
+	      }
+	      .softSkills{
+					padding-left: 0px ;
+
+	      }
+	      .education{
+	        font-family: $subFont;
+					font-size: 15px;
+					line-height: 20px;
+					.blue{
+						color: $blue;
+						font-weight: 500;
+						font-size: 18px;
+					}
+	      }
+	      .awards{
+
+	      }
+	      .social{
+					.socialContainer{
+						margin-left: 3%;
+						width:55px;
+						a {
+	              text-decoration: none;
+	              width: 55px;
+	              height: 55px;
+								margin:20px;
+	            i {
+	              text-align: center;
+	              font-size: 24px;
+	              -moz-border-radius: 100px;
+	              -webkit-border-radius: 100px;
+	              border-radius: 100px;
+	              border: 2px solid $blue;
+	              display: block;
+	              width: 55px;
+	              height: 55px;
+	              line-height: 55px;
+	              margin: 0 5px;
+	              -moz-transition: all 0.25s ease-in-out;
+	              -o-transition: all 0.25s ease-in-out;
+	              -webkit-transition: all 0.25s ease-in-out;
+	              transition: all 0.25s ease-in-out;
+	              color: $blue;
+								&:hover {
+			            background-color: $blue;
+			            color: #fff;
+			          }
+							}
+	          }
+					}
+	      }
+	    }
+	    .rightColumn{
+	      margin-left: -2%;
+	      position: relative;
+	      width: 69%;
+	      display: inline-block;
+	      float: right;
+	      .experience{
+	        // word-wrap: break-word;
+	        .sectionTitle{
+	          font-family: $mainFont;
+	          color:  $mainColor;
+	        }
+	        .job{
+	          padding-bottom: 15px;
+	          padding-right: 5%;
+	          margin-top: 10px;
+	          color:  $mainColor;
+	          .infoContainer{
+	              font-family: $rale;
+	              font-size: 12px;
+	              line-height: 10px;
+	            .title{
+	              color: $blue;
+	            }
+	            .year{
+	              color: $gray;
+								// font-size:  10px;
+	            }
+	            .company{
+	            }
+	            .location{
+	            }
+	          }
+
+	          ul{
+							list-style: none;
+	            li{
+	              font-family: $rale;
+	              font-size: 15px;
+	              line-height: 20px;
+								color:  $mainColor;
+								text-indent: -1em;
+								&::before{
+									color: $blue;
+									content: "•";
+								  padding-right:4px;
+								  vertical-align:middle;
+								  font-size:30px;
+								}
+	            }
+	          }
+	        }
+	      }
+	    }
+    }
+	}
+}
+footer{
+	 border: 3px solid $mainColor;
+	bottom: 0;
+ 	padding: 10px;
+	background-color: $blue;
+	text-align: center;
+	font-family: $mainFont;
+	.copy {
+		font-family: $subFont;
+	}
+}
