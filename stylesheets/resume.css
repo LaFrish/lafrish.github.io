@@ -373,6 +373,20 @@ body .container .mainRow .rightColumn .experience .job ul li::before {
   font-size: 30px;
 }
 
+.sticky {
+  background-color: #000;
+  color: #fff;
+  z-index: 10;
+}
+
+.sticky a {
+  color: #fff;
+}
+
+.sticky a i {
+  color: #fff;
+}
+
 footer {
   border: 3px solid #070707;
   bottom: 0;
