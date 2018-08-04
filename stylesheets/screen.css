@@ -1978,16 +1978,20 @@ border: 1px solid #000;
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+
+
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
 }
 
-@-webkit-keyframes zigzag {
+/* @-webkit-keyframes zigzag {
   100% {
     background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
   }
@@ -1996,7 +2000,7 @@ border: 1px solid #000;
   100% {
     background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
   }
-}
+} */
 
 .pop1:before {
 	position: absolute;
@@ -2020,7 +2024,7 @@ border: 1px solid #000;
 .pop1 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2098,25 +2102,18 @@ span1:hover{
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
 }
 
-@-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
+
 
 .pop2:before {
 	position: absolute;
@@ -2140,7 +2137,7 @@ span1:hover{
 .pop2 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2218,25 +2215,18 @@ span2:hover{
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
 }
 
-@-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
+
 
 .pop3:before {
 	position: absolute;
@@ -2260,7 +2250,7 @@ span2:hover{
 .pop3 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2337,25 +2327,17 @@ span3:hover{
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
 }
 
-@-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
 .pop4:before {
 	position: absolute;
 	-moz-border-radius: 3px;
@@ -2378,7 +2360,7 @@ span3:hover{
 .pop4 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2454,25 +2436,18 @@ span4:hover{
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
 }
 
-@-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
+
 
 .pop5:before {
 	position: absolute;
@@ -2496,7 +2471,7 @@ span4:hover{
 .pop5 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2573,24 +2548,15 @@ height: 2000px;
 width: 100%;
 margin-top: -340px;
 margin-bottom: -1000px;
-transform: skew(0deg, -5deg);
+background: #000;
+opacity: 0.7;
+/* transform: skew(0deg, -5deg);
 -webkit-animation: zigzag 1s linear infinite;
 animation: zigzag 1s linear infinite;
 background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
 background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-background-size: 0.75em 0.75em;
+background-size: 0.75em 0.75em; */
 
-}
-
-@-webkit-keyframes zigzag {
-100% {
-	background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-}
-}
-@keyframes zigzag {
-100% {
-	background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-}
 }
 
 .pop6:before {
@@ -2615,7 +2581,7 @@ background-size: 0.75em 0.75em;
 .pop6 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2692,24 +2658,15 @@ span6:hover{
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
-}
-
-@-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
 }
 
 .pop7:before {
@@ -2734,7 +2691,7 @@ span6:hover{
 .pop7 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2812,25 +2769,17 @@ span7:hover{
   width: 100%;
   margin-top: -340px;
   margin-bottom: -1000px;
-  transform: skew(0deg, -5deg);
+	background: #000;
+	opacity: 0.7;
+  /* transform: skew(0deg, -5deg);
   -webkit-animation: zigzag 1s linear infinite;
   animation: zigzag 1s linear infinite;
   background: -webkit-linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, -webkit-linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, -webkit-linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
   background: linear-gradient(135deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(249, 23, 145, 1) 0.25em, transparent 0.25em) 0 0;
-  background-size: 0.75em 0.75em;
+  background-size: 0.75em 0.75em; */
 
 }
 
-@-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
 
 
 .pop8:before {
@@ -2855,7 +2804,7 @@ span7:hover{
 .pop8 > p1 {
 	margin: 25px;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 24px;
 	line-height: 28px;
@@ -2894,7 +2843,7 @@ span8:hover{
   top: 0;
   left: 0;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 1.75em;
   text-align: center;
@@ -2903,7 +2852,7 @@ span8:hover{
   animation: 3s fade;
 }
 .techUsed p{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 24px;
 }
