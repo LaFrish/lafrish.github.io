@@ -27,14 +27,14 @@ html {
   border-radius: 100%;
   border-width: 0 0 1px;
   z-index: 100;
+  right: 30px;
+  top: 30px;
 }
 
 .menu-bg {
   position: fixed;
   background: #f91791;
   transition: .25s;
-  right: 45px;
-  top: 30px;
   transform: translate3d(50%, -50%, 0);
   transform-origin: center center;
   box-shadow: 0 2px 3px black;
@@ -42,15 +42,15 @@ html {
   -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  color: #95C6C4;
   cursor: pointer;
 }
 
-.menu-bg a {
+.menu-bg span a {
   text-decoration: none;
+  color: #fff;
 }
 
-.menu-bg a i {
+.menu-bg span a i {
   text-align: center;
   font-size: 24px;
   -moz-border-radius: 100px;
@@ -65,9 +65,100 @@ html {
   color: #fff;
 }
 
-.menu-bg a i:hover {
-  background-color: #95C6C4;
+.menu-bg span a i:hover {
+  background-color: #fff;
+  color: #f91791;
+}
+
+.menu-bg span:hover {
+  color: #f91791;
+}
+
+.menu-bg:hover {
+  background-color: #fff;
+  color: #f91791;
+}
+
+[tooltip] {
+  position: relative;
+}
+
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none;
+  font-size: 16px;
+  line-height: 20px;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1001;
+}
+
+[tooltip]::after {
+  content: attr(tooltip);
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  min-width: 25px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: 5px;
+  box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+  background: #f91791;
   color: #fff;
+  z-index: 1000;
+}
+
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+
+[tooltip][flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #f91791;
+  left: calc(0em - 10px);
+  transform: translate(-0.5em, -50%);
+}
+
+[tooltip][flow^="left"]::after {
+  top: 50%;
+  right: calc(100% + 10px);
+  transform: translate(-0.5em, -50%);
+}
+
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
 }
 
 body {
