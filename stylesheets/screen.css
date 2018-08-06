@@ -1522,9 +1522,17 @@ padding: 200px 0;
 
 
 @media (min-width: 768px) {
+
   .containerHeading {
     font-size: 50px;
   }
+
+	.containerHeading .muted{
+    font-size: 50px;
+  }
+	.experience .row .col-md-12 ul li{
+		font-size: 20px;
+	}
 }
 
 @media (min-width: 992px) {
