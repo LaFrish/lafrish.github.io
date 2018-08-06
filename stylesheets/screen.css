@@ -1675,7 +1675,7 @@ padding: 200px 0;
 		display: grid;
 } */
 
-	#contactMe .contact-info div {
+	/* #contactMe .contact-info div {
     border: 1px solid #fff;
     margin: 0 auto 12px !important;
     -moz-border-radius: 3px;
@@ -1686,7 +1686,7 @@ padding: 200px 0;
     width: 100%;
     font-size: 20px;
     clear: both;
-	}
+	} */
 
 
 	#bio > p {
