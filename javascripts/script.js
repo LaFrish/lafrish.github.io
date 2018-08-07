@@ -286,7 +286,7 @@ $(document).ready(function () {
 		$(".pop3").fadeOut(300);
 	});
 });
-//node portfolio
+//protrakr
 $(document).ready(function () {
 	$(".gal_btn4").click(function () {
 		$(".pop4").fadeIn(300);
@@ -315,7 +315,7 @@ $(document).ready(function () {
 		$(".pop6").fadeOut(300);
 	});
 });
-//protrakr
+
 $(document).ready(function () {
 	$(".gal_btn7").click(function () {
 		$(".pop7").fadeIn(600);
