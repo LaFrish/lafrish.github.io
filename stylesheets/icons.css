@@ -1,0 +1,495 @@
+
+/*SKILLS ICONS*/
+@font-face {
+	font-family: "untitled-font-2";
+	src:url("fonts/untitled-font-2.eot");
+	src:url("fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"),
+	url("fonts/untitled-font-2.woff") format("woff"),
+	url("fonts/untitled-font-2.ttf") format("truetype"),
+	url("fonts/untitled-font-2.svg#untitled-font-2") format("svg");
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+[data-icon]:before {
+	font-family: "untitled-font-2" !important;
+	content: attr(data-icon);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "untitled-font-2" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-haml-2:before {
+	color: #fff;
+	content: "\61";
+}
+.icon-haml-2:hover {
+	color: #ecdfa7;
+	content: "\61";
+}
+
+@font-face {
+	font-family: 'devicon';
+	src:url('fonts/devicon.eot?-hdf3wh');
+	src:url('fonts/devicon.eot?#iefix-hdf3wh') format('embedded-opentype'),
+	url('fonts/devicon.woff?-hdf3wh') format('woff'),
+	url('fonts/devicon.ttf?-hdf3wh') format('truetype'),
+	url('fonts/devicon.svg?-hdf3wh#devicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="devicon-"], [class*=" devicon-"] {
+	font-family: 'devicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.devicon-css3-plain:hover {
+	color: #3d8fc6;
+	text-align: center;
+}
+
+.devicon-github-original:before,
+.devicon-github-plain:before {
+	color: #fff;
+	content: "\e90b";
+	text-align: center;
+}
+
+.devicon-github-original:hover,
+.devicon-github-plain:hover {
+	color: #181616;
+	text-align: center;
+}
+
+.devicon-heroku-line:before,
+.devicon-heroku-original:before {
+	color: #fff;
+	content: "\e60b";
+	text-align: center;
+
+}
+.devicon-heroku-line:hover,
+.devicon-heroku-plain:hover,
+.devicon-heroku-original:hover {
+	background: #6762a6;
+	text-align: center;
+}
+
+.devicon-heroku-plain:before {
+	background: #6762a6;
+	color: #fff;
+	content: "\e60f";
+	text-align: center;
+}
+
+.devicon-angularjs-plain:before {
+	color: #fff;
+	content: "\e61d";
+	text-align: center;
+}
+.devicon-angularjs-plain:hover {
+	color: #c4473a;
+	text-align: center;
+}
+
+
+.devicon-atom-original:before,
+.devicon-atom-plain:before {
+	color: #fff;
+	content: "\e624";
+	text-align: center;
+}
+.devicon-atom-original:hover,
+.devicon-atom-plain:hover {
+	color: #67595D;
+	text-align: center;
+}
+
+.devicon-git-plain:before {
+	color: #fff;
+	content: "\e7a8";
+	text-align: center;
+}
+.devicon-git-plain:hover {
+	color: #f34f29;
+	text-align: center;
+}
+
+.devicon-html5-plain:before {
+	color: #fff;
+	content: "\e7f7";
+	text-align: center;
+}
+.devicon-html5-plain:hover {
+	color: #e54d26;
+	text-align: center;
+}
+
+
+.devicon-illustrator-line:before {
+	color: #fff;
+	content: "\e7f9";
+	text-align: center;
+}
+
+.devicon-illustrator-plain:before {
+	color: #fff;
+	content: "\e7fa";
+	text-align: center;
+}
+
+.devicon-illustrator-line:hover,
+.devicon-illustrator-plain:hover {
+	color: #faa625;
+	text-align: center;
+}
+
+
+.devicon-javascript-plain:before {
+	color: #fff;
+	content: "\e845";
+	text-align: center;
+}
+.devicon-javascript-plain:hover {
+	color: #f0db4f;
+	text-align: center;
+}
+
+.devicon-jquery-plain:before {
+	color: #fff;
+	content: "\e84a";
+	text-align: center;
+}
+
+.devicon-jquery-plain:hover {
+	color: #0769ad;
+	text-align: center;
+}
+
+
+.devicon-mongodb-plain:before {
+	color: #fff;
+	content: "\eb44";
+	text-align: center;
+}
+
+.devicon-mongodb-plain:hover {
+	color: #4FAA41;
+	text-align: center;
+}
+
+
+.devicon-mysql-plain:before {
+	color: #fff;
+	content: "\eb61";
+	text-align: center;
+}
+.devicon-mysql-plain:hover {
+	color: #00618a;
+	text-align: center;
+}
+
+.devicon-nodejs-plain:before {
+	color: #fff;
+	content: "\eb6a";
+	text-align: center;
+}
+
+.devicon-nodejs-plain:hover {
+	color: #83CD29;
+	text-align: center;
+}
+.devicon-photoshop-line:before {
+	color: #fff;
+	content: "\eb6c";
+	text-align: center;
+}
+
+.devicon-photoshop-plain:before {
+	color: #fff;
+	content: "\eb6d";
+
+}
+.devicon-photoshop-line:hover,
+.devicon-photoshop-plain:hover{
+	color: #80b5e2;
+	text-align: center;
+}
+
+.devicon-postgresql-plain:before {
+	color: #fff;
+	content: "\eb7d";
+	text-align: center;
+}
+.devicon-postgresql-plain:hover{
+	color: #336791;
+	text-align: center;
+}
+
+.devicon-php-plain:before {
+	color: #fff;
+	text-align: center;
+
+}
+.devicon-php-plain:hover {
+	color: #6181b6;
+	text-align: center;
+}
+.devicon-python-plain:before {
+	color: #fff;
+	content: "\eb89";
+}
+.devicon-python-plain:hover {
+	color: #ffd845;
+}
+
+
+.devicon-rails-plain:before {
+	color: #fff;
+	content: "\eba3";
+	text-align: center;
+}
+
+.devicon-rails-plain:hover {
+	color: #a62c46;
+	text-align: center;
+}
+
+
+.devicon-ruby-plain:before {
+	color: #fff;
+	content: "\ebca";
+	text-align: center;
+}
+
+.devicon-ruby-plain:hover {
+	color: #d91404;
+}
+
+.devicon-sass-original:before,
+.devicon-sass-plain:before {
+	color: #fff;
+	content: "\ebcb";
+	text-align: center;
+}
+.devicon-sass-original:hover,
+.devicon-sass-plain:hover{
+	color: #cc6699;
+}
+
+
+.devicon-wordpress-plain:before {
+	color: #fff;
+	content: "\ebfe";
+	text-align: center;
+}
+.devicon-wordpress-plain:hover {
+	color: #494949;
+}
+.devicon-apache-line:before {
+	content: "\e627";
+}
+
+.devicon-apache-plain:before {
+	content: "\e629";
+}
+.devicon-apache-line.colored,
+.devicon-apache-plain.colored {
+	color: #303284;
+}
+.devicon-react-original:before,
+.devicon-react-plain:before {
+	content: "\e601";
+}
+
+.devicon-react-plain:hover,
+.devicon-react-original:hover {
+	color: #61dafb;
+}
+.devicon-bootstrap-plain:before {
+	content: "\e62f";
+}
+.devicon-bootstrap-plain:hover {
+	color: #59407f;
+}
+
+
+.bitIcon-css-sq:before {
+	content: "\e606";
+}
+.bitIcon-css:before {
+	content: "\e607";
+	color: #fff;
+	text-align: center;
+}
+.bitIcon-html-sq:before {
+	content: "\e60c";
+}
+
+.bitIcon-html:before {
+	content: "\e60d";
+	text-align: center;
+	background: #8942d6;
+	color: #fff;
+}
+.bitIcon-html:hover{
+	color: #8942d6;
+	background: #8942d6;
+}
+
+
+#about .skills a i {
+	font-size: 24px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	border: 2px solid #000;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	margin: 0 5px;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	color: #fff;
+}
+
+.angular {
+	background: #c4473a;
+	text-align: center;
+}
+
+.bootstrap {
+	background: #59407f;
+	text-align: center;
+}
+
+.github{
+	background: #181616;
+	text-align: center;
+}
+
+.atom {
+	background: #67595D;
+	text-align: center;
+}
+
+.git {
+	background: #f34f29;
+	text-align: center;
+}
+.html5 {
+	background: #e54d26;
+	text-align: center;
+}
+.html {
+	background: #8942d6;
+	text-align: center;
+}
+.css {
+	background: #80b5e2;
+	text-align: center;
+}
+
+.heroku {
+	background-color: #6762a6;
+}
+.illustrator {
+	background: #faa625;
+	text-align: center;
+}
+
+.php {
+	background-color: #6181b6;
+	text-align: center;
+}
+.wordpress{
+	background-color: #494949;
+	text-align: center;
+}
+.javascript {
+	background: #f0db4f;
+	text-align: center;
+}
+.jquery {
+	background: #0769ad;
+	text-align: center;
+}
+
+.mongodb {
+	background: #4FAA41;
+	text-align: center;
+}
+.mysql {
+	background: #00618a;
+	text-align: center;
+}
+.node {
+	background: #83CD29;
+	text-align: center;
+}
+.photoshop{
+	background: #80b5e2;
+	text-align: center;
+}
+.postgresql{
+	background: #336791;
+	text-align: center;
+}
+.rails {
+	background: #a62c46;
+	text-align: center;
+}
+.react {
+	background: #61dafb;
+	text-align: center;
+}
+.ruby {
+	background: #d91404;
+	text-align: center;
+}
+.sass{
+	background: #cc6699;
+	text-align: center;
+}
+.wordpress {
+	background: #494949;
+	text-align: center;
+}
+
+.haml {
+	background: #ecdfa7;
+	text-align: center;
+}
+.apache {
+	background: #303284;
+	text-align: center;
+}
