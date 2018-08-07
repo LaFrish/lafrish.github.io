@@ -250,7 +250,7 @@ $(document).scroll(function() {
 $(function() {
 	$('.toggles button').click(function(){
 		var get_id = this.id;
-		var get_current = $('.gallery_containers .' + get_id);
+		var get_current = $('.grid .' + get_id);
 		$('.gallery_container').not( get_current ).hide(500);
 		get_current.show(500);
 	});
@@ -262,7 +262,7 @@ $(document).ready(function () {
 		$(".pop1").fadeIn(300);
 	});
 	//close
-	$(".pop1 > span1").click(function () {
+	$(".pop1 > span").click(function () {
 		$(".pop1").fadeOut(300);
 	});
 });
@@ -272,7 +272,7 @@ $(document).ready(function () {
 		$(".pop2").fadeIn(300);
 	});
 	//close
-	$(".pop2 > span2").click(function () {
+	$(".pop2 > span").click(function () {
 		$(".pop2").fadeOut(300);
 	});
 });
@@ -282,7 +282,7 @@ $(document).ready(function () {
 		$(".pop3").fadeIn(300);
 	});
 	//close
-	$(".pop3 > span3").click(function () {
+	$(".pop3 > span").click(function () {
 		$(".pop3").fadeOut(300);
 	});
 });
@@ -292,7 +292,7 @@ $(document).ready(function () {
 		$(".pop4").fadeIn(300);
 	});
 	//close
-	$(".pop4 > span4").click(function () {
+	$(".pop4 > span").click(function () {
 		$(".pop4").fadeOut(300);
 	});
 });
@@ -301,7 +301,7 @@ $(document).ready(function () {
 		$(".pop5").fadeIn(300);
 	});
 	//close
-	$(".pop5 > span5").click(function () {
+	$(".pop5 > span").click(function () {
 		$(".pop5").fadeOut(300);
 	});
 });
@@ -311,7 +311,7 @@ $(document).ready(function () {
 		$(".pop6").fadeIn(600);
 	});
 	//close
-	$(".pop6 > span6").click(function () {
+	$(".pop6 > span").click(function () {
 		$(".pop6").fadeOut(300);
 	});
 });
@@ -321,7 +321,7 @@ $(document).ready(function () {
 		$(".pop7").fadeIn(600);
 	});
 	//close
-	$(".pop7 > span7").click(function () {
+	$(".pop7 > span").click(function () {
 		$(".pop7").fadeOut(300);
 	});
 });
@@ -331,7 +331,20 @@ $(document).ready(function () {
 		$(".pop8").fadeIn(800);
 	});
 	//close
-	$(".pop8 > span8").click(function () {
+	$(".pop8 > span").click(function () {
 		$(".pop8").fadeOut(300);
 	});
+});
+
+
+// masonry grid
+
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
 });
