@@ -256,86 +256,16 @@ $(function() {
 	});
 });
 
-//trivia portfolio
-$(document).ready(function () {
-	$(".gal_btn1").click(function () {
-		$(".pop1").fadeIn(300);
-	});
-	//close
-	$(".pop1 > span").click(function () {
-		$(".pop1").fadeOut(300);
-	});
-});
-//cheerie portfolio
-$(document).ready(function () {
-	$(".gal_btn2").click(function () {
-		$(".pop2").fadeIn(300);
-	});
-	//close
-	$(".pop2 > span").click(function () {
-		$(".pop2").fadeOut(300);
-	});
-});
-//icare portfolio
-$(document).ready(function () {
-	$(".gal_btn3").click(function () {
-		$(".pop3").fadeIn(300);
-	});
-	//close
-	$(".pop3 > span").click(function () {
-		$(".pop3").fadeOut(300);
-	});
-});
-//protrakr
-$(document).ready(function () {
-	$(".gal_btn4").click(function () {
-		$(".pop4").fadeIn(300);
-	});
-	//close
-	$(".pop4 > span").click(function () {
-		$(".pop4").fadeOut(300);
-	});
-});
-$(document).ready(function () {
-	$(".gal_btn5").click(function () {
-		$(".pop5").fadeIn(300);
-	});
-	//close
-	$(".pop5 > span").click(function () {
-		$(".pop5").fadeOut(300);
-	});
-});
-//yearbook
-$(document).ready(function () {
-	$(".gal_btn6").click(function () {
-		$(".pop6").fadeIn(600);
-	});
-	//close
-	$(".pop6 > span").click(function () {
-		$(".pop6").fadeOut(300);
-	});
-});
+// Show & Hide Gallery modal
 
-$(document).ready(function () {
-	$(".gal_btn7").click(function () {
-		$(".pop7").fadeIn(600);
-	});
-	//close
-	$(".pop7 > span").click(function () {
-		$(".pop7").fadeOut(300);
-	});
-});
-//MMG trivia
-$(document).ready(function () {
-	$(".gal_btn8").click(function () {
-		$(".pop8").fadeIn(800);
-	});
-	//close
-	$(".pop8 > span").click(function () {
-		$(".pop8").fadeOut(300);
-	});
-});
-
+    $('.gal_btn').click(function () {
+			$('#' + $(this).data("index")).fadeIn(300);
+			console.log('visible');
+		});
+			$(".pop > .gal_btn").click(function () {
+				$(".pop").fadeOut(300);
+				console.log('why')
+			});
 
 // masonry grid
 
