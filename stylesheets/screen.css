@@ -3570,6 +3570,9 @@ body>nav.hide-it {
 			font-size: 13px;
 			line-height: 16px;
 		}
+		#resume .links a {
+    margin: 0;
+}
 		#resume .pop .links {
 			margin: 20px 0 20px 0;
 
