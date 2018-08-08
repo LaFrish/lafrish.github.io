@@ -3479,7 +3479,7 @@ body>nav.hide-it {
     font-size: 75px;
 		line-height: 1;
     margin-top: 75px;
-    margin-left: 250px;
+    margin-left: 260px;
 }
 	#bio > p {
   margin-top: 10px;
@@ -3511,6 +3511,14 @@ body>nav.hide-it {
 	}
 	.experience .row .muted {
 	    font-size: 25px;
+	}
+	.experience .row li {
+
+		list-style: disc;
+		margin-left: 21px;
+		line-height: 22px;
+		font-size: 11px;
+
 	}
 	.grid-sizer,
 	.grid-item {
