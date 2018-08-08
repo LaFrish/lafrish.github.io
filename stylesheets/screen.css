@@ -3341,9 +3341,9 @@ body>nav.hide-it {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
-.experience .col-md-12{
+/* .experience .col-md-12{
 	 margin-left: 25px;
-	 }
+	 } */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
@@ -3548,10 +3548,10 @@ body>nav.hide-it {
 }
 
 @media (max-width: 362px){
-	.menu-items {
+	/* .menu-items {
 		font-size: 67px;
     margin-left: 366px;
-}
+} */
 
 #about .title li {
     font-size: 16px;
