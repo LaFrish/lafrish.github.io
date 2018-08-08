@@ -457,6 +457,7 @@ body{
 	              line-height: 20px;
 								color:  $mainColor;
 								text-indent: -1em;
+								padding-bottom: 5px;
 								&::before{
 									color: $blue;
 									content: "•";
@@ -496,24 +497,500 @@ footer{
 		font-family: $subFont;
 	}
 }
+@media (min-width: 402px) {
+	body{
+
+	  .banner{
+
+	    .heading{
+
+	    }
+	    .subHeading{
+	    }
+	  }
+			header{
+
+
+		    div{
+		      // width: 30%;
+		      // display: inline-flex;
+		      a{
+		        // text-decoration: none;
+		        // display: inline-flex;
+		        // font-size: 20px;
+		        // color: $mainColor;
+		        &:hover {
+		          // color: $blue;
+		          i{
+		            // color: $blue;
+		          }
+		        }
+		      i{
+		        // font-size: 20px;
+		        // color: $mainColor;
+		      }
+		    }
+		  }
+			.email{
+				padding-left: 60px;
+				a{
+					// margin-top: 15px;
+					&:hover {
+						// color: $blue;
+						i{
+							// color: $blue;
+						}
+					}
+				i{
+					// padding-top: 4px;
+					// margin-right: 20px;
+				}
+			}
+		}
+			.tel{
+			    a{
+
+			      // padding-left: 15px;
+			    	i{
+			      // padding-right: 2px;
+			      // transform: rotate(100deg);
+			      // -ms-transform: rotate(100deg);
+			      // -webkit-transform: rotate(100deg);
+			      // font-size: 18px;
+			      // margin-right: 20px;
+			    }
+					&:hover{
+			      // color: $blue;
+			    }
+			  }
+			}
+		  .website{
+		   float: none;
+
+		    a{
+		      // margin-top: 15px;
+
+		      i{
+						// margin-left: -10px;
+		        // padding-top: 3px;
+		        // font-size: 18px;
+		        // margin-right: 20px;
+		      }
+		    &:hover{
+		      // color: $blue;
+		    }
+		  }
+		}
+	}
+
+}
+
+	.profile{
+		height: 170px;
+	}
+	.profile h2{
+		font-size: 26px;
+	}
+
+
+.profile p{
+	font-size: 21px;
+}
+
+.leftColumn .section ul li {
+
+    font-size: 15px;
+    line-height: 20px;
+		margin-left: -30px;
+
+}
+.rightColumn{
+	// margin-left: -2%;
+	// position: relative;
+	// width: 69%;
+	// display: inline-block;
+	// float: right;
+	.experience{
+		// word-wrap: break-word;
+		.sectionTitle{
+
+		}
+		.job{
+			padding-right: 20px;
+			// padding-bottom: 15px;
+			// padding-right: 5%;
+			// margin-top: 10px;
+			// color:  $mainColor;
+			.infoContainer{
+
+
+				.title{
+				font-size: 18px;
+
+				}
+				.year{
+
+					// font-size:  10px;
+				}
+				.company{
+				}
+				.location{
+				}
+			}
+
+			ul{
+				// list-style: none;
+				li{
+			    font-size: 13px;
+			    line-height: 20px;
+			    color: #070707;
+			   	text-indent:0em;
+			    padding-bottom: 8px;
+			    margin-left: -13px;
+					&::before{
+						// color: $blue;
+						// content: "•";
+						// padding-right:4px;
+						// vertical-align:middle;
+						// font-size:30px;
+					}
+				}
+			}
+		}
+	}
+}
+}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media  (min-width: 600px) {
+	body{
+
+	  .banner{
+
+	    .heading{
+
+	    }
+	    .subHeading{
+	    }
+	  }
+			header{
+
+
+		    div{
+		      // width: 30%;
+		      // display: inline-flex;
+		      a{
+		        // text-decoration: none;
+		        // display: inline-flex;
+		        // font-size: 20px;
+		        // color: $mainColor;
+		        &:hover {
+		          // color: $blue;
+		          i{
+		            // color: $blue;
+		          }
+		        }
+		      i{
+		        // font-size: 20px;
+		        // color: $mainColor;
+		      }
+		    }
+		  }
+			.email{
+				padding-left: 60px;
+				a{
+					// margin-top: 15px;
+					&:hover {
+						// color: $blue;
+						i{
+							// color: $blue;
+						}
+					}
+				i{
+					// padding-top: 4px;
+					// margin-right: 20px;
+				}
+			}
+		}
+			.tel{
+			    a{
+
+			      // padding-left: 15px;
+			    	i{
+			      // padding-right: 2px;
+			      // transform: rotate(100deg);
+			      // -ms-transform: rotate(100deg);
+			      // -webkit-transform: rotate(100deg);
+			      // font-size: 18px;
+			      // margin-right: 20px;
+			    }
+					&:hover{
+			      // color: $blue;
+			    }
+			  }
+			}
+		  .website{
+		   float: none;
+
+		    a{
+		      // margin-top: 15px;
+
+		      i{
+						// margin-left: -10px;
+		        // padding-top: 3px;
+		        // font-size: 18px;
+		        // margin-right: 20px;
+		      }
+		    &:hover{
+		      // color: $blue;
+		    }
+		  }
+		}
+	}
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
+	body{
+
+	  .banner{
+
+	    .heading{
+
+	    }
+	    .subHeading{
+	    }
+	  }
+			header{
+
+
+		    div{
+		      // width: 30%;
+		      // display: inline-flex;
+		      a{
+		        // text-decoration: none;
+		        // display: inline-flex;
+		        // font-size: 20px;
+		        // color: $mainColor;
+		        &:hover {
+		          // color: $blue;
+		          i{
+		            // color: $blue;
+		          }
+		        }
+		      i{
+		        // font-size: 20px;
+		        // color: $mainColor;
+		      }
+		    }
+		  }
+			.email{
+				padding-left: 60px;
+				a{
+					// margin-top: 15px;
+					&:hover {
+						// color: $blue;
+						i{
+							// color: $blue;
+						}
+					}
+				i{
+					// padding-top: 4px;
+					// margin-right: 20px;
+				}
+			}
+		}
+			.tel{
+			    a{
+
+			      // padding-left: 15px;
+			    	i{
+			      // padding-right: 2px;
+			      // transform: rotate(100deg);
+			      // -ms-transform: rotate(100deg);
+			      // -webkit-transform: rotate(100deg);
+			      // font-size: 18px;
+			      // margin-right: 20px;
+			    }
+					&:hover{
+			      // color: $blue;
+			    }
+			  }
+			}
+		  .website{
+		   float: none;
+
+		    a{
+		      // margin-top: 15px;
+
+		      i{
+						// margin-left: -10px;
+		        // padding-top: 3px;
+		        // font-size: 18px;
+		        // margin-right: 20px;
+		      }
+		    &:hover{
+		      // color: $blue;
+		    }
+		  }
+		}
+	}
+}
+
+	// margin-left: -2%;
+	// position: relative;
+	// width: 69%;
+	// display: inline-block;
+	// float: right;
+	.experience{
+		// word-wrap: break-word;
+		.sectionTitle{
+
+		}
+		.job{
+			padding-right: 20px;
+			// padding-bottom: 15px;
+			// padding-right: 5%;
+			// margin-top: 10px;
+			// color:  $mainColor;
+			.infoContainer{
+
+
+				.title{
+					font-size: 22px;
+
+				}
+				.year{
+
+					// font-size:  10px;
+				}
+				.company{
+				}
+				.location{
+				}
+			}
+
+			ul{
+				// list-style: none;
+				li{
+					font-size: 13px;
+					line-height: 20px;
+					color: #070707;
+					text-indent:0em;
+					padding-bottom: 8px;
+					margin-left: -13px;
+
+					&::before{
+						// color: $blue;
+						// content: "•";
+						// padding-right:4px;
+						// vertical-align:middle;
+						// font-size:30px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.leftColumn{
+		// margin-left: 5%;
+		// width: 25%;
+		// display: inline-block;
+		// position: relative;
+		.section{
+			// margin-bottom: 50px;
+			h2{
+
+			}
+			ul{
+				// list-style: none;
+				li{
+
+			    font-size: 18px;
+			    line-height: 28px;
+			    margin-left: -14px;
+					&::before{
+						// color: $blue;
+						// content: "•";
+						// padding-right:4px;
+						// vertical-align:middle;
+						// font-size:30px;
+					}
+				}
+			}
+		}
+		.languages{
+		}
+		.hardSkills{
+			padding-left: 0px ;
+		}
+		.softSkills{
+			padding-left: 0px ;
+
+		}
+		.education{
+
+			font-size: 15px;
+			line-height: 20px;
+			.blue{
+				// color: $blue;
+				// font-weight: 500;
+				// font-size: 18px;
+			}
+		}
+		.awards{
+
+		}
+		.social{
+			.socialContainer{
+				// margin-left: 3%;
+				// width:55px;
+				a {
+						// text-decoration: none;
+						// width: 55px;
+						// height: 55px;
+						// margin:20px;
+					i {
+						// text-align: center;
+						// font-size: 24px;
+						// -moz-border-radius: 100px;
+						// -webkit-border-radius: 100px;
+						// border-radius: 100px;
+						// border: 2px solid $blue;
+						// display: block;
+						// width: 55px;
+						// height: 55px;
+						// line-height: 55px;
+						// margin: 0 5px;
+						// -moz-transition: all 0.25s ease-in-out;
+						// -o-transition: all 0.25s ease-in-out;
+						// -webkit-transition: all 0.25s ease-in-out;
+						// transition: all 0.25s ease-in-out;
+						// color: $blue;
+						&:hover {
+
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	 .email {
+    padding-left: 5%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	
+
 }

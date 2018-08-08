@@ -454,6 +454,7 @@ body .container .mainRow .rightColumn .experience .job ul li {
   line-height: 20px;
   color: #070707;
   text-indent: -1em;
+  padding-bottom: 5px;
 }
 
 body .container .mainRow .rightColumn .experience .job ul li::before {
@@ -491,8 +492,98 @@ footer .copy {
   font-family: "Montserrat";
 }
 
+@media (min-width: 402px) {
+  body header .email {
+    padding-left: 60px;
+  }
+  body header .website {
+    float: none;
+  }
+  .profile {
+    height: 170px;
+  }
+  .profile h2 {
+    font-size: 26px;
+  }
+  .profile p {
+    font-size: 21px;
+  }
+  .leftColumn .section ul li {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: -30px;
+  }
+  .rightColumn .experience .job {
+    padding-right: 20px;
+  }
+  .rightColumn .experience .job .infoContainer .title {
+    font-size: 18px;
+  }
+  .rightColumn .experience .job ul li {
+    font-size: 13px;
+    line-height: 20px;
+    color: #070707;
+    text-indent: 0em;
+    padding-bottom: 8px;
+    margin-left: -13px;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  body header .email {
+    padding-left: 60px;
+  }
+  body header .website {
+    float: none;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  body header .email {
+    padding-left: 60px;
+  }
+  body header .website {
+    float: none;
+  }
+  .experience .job {
+    padding-right: 20px;
+  }
+  .experience .job .infoContainer .title {
+    font-size: 22px;
+  }
+  .experience .job ul li {
+    font-size: 13px;
+    line-height: 20px;
+    color: #070707;
+    text-indent: 0em;
+    padding-bottom: 8px;
+    margin-left: -13px;
+  }
+  .leftColumn .section ul li {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: -14px;
+  }
+  .leftColumn .hardSkills {
+    padding-left: 0px;
+  }
+  .leftColumn .softSkills {
+    padding-left: 0px;
+  }
+  .leftColumn .education {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .email {
+    padding-left: 5%;
+  }
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
