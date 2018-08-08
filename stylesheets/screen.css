@@ -3546,10 +3546,10 @@ body>nav.hide-it {
 		}
 }
 
-@media (max-width: 355px){
+@media (max-width: 362px){
 	.menu-items {
 		font-size: 67px;
-    margin-left: 313px;
+    margin-left: 366px;
 }
 
 #about .title li {
