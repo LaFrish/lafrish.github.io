@@ -901,7 +901,7 @@ padding: 200px 0;
 
 	float: left;
 	line-height: 24px;
-	padding-bottom: 200px;
+	/* padding-bottom: 200px; */
 	display: block;
 }
 
@@ -3455,6 +3455,7 @@ body>nav.hide-it {
 		}
 }
 @media (max-width: 480px) {
+
 	.menu-bg {
 		/* position: fixed;
 		background: #f91791;
@@ -3474,7 +3475,7 @@ body>nav.hide-it {
 }
 	#bio > p {
   margin-top: 10px;
-    text-align: center;
+
     font-size: 20px;
     line-height: 30px;
 }
@@ -3492,10 +3493,10 @@ body>nav.hide-it {
 
 	}
 
-	.experience .companyHeading{
+	 .companyHeading{
 		font-size: 35px;
 	}
-	.experience .containerHeading{
+	 .containerHeading{
     font-size: 35px;
     /* margin-bottom: 5px; */
 
@@ -3536,4 +3537,71 @@ body>nav.hide-it {
 			margin: 20px 0 20px 0;
 
 		}
+}
+
+@media (max-width: 355px){
+	.menu-items {
+		font-size: 67px;
+    margin-left: 313px;
+}
+
+#about .title li {
+    font-size: 16px;
+    /* margin: 0 10px; */
+}
+#bio > p {
+
+    font-size: 19px;
+
+}
+blockquote {
+    font-size: 14px;
+    margin-top: -5px;
+}
+.education .row {
+    margin-top: 0;
+}
+/* aside{
+	margin-right: 20px;
+	margin-left: 20px;
+} */
+.education .row .brief .name,
+.education .row .brief .city{
+	font-size: 26px;
+	line-height: 28px;
+}
+.education .row .brief .position{
+	font-size: 20px;
+	line-height: 25px;
+}
+.companyHeading {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.containerHeading {
+	font-size: 23px;
+	line-height: 30px;
+	width: 100%;
+}
+
+.experience .row .muted{
+	font-size: 22px;
+	/* line-height: 50px;
+	text-indent: 5px; */
+}
+/* .experience .row .col-md-12 ul li{
+	font-size: 16px;
+} */
+
+.experience .row li {
+
+	list-style: disc;
+	margin-left: 21px;
+	line-height: 22px;
+	font-size: 12px;
+
+}
+
+
 }
