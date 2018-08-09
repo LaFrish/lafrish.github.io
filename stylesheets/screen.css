@@ -2352,6 +2352,14 @@ border: 1px solid #000;
 	margin: 0 0 0 20px;
 }
 
+#contactMe .contact-info .mail a span{
+
+		font-family: 'Montserrat';
+		font-size: 14px;
+		line-height: 27px;
+
+}
+
 #contactMe .contact-info .fa-mobile {
 	font-size: 38px;
 	float: left;
