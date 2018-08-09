@@ -226,6 +226,12 @@ body header div a {
   color: #070707;
 }
 
+body header div a span {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 27px;
+}
+
 body header div a:hover {
   color: #95C6C4;
 }
