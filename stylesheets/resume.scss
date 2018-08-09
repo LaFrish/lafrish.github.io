@@ -190,6 +190,7 @@ html{
 body{
   color:black;
   width: 100%;
+	height: 2000px;
 	margin: 0;
   .banner{
 		// margin: 0;
@@ -329,6 +330,9 @@ body{
 	    }
 	  }
 	  .mainRow{
+			margin-bottom: -20px;
+			padding-bottom: 20px;
+			height: 2000px;
 	    .leftColumn{
 	      margin-left: 5%;
 	      width: 25%;
@@ -421,6 +425,8 @@ body{
 	      width: 69%;
 	      display: inline-block;
 	      float: right;
+				margin-bottom: -20px;
+				padding-bottom: 20px;
 	      .experience{
 	        // word-wrap: break-word;
 	        .sectionTitle{
@@ -487,9 +493,11 @@ body{
 }
 
 footer{
+	// position: absolute;
+	width: 99.5%;
 	 border: 3px solid $mainColor;
 	bottom: 0;
- 	padding: 10px;
+ 	padding: 10px 0;
 	background-color: $blue;
 	text-align: center;
 	font-family: $mainFont;
@@ -497,7 +505,7 @@ footer{
 		font-family: $subFont;
 	}
 }
-@media (min-width: 402px) {
+@media only screen and (min-width: 402px) {
 	body{
 
 	  .banner{
@@ -597,6 +605,14 @@ footer{
 	font-size: 21px;
 }
 
+.mainRow{
+	height: 1900px;
+}
+.leftColumn{
+
+    height: 100%;
+
+}
 .leftColumn .section ul li {
 
     font-size: 15px;
@@ -605,11 +621,8 @@ footer{
 
 }
 .rightColumn{
-	// margin-left: -2%;
-	// position: relative;
-	// width: 69%;
-	// display: inline-block;
-	// float: right;
+	height: 100%;
+
 	.experience{
 		// word-wrap: break-word;
 		.sectionTitle{
@@ -662,11 +675,11 @@ footer{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media  (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 	body{
 
 	  .banner{
@@ -755,7 +768,7 @@ footer{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	body{
 
 	  .banner{
@@ -841,12 +854,11 @@ footer{
 		}
 	}
 }
+.mainRow{
+	height: 1900px;
+}
 
-	// margin-left: -2%;
-	// position: relative;
-	// width: 69%;
-	// display: inline-block;
-	// float: right;
+
 	.experience{
 		// word-wrap: break-word;
 		.sectionTitle{

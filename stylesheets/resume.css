@@ -164,6 +164,7 @@ html {
 body {
   color: black;
   width: 100%;
+  height: 2000px;
   margin: 0;
 }
 
@@ -318,6 +319,12 @@ body .container .row .profile p {
   color: #070707;
 }
 
+body .container .mainRow {
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+  height: 2000px;
+}
+
 body .container .mainRow .leftColumn {
   margin-left: 5%;
   width: 25%;
@@ -416,6 +423,8 @@ body .container .mainRow .rightColumn {
   width: 69%;
   display: inline-block;
   float: right;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
 }
 
 body .container .mainRow .rightColumn .experience .sectionTitle {
@@ -480,9 +489,10 @@ body .container .mainRow .rightColumn .experience .job ul li::before {
 }
 
 footer {
+  width: 99.5%;
   border: 3px solid #070707;
   bottom: 0;
-  padding: 10px;
+  padding: 10px 0;
   background-color: #95C6C4;
   text-align: center;
   font-family: "Audrey-Normal";
@@ -492,7 +502,7 @@ footer .copy {
   font-family: "Montserrat";
 }
 
-@media (min-width: 402px) {
+@media only screen and (min-width: 402px) {
   body header .email {
     padding-left: 60px;
   }
@@ -508,10 +518,19 @@ footer .copy {
   .profile p {
     font-size: 21px;
   }
+  .mainRow {
+    height: 1900px;
+  }
+  .leftColumn {
+    height: 100%;
+  }
   .leftColumn .section ul li {
     font-size: 15px;
     line-height: 20px;
     margin-left: -30px;
+  }
+  .rightColumn {
+    height: 100%;
   }
   .rightColumn .experience .job {
     padding-right: 20px;
@@ -531,7 +550,7 @@ footer .copy {
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   body header .email {
     padding-left: 60px;
   }
@@ -541,12 +560,15 @@ footer .copy {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body header .email {
     padding-left: 60px;
   }
   body header .website {
     float: none;
+  }
+  .mainRow {
+    height: 1900px;
   }
   .experience .job {
     padding-right: 20px;
