@@ -2098,17 +2098,19 @@ border: 1px solid #000;
 		-moz-border-radius: 50%;
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
-		border: 2px solid #f91791;
+		border: 2px solid transparent;
+		color: #f91791;
+		background-color: transparent;
 		display: inline-block;
-		width: 55px;
-		height: 55px;
-		line-height: 55px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
 		padding: 0 5px;
 		-moz-transition: all 0.25s ease-in-out;
 		-o-transition: all 0.25s ease-in-out;
 		-webkit-transition: all 0.25s ease-in-out;
 		transition: all 0.25s ease-in-out;
-		color: #f91791;
+
 		text-align: center;
 }
 /* .pop span {
@@ -2130,9 +2132,7 @@ border: 1px solid #000;
 
 
 #resume .pop button.gal_btn:hover{
-
-	background:  #f91791;
-	color: #fff;
+	color: #f91791;
 	text-shadow: 1px 1px 1px #000;
 	-moz-transition: all 0.25s ease-in-out;
 	-o-transition: all 0.25s ease-in-out;
@@ -2176,7 +2176,7 @@ border: 1px solid #000;
   content: '';
   width: 110%;
   margin-left: -5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   border-top: 1px solid #000;
   -webkit-animation: 2.5s draw;
   animation: 2.5s draw;
@@ -3654,4 +3654,48 @@ blockquote {
 }
 
 
+}
+
+.closeX {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.closeX:hover::before, .closeX:hover::after {
+  background: #f91791;
+  text-shadow: 1px 1px 1px #000;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.closeX::before, .closeX::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #000;
+}
+
+.closeX::before {
+  transform: rotate(45deg);
+}
+
+.closeX::after {
+  transform: rotate(-45deg);
+}
+
+.closeX.big {
+  transform: scale(3);
+}
+
+.closeX.hairline::before, .closeX.hairline::after {
+  height: 1px;
 }
