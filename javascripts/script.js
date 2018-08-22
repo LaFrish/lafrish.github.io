@@ -148,6 +148,7 @@ $(document).ready(function() {
 });
 
 
+
 $(document).ready(function(){
 	$('.bxslider').bxSlider({
 		adaptiveHeight: false,
