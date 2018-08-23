@@ -2910,13 +2910,48 @@ body>nav.hide-it {
 			padding: 0;
 		}
 		.skillsHeading{
-			text-align: center;
-			font-size: 45px;
+			font-size: 35px;
 		}
+		.skillsGrid li {
+    /* width: 213px; */
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0;
+}
+#about .skills .row .col-md-12 li i {
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #f91791;
+    padding-top: 10px;
+}
 
 		.skills li{
-			width: 25;
+			width: 49%;
 		}
+
+
+		.skillsGrid li h4 {
+
+    margin-top: -3px;
+    font-size: 16px;
+
+	}
+	.skillsGrid li.widerLI {
+		width: 49%;
+}
+	.skillsGrid li.widerLI2 {
+    width: 49%;
+}
 }
 @media (max-width: 480px) {
 
@@ -3089,14 +3124,11 @@ blockquote {
 
 }
 
-.skillsHeading{
-	text-align: center;
+/* .skillsHeading{
 	font-size: 45px;
-}
+} */
 
-.skills li{
-	width: 25;
-}
+
 
 }
 
