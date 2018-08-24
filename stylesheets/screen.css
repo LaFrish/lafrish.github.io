@@ -1362,12 +1362,12 @@ padding: 200px 0;
 } */
 .me svg{
 
-	width: 100%;
+	width: 125px;
 	height: auto;
 }
 .me h3{
 	font-size: 20px;
-	margin: 15px 0;
+	margin: 10px 0;
 	/* font-family: "Audrey-Normal", monospace; */
 }
 
