@@ -15,7 +15,7 @@
   position: absolute;
   display: block;
   left: 50%;
-  top: 0;
+  top: 86px;
   margin-bottom: 50px;
   width: 3px;
   height: 5px;
@@ -24,351 +24,351 @@
 }
 
 .optimism:hover i:nth-of-type(1) {
-  transform: translate3d(15px, -65px, 0) rotate(24deg);
-  background: #bf00ff;
+  transform: translate3d(-70px, -63px, 0) rotate(247deg);
+  background: #37ff00;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(2) {
-  transform: translate3d(-80px, -63px, 0) rotate(117deg);
-  background: #c8ff00;
+  transform: translate3d(-14px, -93px, 0) rotate(326deg);
+  background: #003cff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(3) {
-  transform: translate3d(78px, -64px, 0) rotate(233deg);
-  background: #48ff00;
+  transform: translate3d(-85px, -91px, 0) rotate(93deg);
+  background: #00e1ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(4) {
-  transform: translate3d(18px, -94px, 0) rotate(304deg);
-  background: #5eff00;
+  transform: translate3d(50px, -72px, 0) rotate(300deg);
+  background: #ff0037;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(5) {
-  transform: translate3d(89px, -66px, 0) rotate(245deg);
-  background: #0026ff;
+  transform: translate3d(-11px, -58px, 0) rotate(279deg);
+  background: #ff0044;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(6) {
-  transform: translate3d(-4px, -80px, 0) rotate(244deg);
-  background: #00ff66;
+  transform: translate3d(74px, -83px, 0) rotate(219deg);
+  background: #008cff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(7) {
-  transform: translate3d(71px, -95px, 0) rotate(252deg);
-  background: #7bff00;
+  transform: translate3d(-6px, -80px, 0) rotate(43deg);
+  background: #00ffc4;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(8) {
-  transform: translate3d(-84px, -53px, 0) rotate(208deg);
-  background: #2200ff;
+  transform: translate3d(-69px, -92px, 0) rotate(154deg);
+  background: #00ff22;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(9) {
-  transform: translate3d(-62px, -78px, 0) rotate(96deg);
-  background: #00ff91;
+  transform: translate3d(-81px, -92px, 0) rotate(25deg);
+  background: #4000ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
 .optimism:hover i:nth-of-type(10) {
-  transform: translate3d(87px, -61px, 0) rotate(19deg);
-  background: #00ff37;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(11) {
-  transform: translate3d(-31px, -80px, 0) rotate(167deg);
-  background: #ff0004;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(12) {
-  transform: translate3d(-35px, -87px, 0) rotate(247deg);
-  background: #a600ff;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(13) {
-  transform: translate3d(75px, -90px, 0) rotate(4deg);
-  background: #ffe100;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(14) {
-  transform: translate3d(-55px, -66px, 0) rotate(102deg);
-  background: #ff0040;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(15) {
-  transform: translate3d(-17px, -64px, 0) rotate(207deg);
-  background: #0900ff;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(16) {
-  transform: translate3d(65px, -89px, 0) rotate(132deg);
+  transform: translate3d(-77px, -75px, 0) rotate(51deg);
   background: #ff00d5;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(17) {
-  transform: translate3d(44px, -50px, 0) rotate(308deg);
-  background: #ff0051;
+.optimism:hover i:nth-of-type(11) {
+  transform: translate3d(80px, -53px, 0) rotate(244deg);
+  background: #7700ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(18) {
-  transform: translate3d(-37px, -52px, 0) rotate(155deg);
-  background: #ff0009;
+.optimism:hover i:nth-of-type(12) {
+  transform: translate3d(-4px, -69px, 0) rotate(222deg);
+  background: #ff7700;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(19) {
-  transform: translate3d(56px, -73px, 0) rotate(301deg);
-  background: #fff200;
+.optimism:hover i:nth-of-type(13) {
+  transform: translate3d(-26px, -65px, 0) rotate(74deg);
+  background: #eeff00;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(20) {
-  transform: translate3d(6px, -69px, 0) rotate(237deg);
-  background: #2fff00;
+.optimism:hover i:nth-of-type(14) {
+  transform: translate3d(-81px, -63px, 0) rotate(293deg);
+  background: #ff0088;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(21) {
-  transform: translate3d(7px, -85px, 0) rotate(265deg);
-  background: #ffc800;
+.optimism:hover i:nth-of-type(15) {
+  transform: translate3d(63px, -88px, 0) rotate(160deg);
+  background: #0040ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(22) {
-  transform: translate3d(3px, -56px, 0) rotate(141deg);
-  background: #ff00aa;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(23) {
-  transform: translate3d(48px, -85px, 0) rotate(90deg);
-  background: #00ffee;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(24) {
-  transform: translate3d(-86px, -95px, 0) rotate(265deg);
-  background: #ff2600;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(25) {
-  transform: translate3d(-61px, -55px, 0) rotate(140deg);
-  background: #ff5100;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(26) {
-  transform: translate3d(23px, -81px, 0) rotate(10deg);
-  background: #00ffe6;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(27) {
-  transform: translate3d(75px, -56px, 0) rotate(306deg);
-  background: #ff5900;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(28) {
-  transform: translate3d(65px, -65px, 0) rotate(188deg);
-  background: #aa00ff;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(29) {
-  transform: translate3d(-86px, -89px, 0) rotate(272deg);
-  background: #7bff00;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(30) {
-  transform: translate3d(41px, -86px, 0) rotate(283deg);
-  background: #ff009d;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(31) {
-  transform: translate3d(-95px, -56px, 0) rotate(280deg);
-  background: #ff005e;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(32) {
-  transform: translate3d(74px, -80px, 0) rotate(94deg);
-  background: #aa00ff;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(33) {
-  transform: translate3d(-55px, -76px, 0) rotate(65deg);
-  background: #37ff00;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(34) {
-  transform: translate3d(-62px, -99px, 0) rotate(232deg);
-  background: lime;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(35) {
-  transform: translate3d(41px, -99px, 0) rotate(297deg);
-  background: #bf00ff;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(36) {
-  transform: translate3d(-48px, -83px, 0) rotate(22deg);
-  background: #00ffea;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(37) {
-  transform: translate3d(44px, -80px, 0) rotate(351deg);
-  background: #ff9d00;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(38) {
-  transform: translate3d(67px, -84px, 0) rotate(264deg);
+.optimism:hover i:nth-of-type(16) {
+  transform: translate3d(57px, -85px, 0) rotate(319deg);
   background: #0037ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(39) {
-  transform: translate3d(89px, -73px, 0) rotate(109deg);
-  background: #ffae00;
+.optimism:hover i:nth-of-type(17) {
+  transform: translate3d(15px, -80px, 0) rotate(79deg);
+  background: #00ff1a;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(40) {
-  transform: translate3d(-85px, -53px, 0) rotate(130deg);
-  background: #6aff00;
+.optimism:hover i:nth-of-type(18) {
+  transform: translate3d(-71px, -91px, 0) rotate(151deg);
+  background: #eaff00;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(41) {
-  transform: translate3d(-12px, -99px, 0) rotate(299deg);
-  background: #55ff00;
+.optimism:hover i:nth-of-type(19) {
+  transform: translate3d(-23px, -87px, 0) rotate(283deg);
+  background: #ff003c;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(42) {
-  transform: translate3d(-30px, -87px, 0) rotate(192deg);
-  background: blue;
+.optimism:hover i:nth-of-type(20) {
+  transform: translate3d(23px, -99px, 0) rotate(83deg);
+  background: #ff0400;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(43) {
-  transform: translate3d(-52px, -56px, 0) rotate(293deg);
-  background: #00ff99;
+.optimism:hover i:nth-of-type(21) {
+  transform: translate3d(70px, -63px, 0) rotate(343deg);
+  background: #9900ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(44) {
-  transform: translate3d(19px, -55px, 0) rotate(195deg);
-  background: #bb00ff;
+.optimism:hover i:nth-of-type(22) {
+  transform: translate3d(-18px, -88px, 0) rotate(32deg);
+  background: #0055ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(45) {
-  transform: translate3d(-80px, -69px, 0) rotate(122deg);
-  background: #ff001a;
+.optimism:hover i:nth-of-type(23) {
+  transform: translate3d(79px, -84px, 0) rotate(353deg);
+  background: #00fff7;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(46) {
-  transform: translate3d(83px, -73px, 0) rotate(199deg);
-  background: #8cff00;
+.optimism:hover i:nth-of-type(24) {
+  transform: translate3d(73px, -82px, 0) rotate(167deg);
+  background: #73ff00;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(47) {
-  transform: translate3d(68px, -70px, 0) rotate(302deg);
-  background: #37ff00;
-  animation: bang 700ms ease-out forwards infinite;
-  opacity: 0;
-}
-
-.optimism:hover i:nth-of-type(48) {
-  transform: translate3d(-44px, -76px, 0) rotate(294deg);
+.optimism:hover i:nth-of-type(25) {
+  transform: translate3d(34px, -90px, 0) rotate(133deg);
   background: #f700ff;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
-.optimism:hover i:nth-of-type(49) {
-  transform: translate3d(9px, -89px, 0) rotate(165deg);
+.optimism:hover i:nth-of-type(26) {
+  transform: translate3d(47px, -63px, 0) rotate(161deg);
+  background: #2200ff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(27) {
+  transform: translate3d(82px, -60px, 0) rotate(57deg);
+  background: #ff0062;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(28) {
+  transform: translate3d(-65px, -56px, 0) rotate(256deg);
+  background: #ff005e;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(29) {
+  transform: translate3d(40px, -96px, 0) rotate(44deg);
+  background: #ccff00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(30) {
+  transform: translate3d(13px, -58px, 0) rotate(241deg);
+  background: #4dff00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(31) {
+  transform: translate3d(-72px, -89px, 0) rotate(193deg);
+  background: #ff5e00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(32) {
+  transform: translate3d(6px, -88px, 0) rotate(113deg);
+  background: #00eaff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(33) {
+  transform: translate3d(-13px, -95px, 0) rotate(308deg);
+  background: #ffbb00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(34) {
+  transform: translate3d(-31px, -96px, 0) rotate(253deg);
+  background: #fbff00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(35) {
+  transform: translate3d(50px, -78px, 0) rotate(284deg);
+  background: #00ff26;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(36) {
+  transform: translate3d(-82px, -63px, 0) rotate(155deg);
+  background: #ffea00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(37) {
+  transform: translate3d(-80px, -60px, 0) rotate(208deg);
+  background: #008cff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(38) {
+  transform: translate3d(90px, -76px, 0) rotate(33deg);
+  background: #ff0044;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(39) {
+  transform: translate3d(-55px, -88px, 0) rotate(288deg);
+  background: #00fffb;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(40) {
+  transform: translate3d(61px, -72px, 0) rotate(179deg);
+  background: cyan;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(41) {
+  transform: translate3d(76px, -87px, 0) rotate(80deg);
+  background: #d000ff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(42) {
+  transform: translate3d(-93px, -66px, 0) rotate(92deg);
+  background: #0055ff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(43) {
+  transform: translate3d(-64px, -52px, 0) rotate(213deg);
+  background: #ffd500;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(44) {
+  transform: translate3d(-63px, -62px, 0) rotate(161deg);
   background: #00ffc8;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
 
+.optimism:hover i:nth-of-type(45) {
+  transform: translate3d(18px, -55px, 0) rotate(118deg);
+  background: #ff00d5;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(46) {
+  transform: translate3d(-27px, -96px, 0) rotate(48deg);
+  background: #ff6a00;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(47) {
+  transform: translate3d(-85px, -78px, 0) rotate(285deg);
+  background: #8400ff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(48) {
+  transform: translate3d(21px, -81px, 0) rotate(333deg);
+  background: #ff008c;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
+.optimism:hover i:nth-of-type(49) {
+  transform: translate3d(-12px, -59px, 0) rotate(71deg);
+  background: #0077ff;
+  animation: bang 700ms ease-out forwards infinite;
+  opacity: 0;
+}
+
 .optimism:hover i:nth-of-type(50) {
-  transform: translate3d(12px, -66px, 0) rotate(22deg);
-  background: #00ddff;
+  transform: translate3d(-25px, -92px, 0) rotate(205deg);
+  background: #00ff9d;
   animation: bang 700ms ease-out forwards infinite;
   opacity: 0;
 }
