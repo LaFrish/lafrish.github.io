@@ -572,6 +572,7 @@ body > section > .holder > .title h2:after {
 /* /gifs */
 .rw-words-1 span{
 	margin-left: -17px;
+	/* margin-left: -27px; */
 	text-align: center;
 	font-family: 'Abril Fatface', serif;
 	color: #f91791;
@@ -582,10 +583,12 @@ body > section > .holder > .title h2:after {
 	-ms-animation: rotateWord 18s linear infinite 0s;
 	animation: rotateWord 18s linear infinite 0s;
 }
+
 /* tech */
 .rw-words-1 span:nth-child(2) {
 
-		margin-left: -20px;
+		/* margin-left: -20px; */
+  margin-left: -30px;
 	-webkit-animation-delay: 3s;
 	-ms-animation-delay: 3s;
 	animation-delay: 3s;
@@ -593,7 +596,8 @@ body > section > .holder > .title h2:after {
 /* web */
 .rw-words-1 span:nth-child(3) {
 
-		margin-left: -82px;
+		/* margin-left: -82px; */
+		  margin-left: -101px;
 	-webkit-animation-delay: 6s;
 	-ms-animation-delay: 6s;
 	animation-delay: 6s;
@@ -601,7 +605,8 @@ body > section > .holder > .title h2:after {
 /* pop culture */
 .rw-words-1 span:nth-child(4) {
 
-		margin-left: -49px;
+		/* margin-left: -49px; */
+		margin-left: -72px;
 	-webkit-animation-delay: 9s;
 	-ms-animation-delay: 9s;
 	animation-delay: 9s;
@@ -609,14 +614,16 @@ body > section > .holder > .title h2:after {
 /* marketing */
 .rw-words-1 span:nth-child(5) {
 
-		margin-left: -47px;
+		/* margin-left: -47px; */
+		margin-left: -66px;
 	-webkit-animation-delay: 12s;
 	-ms-animation-delay: 12s;
 	animation-delay: 12s;
 }
 /* Social Media */
 .rw-words-1 span:nth-child(6) {
-		margin-left: -55px;
+		/* margin-left: -55px; */
+		    margin-left: -75px;
 	-webkit-animation-delay: 15s;
 	-ms-animation-delay: 15s;
 	animation-delay: 15s;
@@ -650,7 +657,7 @@ body > section > .holder > .title h2:after {
 	100% { opacity: 0; }
 }
 @media screen and (max-width: 768px){
-	.rw-sentence { font-size: 18px; }
+	.rw-sentence { font-size: 23px; }
 }
 @media screen and (max-width: 320px){
 	.rw-sentence { font-size: 9px; }
@@ -2297,9 +2304,34 @@ border: 1px solid #000;
 		}
 
 		#welcome .welcome p {
-			font-size: 18px;
+			font-size: 23px;
 			line-height: 1.2;
 		}
+
+		.rw-words-1 span{
+			margin-left: -17px;
+		}
+
+		.rw-words-1 span:nth-child(2){
+			margin-left: -26px;
+		}
+
+		.rw-words-1 span:nth-child(3){
+			    margin-left: -96px;
+		}
+		.rw-words-1 span:nth-child(4){
+			margin-left: -64px;
+		}
+		.rw-words-1 span:nth-child(5){
+			margin-left: -57px;
+		}
+		.rw-words-1 span:nth-child(6){
+			    margin-left: -66px;
+		}
+
+
+
+
 		#welcome .welcome .buttonContainer {
     margin-top: 30px;
 	}
