@@ -415,6 +415,9 @@ a:visited{
 	position: relative;
 }
 
+.align{
+	text-align: left;
+}
 body > section {
 	float: left;
 	width: 100%;
@@ -564,9 +567,7 @@ body > section > .holder > .title h2:after {
 }
 
 
-.align{
-	text-align: left;
-}
+
 
 /* /gifs */
 .rw-words-1 span{
@@ -1455,7 +1456,7 @@ padding: 200px 0;
 
 /* **************GALLERY BUTTON CONTAINER ************** */
 
- .holder button {
+ /* .holder button {
 	font-family: "Abril Fatface", serif;
 	background-color: #fff;
 	color: #000;
@@ -1510,11 +1511,10 @@ padding: 200px 0;
 	transition: all 0.5s;
 	filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
 	opacity: 1;
-}
+} */
 
-
+/*
 .grid {
-
 	margin-top: 50px;
 }
 
@@ -1532,7 +1532,6 @@ padding: 200px 0;
 
 .grid-item,
 .figure {
-  /* float: left; */
   overflow: hidden;
 }
 
@@ -1541,19 +1540,13 @@ padding: 200px 0;
   max-width: 100%;
 }
 
-.grid-item:hover {
-
-
-}
 
 .grid-item img:hover {
   opacity: 0.4;
   filter: alpha(opacity=40);
-  /* For IE8 and earlier */
 }
 
 .gallery_containers {
-
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -1604,12 +1597,7 @@ padding: 200px 0;
 	font-size: 16px;
 }
 
-/*.toggles:active{
-color: #fff;
-background-color: #f91791;
-border: 1px solid #000;
 
-}*/
 .grid-item button{
 	font-family: 'Abril Fatface', serif;
 	-moz-border-radius: 3px;
@@ -1636,8 +1624,8 @@ border: 1px solid #000;
 	transition: all 0.5s ease-in-out;
 	filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
 	opacity: 1;
+} */
 
-}
 /*
 #resume .links {
 	margin: 20px 0 0 0;
@@ -1942,7 +1930,7 @@ border: 1px solid #000;
 } */
 
 
-#resume {
+/* #resume {
 	background-color: #fff;
 	padding: 80px 0 210px 0;
 	text-align: center;
@@ -1952,43 +1940,15 @@ border: 1px solid #000;
 #resume .holder {
 	max-width: 1000px;
 	margin: 0 auto;
-}
+} */
 
 #resume .resume {
 	line-height: 34px;
 }
 
-#resume .tech {
-	margin: 40px 0;
-}
-
-#resume .tech a i {
-	font-size: 24px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-	border: 2px solid #fff;
-	display: inline-block;
-	width: 55px;
-	height: 55px;
-	line-height: 55px;
-	margin: 0 5px;
-	-moz-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-	color: #fff;
-}
-
-#resume .tech a i:hover {
-	background-color: #fff;
-	color: #f91791;
-}
-
-#resume .copy {
-	padding: 40px 0 0 0;
-}
-
+/* #resume .title h2:after {
+	background-color: #f91791;
+} */
 
 #contactMe {
 	background-color: #f91791;
@@ -2011,9 +1971,7 @@ border: 1px solid #000;
 	background: #f91791;
 	position: absolute;
 }
-#resume .title h2:after {
-	background-color: #f91791;
-}
+
 
 #contactMe h2 {
 	font-size: 40px;
