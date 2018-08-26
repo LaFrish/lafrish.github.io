@@ -1,16 +1,17 @@
 
 
-$mainFont: "Audrey-Normal";
+$mainFont: "Audrey-Normal", monospace;
 $subFont: "Montserrat";
 $rale: "Raleway";
-
+$fatface: 'Abril Fatface', serif;
 
 
 $blue: #95C6C4;
 $mainColor: #070707;
 $gray: #8c8c8c;
 $pink: #f91791;
-
+$white: #fff;
+$black: #000000;
 
 
 .fade-in {
@@ -60,12 +61,12 @@ body > section {
         display: inline-block;
         padding: 0 0 12px;
         text-transform: uppercase;
-        font-family: "Audrey-Normal", monospace;
+        font-family: $mainFont;
         &:after {
           position: absolute;
           content: '';
           height: 4px;
-          background-color: #000;
+          background-color: $black;
           width: 50%;
           margin: 0 auto;
           clear: both;
@@ -79,7 +80,7 @@ body > section {
 }
 
 .rw-words {
-  font-family: 'Abril Fatface', serif;
+  font-family: $fatface;
   display: inline;
   min-width: 600px;
   min-height: 29px;
@@ -94,8 +95,8 @@ body > section {
   margin-left: -17px;
   /* margin-left: -27px; */
   text-align: center;
-  font-family: 'Abril Fatface', serif;
-  color: #f91791;
+  font-family: $fatface;
+  color: $pink;
   position: absolute;
   opacity: 0;
   vertical-align: baseline;
@@ -227,11 +228,11 @@ body > section {
 //       .project_info {
 //         width: 100%;
 //         height: 100%;
-//         font-family: "Abril Fatface", serif;
+//         font-family: $fatface;
 //         font-size: 50px;
-//         color: #000;
+//         color: $black;
 //         padding-top: 80px;
-//         background: #f91791;
+//         background: $pink;
 //         position: absolute;
 //         opacity: 0;
 //         -moz-transition: all 0.25s ease-in-out;
@@ -245,7 +246,7 @@ body > section {
 // 				}
 //
 // 				button.gal_btn {
-//           font-family: 'Abril Fatface', serif;
+//           font-family: $fatface;
 //           -moz-border-radius: 3px;
 //           -webkit-border-radius: 3px;
 //           border-radius: 3px;
@@ -261,7 +262,7 @@ body > section {
 //           text-align: center;
 //           cursor: pointer;
 //           &:hover {
-//             border: 1px solid #000;
+//             border: 1px solid $black;
 //             -moz-transition: all 0.5s ease-in-out;
 //             -o-transition: all 0.5s ease-in-out;
 //             -webkit-transition: all 0.5s ease-in-out;
@@ -276,7 +277,7 @@ body > section {
 // }
 
 #resume {
-  background-color: #fff;
+  background-color: $white;
   padding: 80px 0 210px 0;
   text-align: center;
   position: relative;
@@ -290,20 +291,20 @@ body > section {
 
 			h2 {
         &:after {
-          	background-color: #f91791;
+          	background-color: $pink;
         }
 			}
 		}
 		div {
 			button.current {
-        background: #f91791;
-        color: #fff;
+        background: $pink;
+        color: $white;
 			}
       button {
-        font-family: "Abril Fatface", serif;
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #f91791;
+        font-family: $fatface;
+        background-color: $white;
+        color: $black;
+        border: 1px solid $pink;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         border-radius: 3px;
@@ -321,7 +322,7 @@ body > section {
         cursor: pointer;
         &:before {
           opacity: 0;
-          background: #f91791;
+          background: $pink;
           content: '';
           position: absolute;
           top: 0;
@@ -343,8 +344,8 @@ body > section {
           z-index: -1;
         }
         &:hover {
-          background: #f91791;
-          color: #fff;
+          background: $pink;
+          color: $white;
           -moz-transition: all 0.5s;
           -o-transition: all 0.5s;
           -webkit-transition: all 0.5s;
@@ -377,7 +378,7 @@ body > section {
 
     }
     button {
-      font-family: 'Abril Fatface', serif;
+      font-family: $fatface;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
@@ -393,7 +394,7 @@ body > section {
       text-align: center;
       cursor: pointer;
       &:hover {
-        border: 1px solid #000;
+        border: 1px solid $black;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         -webkit-transition: all 0.5s ease-in-out;
@@ -408,21 +409,21 @@ body > section {
     height: 300px;
     margin: 10px;
     position: relative;
-    border: 1px solid #000;
+    border: 1px solid $black;
     img {
       width: 100%;
       height: 100%;
-      outline: 1px solid #000;
+      outline: 1px solid $black;
       box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     }
     .project_info {
       width: 100%;
       height: 100%;
-      font-family: "Abril Fatface", serif;
+      font-family: $fatface;
       font-size: 50px;
-      color: #000;
+      color: $black;
       padding-top: 80px;
-      background: #f91791;
+      background: $pink;
       position: absolute;
       opacity: 0;
       -moz-transition: all 0.25s ease-in-out;
@@ -455,8 +456,8 @@ body > section {
   left:10%;
   width:80%;
   height:85%;
-  background: #fff;
-  outline:1px solid #000;
+  background: $white;
+  outline:1px solid $black;
   z-index: 999;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -468,7 +469,7 @@ body > section {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #FFF;
+    background: $white;
     z-index: -1;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -489,26 +490,26 @@ body > section {
     width: 100%;
     margin-top: -340px;
     margin-bottom: -1000px;
-    background: #000;
+    background: $black;
     opacity: 0.7;
   }
   > {
     h6 {
       padding: 50px 30px 20px 30px;
-      color: #f91791;
+      color: $pink;
       font-size: 50px;
       text-align: center;
     }
     p {
       margin: 20px;
-      color: #000;
-      font-family: 'Raleway', sans-serif;
+      color: $black;
+      font-family: $rale;
       font-weight: 100;
       font-size: 20px;
       line-height: 28px;
       text-align: center;
       &strong{
-        color: #f91791;
+        color: $pink;
 
       }
     }
@@ -524,7 +525,7 @@ body > section {
       -webkit-border-radius: 50%;
       border-radius: 50%;
       border: 2px solid transparent;
-      color: #f91791;
+      color: $pink;
       background-color: transparent;
       display: inline-block;
       width: 50px;
@@ -547,7 +548,7 @@ body > section {
       -webkit-border-radius: 50%;
       border-radius: 50%;
       border: 2px solid transparent;
-      color: #f91791;
+      color: $pink;
       background-color: transparent;
       display: inline-block;
       width: 50px;
@@ -560,8 +561,8 @@ body > section {
       transition: all 0.25s ease-in-out;
       text-align: center;
       &:hover {
-        color: #f91791;
-        text-shadow: 1px 1px 1px #000;
+        color: $pink;
+        text-shadow: 1px 1px 1px $black;
         -moz-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
         -webkit-transition: all 0.25s ease-in-out;
@@ -577,8 +578,8 @@ body > section {
     overflow: hidden;
     &:hover {
       &::before, &::after {
-        background: #f91791;
-        text-shadow: 1px 1px 1px #000;
+        background: $pink;
+        text-shadow: 1px 1px 1px $black;
         -moz-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
         -webkit-transition: all 0.25s ease-in-out;
@@ -593,7 +594,7 @@ body > section {
       top: 50%;
       left: 0;
       margin-top: -1px;
-      background: #000;
+      background: $black;
     }
     &::before {
       transform: rotate(45deg);
@@ -615,15 +616,15 @@ body > section {
     top: 0;
     left: 0;
     width: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: $rale;
     font-weight: 100;
     font-size: 1.75em;
     text-align: center;
-    color: #000;
+    color: $black;
     -webkit-animation: 3s fade;
     animation: 3s fade;
     p {
-      font-family: 'Raleway', sans-serif;
+      font-family: $rale;
       font-weight: 100;
       font-size: 24px;
     }
@@ -637,7 +638,7 @@ body > section {
         width: 110%;
         margin-left: -5%;
         margin-bottom: 3%;
-        border-top: 1px solid #000;
+        border-top: 1px solid $black;
         -webkit-animation: 2.5s draw;
         animation: 2.5s draw;
         -moz-animation-delay: .5s;
@@ -651,7 +652,7 @@ body > section {
         bottom: 0;
         right: 0;
         width: 100%;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $black;
         -webkit-animation: 2.5s draw-bottom;
         animation: 2.5s draw-bottom;
         -moz-animation-delay: .5s;
@@ -666,20 +667,20 @@ body > section {
     text-align: center;
     a {
       margin: 0 0 0 15px;
-      color: #f91791;
+      color: $pink;
       + a {
         margin: 0 0 0 15px;
-        color: #f91791;
+        color: $pink;
       }
       &:hover {
-        color: #fff;
+        color: $white;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 1;
         i {
-          color: #fff;
+          color: $white;
           -moz-transition: all 0.5s;
           -o-transition: all 0.5s;
           -webkit-transition: all 0.5s;
@@ -701,7 +702,7 @@ body > section {
   }
 
   i:hover, .links i:hover {
-    color: #fff;
+    color: $white;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -711,11 +712,11 @@ body > section {
 }
 
 #contactMe {
-  background-color: #f91791;
+  background-color: $pink;
   text-align: center;
   padding: 100px 0 120px 0;
   position: relative;
-  color: #fff;
+  color: $white;
   &:before {
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
@@ -726,41 +727,41 @@ body > section {
     content: "";
     top: -46px;
     left: 0;
-    background: #f91791;
+    background: $pink;
     position: absolute;
   }
   h2 {
     font-size: 40px;
     padding: 0 0 35px;
-    color: #fff;
-    font-family: "Audrey-Normal", monospace;
+    color: $white;
+    font-family: $mainFont;
     &:after {
       bottom: 15px;
     }
   }
   .button {
-    border-color: #fff;
-    color: #fff;
+    border-color: $white;
+    color: $white;
     clear: both;
     z-index: 0;
     &:hover {
-      color: #f91791;
-      background: #fff;
+      color: $pink;
+      background: $white;
       -moz-transition: all 0.25s ease-in-out;
       -o-transition: all 0.25s ease-in-out;
       -webkit-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out;
     }
     &:before {
-      background: #fff;
+      background: $white;
     }
   }
   .contact-info {
     margin: 0 auto;
     font-size: 25px;
-    font-family: "Audrey-Normal", monospace;
+    font-family: $mainFont;
     a {
-      color: #fff;
+      color: $white;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -774,7 +775,7 @@ body > section {
       }
     }
     .mail a span {
-      font-family: 'Montserrat';
+      font-family: $subFont;
       font-size: 14px;
       line-height: 27px;
     }
@@ -792,7 +793,7 @@ body > section {
       -moz-border-radius: 100px;
       -webkit-border-radius: 100px;
       border-radius: 100px;
-      border: 2px solid #fff;
+      border: 2px solid $white;
       display: inline-block;
       width: 55px;
       height: 55px;
@@ -802,11 +803,11 @@ body > section {
       -o-transition: all 0.25s ease-in-out;
       -webkit-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out;
-      color: #fff;
+      color: $white;
       cursor: pointer;
       &:hover {
-        background-color: #fff;
-        color: #f91791;
+        background-color: $white;
+        color: $pink;
       }
     }
   }
@@ -897,7 +898,7 @@ body > section {
 // 					position: absolute;
 // 					content: '';
 // 					height: 4px;
-// 					background-color: #000;
+// 					background-color: $black;
 // 					width: 50%;
 // 					margin: 0 auto;
 // 					clear: both;
@@ -944,13 +945,13 @@ body > section {
 // 								font-family: 'Abril Fatface';
 // 								letter-spacing: -1px;
 // 								font-size: 40px;
-// 								color: #f91791;
+// 								color: $pink;
 // 								/* padding-bottom: 50px */
 // 							}
 // 							h2.skillsHeading{
 // 								/* font-family: 'Abril Fatface'; */
 // 								font-size: 30px;
-// 								color: #000;
+// 								color: $black;
 // 							}
 // 							.skillsGrid{
 // 								/* margin-top: 30px; */
@@ -1000,7 +1001,7 @@ body > section {
 // 										display: inline-block;
 // 										font-size: 20px;
 // 										font-family: 'Raleway';
-// 										color: #000;
+// 										color: $black;
 // 										text-align: left;
 // 										vertical-align: middle;
 // 										-moz-transition: all 0.25s ease-in-out;
@@ -1066,7 +1067,7 @@ body > section {
 //
 // 			div.menu-bg {
 // 				position: fixed;
-// 				background: #f91791;
+// 				background: $pink;
 // 				pointer-events: none;
 // 				transition: .3s;
 // 				right: 50px;
@@ -1083,7 +1084,7 @@ body > section {
 //
 // 			div.menu-burger {
 // 				position: fixed;
-// 				color: #fff;
+// 				color: $white;
 // 				padding-top: 10px;
 // 				-webkit-user-select: none;
 // 				-moz-user-select: none;
@@ -1093,16 +1094,16 @@ body > section {
 // 				transform-origin: center;
 // 				&.fs {
 // 			    transform: rotate(-180deg) translateY(10px);
-// 			    color: #fff;
+// 			    color: $white;
 // 			  }
 // 			}
 //
 // 			.menu-items {
-// 			  font-family: 'Abril Fatface', serif;
+// 			  font-family: $fatface;
 // 			  font-size: 125px;
 // 			  line-height: 120px;
 // 			  position: fixed;
-// 			  color: #fff;
+// 			  color: $white;
 // 			  width: 100%;
 // 			  text-align: left;
 // 			  opacity: 0;
@@ -1113,11 +1114,11 @@ body > section {
 // 			  -webkit-font-smoothing: antialiased;
 // 			  z-index: 101;
 // 			  div {
-// 			    color: #fff;
+// 			    color: $white;
 // 			    transition: 1s;
 // 			    opacity: 0;
 // 			    a {
-// 			      color: #fff;
+// 			      color: $white;
 // 			      text-decoration: none;
 // 			    }
 // 			  }
@@ -1126,13 +1127,13 @@ body > section {
 // 			    pointer-events: auto;
 // 			    opacity: 1;
 // 			    div {
-// 			      color: #fff;
+// 			      color: $white;
 // 			      opacity: 1;
 // 			      a {
-// 			        color: #fff;
+// 			        color: $white;
 // 			        text-decoration: none;
 // 			        &:hover {
-// 			          color: #000;
+// 			          color: $black;
 // 			          text-decoration: none;
 // 			          transition: .4s;
 // 			        }
@@ -1213,7 +1214,7 @@ body > section {
 // }
 //
 // #resume {
-// 	background-color: #fff;
+// 	background-color: $white;
 // 	padding: 80px 0 210px 0;
 // 	text-align: center;
 // 	position: relative;
@@ -1236,10 +1237,10 @@ body > section {
 // 			}
 //
 // 			.button {
-// 				font-family: "Abril Fatface", serif;
-// 				background-color: #fff;
-// 				color: #000;
-// 				border: 1px solid #f91791;
+// 				font-family: $fatface;
+// 				background-color: $white;
+// 				color: $black;
+// 				border: 1px solid $pink;
 // 				-moz-border-radius: 3px;
 // 				-webkit-border-radius: 3px;
 // 				border-radius: 3px;
@@ -1258,7 +1259,7 @@ body > section {
 // 				&::before{
 // 					// filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=0);
 // 					opacity: 0;
-// 					background: #f91791;
+// 					background: $pink;
 // 					content: '';
 // 					position: absolute;
 // 					top: 0;
@@ -1283,7 +1284,7 @@ body > section {
 //
 // 				}
 // 				&:hover{
-// 					color: #fff;
+// 					color: $white;
 // 					-moz-transition: all 0.5s;
 // 					-o-transition: all 0.5s;
 // 					-webkit-transition: all 0.5s;
@@ -1324,12 +1325,12 @@ body > section {
 // 			.project_info {
 // 				width: 95%;
 // 				height: 94%;
-// 				font-family: "Abril Fatface", serif;
+// 				font-family: $fatface;
 // 				font-size: 50px;
-// 				color: #000;
+// 				color: $black;
 // 				padding-top: 80px;
-// 				background: #f91791;
-// 					outline:1px solid #000;
+// 				background: $pink;
+// 					outline:1px solid $black;
 // 				position: absolute;
 // 				top: 10px;
 // 				left: 10px;
@@ -1362,11 +1363,11 @@ body > section {
 //
 //
 // #contactMe {
-//   background-color: #f91791;
+//   background-color: $pink;
 //   text-align: center;
 //   padding: 100px 0 120px 0;
 //   position: relative;
-//   color: #fff;
+//   color: $white;
 //   &:before {
 //     -moz-transform: skewY(-3deg);
 //     -ms-transform: skewY(-3deg);
@@ -1377,30 +1378,30 @@ body > section {
 //     content: "";
 //     top: -46px;
 //     left: 0;
-//     background: #f91791;
+//     background: $pink;
 //     position: absolute;
 //   }
 //   h2 {
 //     font-size: 40px;
 //     padding: 0 0 35px;
-//     color: #fff;
+//     color: $white;
 //     font-family: "Audrey-Normal", monospace;
 //   }
 //   .button {
-//     border-color: #fff;
-//     color: #fff;
+//     border-color: $white;
+//     color: $white;
 //     clear: both;
 //     z-index: 0;
 //     &:hover {
-//       color: #f91791;
-//       background: #fff;
+//       color: $pink;
+//       background: $white;
 //       -moz-transition: all 0.25s ease-in-out;
 //       -o-transition: all 0.25s ease-in-out;
 //       -webkit-transition: all 0.25s ease-in-out;
 //       transition: all 0.25s ease-in-out;
 //     }
 //     &:before {
-//       background: #fff;
+//       background: $white;
 //     }
 //   }
 //   .contact-info {
@@ -1408,7 +1409,7 @@ body > section {
 //     font-size: 25px;
 //     font-family: "Audrey-Normal", monospace;
 //     a {
-//       color: #fff;
+//       color: $white;
 //       text-decoration: none;
 //       &:hover {
 //         text-decoration: underline;
@@ -1435,7 +1436,7 @@ body > section {
 //       -moz-border-radius: 100px;
 //       -webkit-border-radius: 100px;
 //       border-radius: 100px;
-//       border: 2px solid #fff;
+//       border: 2px solid $white;
 //       display: inline-block;
 //       width: 55px;
 //       height: 55px;
@@ -1445,10 +1446,10 @@ body > section {
 //       -o-transition: all 0.25s ease-in-out;
 //       -webkit-transition: all 0.25s ease-in-out;
 //       transition: all 0.25s ease-in-out;
-//       color: #fff;
+//       color: $white;
 //       &:hover {
-//         background-color: #fff;
-//         color: #f91791;
+//         background-color: $white;
+//         color: $pink;
 //       }
 //     }
 //   }
@@ -1457,7 +1458,12 @@ body > section {
 //   }
 // }
 //
-
+@media screen and (max-width: 768px){
+	.rw-sentence { font-size: 23px; }
+}
+@media screen and (max-width: 320px){
+	.rw-sentence { font-size: 9px; }
+}
 
 @media screen and (max-width: 1024px) {
 	#welcome .welcome {
@@ -1495,12 +1501,12 @@ body > section {
 
 		#welcome .close nav .holder {
 			bottom: auto;
-			background: #000;
+			background: $black;
 		}
 
 		#welcome nav .holder {
 			bottom: auto;
-			background: #000;
+			background: $black;
 			position: static;
 			padding: 10px 0;
 			margin: 0;
@@ -1636,7 +1642,7 @@ body > section {
 
 
 		#contactMe .contact-info div {
-			border: 1px solid #fff;
+			border: 1px solid $white;
 			margin: 0 auto 12px !important;
 			-moz-border-radius: 3px;
 			-webkit-border-radius: 3px;
@@ -1867,7 +1873,7 @@ body > section {
 			font-size: 16px;
 		}
 		.pop > p{
-			font-size: 18px;
+			font-size: 14px;
 
 		}
 		#resume {
@@ -1901,7 +1907,7 @@ body > section {
     -o-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-    color: #f91791;
+    color: $pink;
     padding-top: 10px;
 }
 		.skills .row{
