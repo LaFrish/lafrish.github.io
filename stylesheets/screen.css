@@ -1456,175 +1456,20 @@ padding: 200px 0;
 
 /* **************GALLERY BUTTON CONTAINER ************** */
 
- /* .holder button {
-	font-family: "Abril Fatface", serif;
-	background-color: #fff;
-	color: #000;
-	border: 1px solid #f91791;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	text-decoration: none;
-	height: 45px;
-	line-height: 47px;
-	min-width: 130px;
-	display: inline-block;
-	text-transform: uppercase;
-	position: relative;
-	z-index: 0;
-	overflow: hidden;
-	font-size: 18px;
-	text-align: center;
-	cursor: pointer;
-}
 
 .holder button:before {
 	filter: progid:DXImageTransform .Microsoft .Alpha(Opacity=0);
-	opacity: 0;
-	background: #f91791;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 150%;
-	height: 100%;
-	-moz-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
-	-ms-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
-	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
-	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -4em, 0);
-	-moz-transition: -moz-transform 0.4s, opacity 0.4s, background-color 0.4s;
-	-o-transition: -o-transform 0.4s, opacity 0.4s, background-color 0.4s;
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s, background-color 0.4s;
-	transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
-	-moz-transform-origin: 0% 100%;
-	-ms-transform-origin: 0% 100%;
-	-webkit-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
-	z-index: -1;
 }
 
  .holder button:hover {
-	color: #fff;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
 	filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
-	opacity: 1;
-} */
-
-/*
-.grid {
-	margin-top: 50px;
 }
 
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 30%;
-
-}
-
-.grid-item,
-.figure {
-  overflow: hidden;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
-
-
-.grid-item img:hover {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-
-.gallery_containers {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	height: 100vw;
-}
-
-.gallery_container {
-	display: inline-flex;
-	width: 400px;
-	height: 300px;
-	margin: 10px;
-	position: relative;
-	border:1px solid #000;
-}
-.gallery_container img {
-	width: 100%;
-	height: 100%;
-	outline:1px solid #000;
-	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-}
-
-.project_info {
-	width: 100%;
-	height: 100%;
-	font-family: "Abril Fatface", serif;
-	font-size: 50px;
-	color: #000;
-	padding-top: 80px;
-	background: #f91791;
-	position: absolute;
-	opacity: 0;
-	-moz-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-	overflow: hidden;
-}
-
-.project_info:hover {
-	opacity: 0.9;
-}
-
-.project_info span {
-	display: block;
-	font-size: 16px;
-}
-
-
-.grid-item button{
-	font-family: 'Abril Fatface', serif;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	text-decoration: none;
-	height: 45px;
-	line-height: 47px;
-	padding: 0 25px;
-	display: inline-block;
-	text-transform: uppercase;
-	position: relative;
-	overflow: hidden;
-	font-size: 18px;
-	text-align: center;
-	cursor: pointer;
-}
 
 .grid-item button:hover {
-	border: 1px solid #000;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
 	filter: progid:DXImageTransform .Microsoft .Alpha(enabled=false);
 	opacity: 1;
-} */
+}
 
 /*
 #resume .links {
