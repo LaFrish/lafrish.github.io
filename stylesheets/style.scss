@@ -2037,8 +2037,13 @@ body > section {
 }
 
 @media (max-width:425px){
-  body {
-  width:425px;
+  // body {
+  // width:100%;
+  // }
+  .grid-sizer,
+  .grid-item {
+    width: 80%;
+
   }
 
 }
@@ -2047,8 +2052,13 @@ body > section {
 		font-size: 67px;
     margin-left: 366px;
 } */
-body {
-width:360px;
+// body {
+// width:360px;
+// }
+.grid-sizer,
+.grid-item {
+  width: 80%;
+
 }
 
 #about .title li {
