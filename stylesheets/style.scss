@@ -2036,6 +2036,11 @@ body > section {
 		}
 }
 
+@media (max-width:425px){
+  body {
+  width:425px;
+}
+}
 @media (max-width: 362px){
 	/* .menu-items {
 		font-size: 67px;
