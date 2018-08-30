@@ -180,10 +180,12 @@ h5{
 	cursor: pointer;
 	transition: .4s;
 	transform-origin: center;
+	box-shadow: 0 2px 3px rgba(0,0,0,1);
 }
 .menu-burger.fs {
 	transform: rotate(-180deg) translateY(10px);
 	color: #fff;
+		box-shadow: 0 2px 3px rgba(0,0,0,0);
 }
 .menu-items {
 	font-family: 'Abril Fatface', serif;
