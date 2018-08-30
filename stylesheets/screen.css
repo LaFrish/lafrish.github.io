@@ -61,7 +61,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: "Abril Fatface";
 	/* min-width: 458px; */
-	min-width: 360px;
+	/* min-width: 360px; */
 }
 
 html {
@@ -1147,7 +1147,7 @@ padding: 200px 0;
   width: 58.33333333%;
 }
 .col-xs-6 {
-  width: 50%;
+  width: 49%;
 }
 .col-xs-5 {
   width: 41.66666667%;
