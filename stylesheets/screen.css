@@ -60,7 +60,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: "Abril Fatface";
-	/* min-width: 458px; */
+	min-width: 458px;
 }
 
 html {
