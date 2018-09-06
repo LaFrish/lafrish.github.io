@@ -163,9 +163,6 @@ h5{
 	transform: translate3d(50%, -50%, 0);
 	transform-origin: center center;
 	box-shadow: 0 2px 3px rgba(0,0,0,1);
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 }
 .menu-bg.fs {
 	transform: translate3d(50%, -50%, 0);
