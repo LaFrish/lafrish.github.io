@@ -1,3 +1,29 @@
+
+$(document).ready(function(){
+
+$(".popUpAd").delay(2000).fadeIn(100);
+
+
+});
+$(".adButton").click(function () {
+	$(".popUpAd").fadeOut(300);
+	console.log('why')
+});
+
+
+
+/* Ex1 */
+// $( ".Banner1" ).click(function() {
+// $(".BannerBorder,.BannerBorderLine,.BannerHolder,.Sales,.Biggest,.ShopNow").delay(0).fadeOut(500);
+// $(".BannerBorder,.BannerBorderLine").delay(1000).fadeIn(500);
+// $(".BannerHolder").delay(2500).fadeIn(1000);
+// $(".Sales").delay(3500).fadeIn(1000);
+// $(".Biggest").delay(4500).fadeIn(1000);
+// $(".ShopNow").delay(5500).fadeIn(1000);
+// });
+
+
+
 $('.menu-burger, .menu-items').on('click', function() {
 	$('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
 	$('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');

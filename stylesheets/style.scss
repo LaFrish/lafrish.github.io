@@ -12,6 +12,71 @@ $gray: #8c8c8c;
 $pink: #f91791;
 $white: #fff;
 $black: #000000;
+// 
+// .popUpAd {
+//   display: none;
+//   position: fixed;
+//   right: 0px;
+//   top: 0px;
+//   width: 2000vw;
+//   height: 2000vw;
+//   z-index: 9999999999999;
+//   -webkit-animation: fadeIn 1s linear forwards;
+//   animation: fadeIn 4s linear alternate;
+//   background-color: #f91791;
+//   -moz-transition: all 0.25s ease-in-out;
+//   -o-transition: all 0.25s ease-in-out;
+//   -webkit-transition: all 0.25s ease-in-out;
+//   transition: all 0.25s ease-in-out;
+//   .closeX {
+//     position: absolute;
+//     display: inline-block;
+//     overflow: hidden;
+//     z-index: 9999999999999;
+//     width: 50px;
+//     height: 50px;
+//     font-size: 25px;
+//     text-align: center;
+//     border-radius: 100%;
+//     right: 10px;
+//     top: 10px;
+//     border-width: 0 0 1px;
+//     &:hover {
+//       &::before, &::after {
+//         color: #000;
+//         text-shadow: 1px 1px 1px #000000;
+//         -moz-transition: all 0.25s ease-in-out;
+//         -o-transition: all 0.25s ease-in-out;
+//         -webkit-transition: all 0.25s ease-in-out;
+//         transition: all 0.25s ease-in-out;
+//       }
+//     }
+//     &::before, &::after {
+//       content: '';
+//       position: absolute;
+//       height: 2px;
+//       width: 100%;
+//       top: 50%;
+//       left: 0;
+//       margin-top: -1px;
+//       background: #fff;
+//     }
+//     &::before {
+//       transform: rotate(45deg);
+//     }
+//     &::after {
+//       transform: rotate(-45deg);
+//     }
+//     &.big {
+//       transform: scale(3);
+//     }
+//     &.hairline {
+//       &::before, &::after {
+//         height: 1px;
+//       }
+//     }
+//   }
+// }
 
 
 .fade-in {
@@ -2421,3 +2486,13 @@ blockquote {
 				opacity: 0;
 			}
 		}
+
+    @-webkit-keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }

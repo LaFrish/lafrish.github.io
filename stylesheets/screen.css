@@ -1755,3 +1755,135 @@ padding: 200px 0;
     margin-left: 0;
   }
 }
+
+.popUpAd{
+	margin-top: 200px;
+	/* display: none; */
+	position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 2000vw;
+  height: 200px;
+	z-index: 9999999999999;
+	-webkit-animation: fadeInUp 15s linear forwards;
+  animation: fadeInUp 15s linear alternate ;
+	background-color: #f91791;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	background-color: #f91791;
+	  transform: skewY(-10deg)
+	/* -moz-transform: skewY(-3deg);
+	-ms-transform: skewY(-3deg);
+	-webkit-transform: skewY(-3deg);
+	transform: skewY(-3deg); */
+}
+/* .popUpAd::before{
+	-moz-transform: skewY(-3deg);
+	-ms-transform: skewY(-3deg);
+	-webkit-transform: skewY(-3deg);
+	transform: skewY(-3deg);
+	height: 90px;
+	width: 100%;
+	content: "";
+	top: -46px;
+	left: 0;
+background-color: #f91791;
+	position: absolute;
+} */
+
+
+.popUpAd .closeX {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+	z-index: 9999999999999;
+	width: 50px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 100%;
+  right: 10px;
+  top: 10px;
+  border-width: 0 0 1px;
+
+
+
+}
+
+.popUpAd .closeX:hover::before, .popUpAd .closeX:hover::after {
+	color: #000;
+
+  text-shadow: 1px 1px 1px #000000;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.popUpAd .closeX::before, .popUpAd .closeX::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+}
+
+.popUpAd .closeX::before {
+  transform: rotate(45deg);
+}
+
+.popUpAd .closeX::after {
+  transform: rotate(-45deg);
+}
+
+.popUpAd .closeX.big {
+  transform: scale(3);
+}
+
+.popUpAd .closeX.hairline::before, .popUpAd .closeX.hairline::after {
+  height: 1px;
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"  />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="stylesheets/style.css"
+		<link rel="stylesheet" href="stylesheets/style.css">
 	<link rel="stylesheet" href="stylesheets/animate.css">
 	<link rel="stylesheet" href="stylesheets/Audrey-Normal.css">
 	<link rel="stylesheet" href="fonts/Audrey-Normal.css">
@@ -140,7 +140,10 @@
 				</div>
 			</nav>
 		</header>
+		<!-- <div id="popUpAd" class="popUpAd">
+			<div class="adButton closeX hairline"></div>
 
+		</div> -->
 		<section id="welcome">
 			<div class="skewed-bg">
 				<div class="content">
@@ -156,7 +159,7 @@
 							<span>gifs.</span>
 							</span>
 						</p>
-					<div class="buttonContainer">
+					<div class="dContainer">
 						<a href="#about" class="button fade-in four">Welcome to me</a>
 					</div>
 					<div class="scroll-down clear">
@@ -1397,6 +1400,8 @@
 					</div>
 				</div>
 			</section>
+
+				<!-- POP UP HOLDER -->
 			<section id="resume">
 				<div class="holder">
 					<div class="title scrollflow -slide-top -opacity">
@@ -1504,6 +1509,14 @@
 						</div>
 					</div>
 					<div class="web showall grid-item gallery_container scrollflow -slide-top -opacity">
+						<img src="images/anagramChecker.png" alt="TEKvideo">
+						<div class='project_info' onclick=''>
+							Anagram Checker<br>
+							<div class="space20"></div>
+							<button class="gal_btn fade-in four" data-index="11">View Details</button>
+						</div>
+					</div>
+					<div class="web showall grid-item gallery_container scrollflow -slide-top -opacity">
 						<img src="images/reactPathways.png" alt="React Pathways">
 						<div class='project_info' onclick=''>
 							Manager Pathways<br>
@@ -1518,14 +1531,21 @@
 							<div class="space20"></div>
 							<button class="gal_btn fade-in four" data-index="10">View Details</button>
 						</div>
-
+					</div>
+					<div class="web showall grid-item gallery_container scrollflow -slide-top -opacity">
+						<img src="images/mb.png" alt="Mama Bear">
+						<div class='project_info' onclick=''>
+							Mama Bear<br>
+							<div class="space20"></div>
+							<button class="gal_btn fade-in four" data-index="12">View Details</button>
+						</div>
 					</div>
 					<!-- <div class="web showall grid-item gallery_container scrollflow -slide-top -opacity">
-						<img src="images/anagramChecker.png" alt="TEKvideo">
+						<img src="images/CPE-Wireframe-1.png" alt="Aerotek Career Pathways">
 						<div class='project_info' onclick=''>
-							Anagram Checker<br>
+							Career Paths<br>
 							<div class="space20"></div>
-							<button class="gal_btn fade-in four" data-index="11">View Details</button>
+							<button class="gal_btn fade-in four" data-index="13">View Details</button>
 						</div>
 					</div> -->
 				</div>
@@ -1551,8 +1571,6 @@
 					<div class="copy">© Copyright 2018 Farishta Haider</div>
 				</div>
 			</section>
-
-			<!-- POP UP HOLDER -->
 			<div id="1" class="pop">
 				<button class="gal_btn closeX hairline" data-index="1"></button>
 				<h6>Trivia Night</h6>
@@ -1678,16 +1696,45 @@
 					<a href="https://lafrish.github.io/TEKvideo/" target= '_blank' class="button"><i class="fa fa-globe"></i>TEKvideo</a>
 				</div>
 			</div>
-			<!-- <div id="11" class="pop">
+			<div id="11" class="pop">
 				<button class="gal_btn closeX hairline" data-index="11"></button>
 				<h6>Anagram Checker</h6>
 				<div class="techUsed">
-					<h3> <strong>TECH:</strong>  <strong> | </strong> SASS <strong> | </strong> CSS <strong> | </strong> HTML</h3>
+					<h3> <strong>TECH:</strong>  <strong> | </strong> HTML <strong> | </strong> CSS <strong> | </strong> JQUERY</h3>
+				</div>
+				<p><strong></strong>A code challenge to check if 2 words are an anagram.</p><p></p>
+				<div class="links scrollflow">
+					<a href="https://codepen.io/lafrish/pen/LxJGWR" target= '_blank' class="button"><i class="fab fa-codepen"></i>Codepen Repo</a>
+					<!-- <a href="" target= '_blank' class="button"><i class="fa fa-globe"></i>TEKvideo</a> -->
+				</div>
+			</div>
+			<div id="12" class="pop">
+				<button class="gal_btn closeX hairline" data-index="12"></button>
+				<h6>Mama Bear</h6>
+				<div class="techUsed">
+					<h3>
+						<strong>TECH:</strong>  <strong> | </strong> HTML <strong> | </strong> SASS <strong> | </strong> BOOTSTRAP
+					</h3>
+				</div>
+				<p>A SharePoint page written for a special mother program at TEKsystems<strong></strong>.</p><p></p>
+				<div class="links scrollflow">
+					<a href="https://github.com/LaFrish/mamaBear" target= '_blank' class="button"><i class="fa fa-github"></i>Github Repo</a>
+					<a href="https://drive.google.com/file/d/1cI3azRqu4lX7YipcI-1KtO53e4gIhVXH/view?usp=sharing" target= '_blank' class="button"><i class="far fa-image"></i></i>TEKvideo</a>
+				</div>
+			</div>
+			<!-- <div id="13" class="pop">
+				<button class="gal_btn closeX hairline" data-index="13"></button>
+				<h6>Career Pathways</h6>
+				<div class="techUsed">
+					<h3>
+						<strong>TECH:</strong>  <strong> | </strong> HTML <strong> | </strong> SASS <strong> | </strong> BOOTSTRAP
+					</h3>
 				</div>
 				<p><strong></strong>.</p><p></p>
+				<img src="images/CPE-Wireframe-1.png" alt="Aerotek Career Pathways">
 				<div class="links scrollflow">
-					<a href="" target= '_blank' class="button"><i class="fa fa-github"></i>Github Repo</a>
-					<a href="" target= '_blank' class="button"><i class="fa fa-globe"></i>TEKvideo</a>
+					<a href="https://github.com/LaFrish/mamaBear" target= '_blank' class="button"><i class="fa fa-github"></i>Github Repo</a>
+					<a href="https://drive.google.com/file/d/1cI3azRqu4lX7YipcI-1KtO53e4gIhVXH/view?usp=sharing" target= '_blank' class="button"><i class="far fa-image"></i></i>Career Pathways</a>
 				</div>
 			</div> -->
 
